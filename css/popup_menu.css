@@ -18,6 +18,7 @@
     padding-left: 5px;
     padding-top: 35px;
     z-index: 50;
+    letter-spacing: 0.1em;
   }
   .fix_popup_menu span{
     -moz-transform: rotate(-90deg);
