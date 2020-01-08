@@ -1,9 +1,6 @@
 .news_card{
     position: relative;
 }
-.big_news_swiper{
-    margin-bottom: 102px;
-}
 .news_card.news_default{
     margin-bottom: 50px;
 }
