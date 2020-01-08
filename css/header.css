@@ -1,0 +1,119 @@
+.header_top{
+    background: #0D1214;
+    color: #939191;
+    padding-bottom: 17px;
+    padding-top: 16px;
+    font-size: 0.75rem;
+    font-family: "FuturaMediumC";
+  }
+  .header_top a{
+    color: #939191;
+  }
+  .header_phone a,
+  .header_top a:hover{
+    color: var(--gray2);
+  }
+  .header_phone{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 15px;
+  }
+  .header_phone::after{
+    position: absolute;
+    color: var(--gray1);
+    content: "\e90b";
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    right: 9px;
+    top: 50%;
+    margin-top: -10px;
+  }
+  .header_phone::before{
+    content: "";
+    border-radius: 50%;
+    border: 1px solid var(--gray1);
+    top: 50%;
+    margin-top: -9px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    position: absolute;
+  }
+  .header_nav{
+    display: flex;
+  }
+  .header_nav li:not(:last-child){
+    margin-right: 28px;
+  }
+  .service_menu li:not(:last-child){
+    margin-right: 32px;
+  }
+  .header_ico_link i{
+    margin-right: 6px;
+    font-size: 17px;
+  }
+  .header_ico_link i.icon-bookmark{
+    font-size: 14px;
+  }
+  .user_buttom{
+    padding-left: 15px;
+    display: block;
+  }
+  .user_buttom span{
+    width: 28px;
+    height: 28px;
+    display: block;
+    border: 1.5px solid rgba(83, 84, 90, 0.3);
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .user_buttom span i{
+    font-size: 28px;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+  }
+  .header_bottom{
+    font-family: "FuturaDemiC";
+    border: 1px solid var(--borderColor);
+    font-size: 0.81rem;
+    padding: 15px 0px;
+  }
+  .header_bottom a{
+    color: var(--linkBlack);
+  }
+  .header_bottom .stocks_link{
+    font-size: 14px;
+    color: var(--textRed);
+    display: block;
+    background: url('../image/ico/button_line.svg');
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .header_bottom .header_catalog{
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .header_bottom .header_catalog .ico{
+    width: 18px;
+    height: 12px;
+    margin-right: 7px;
+  }
+  .header .search_input{
+    max-width: 207px;
+    min-width: 207px;
+  }

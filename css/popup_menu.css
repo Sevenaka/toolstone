@@ -1,0 +1,101 @@
+.fix_popup_menu{
+    cursor: pointer;
+    position: fixed;
+    width: 34px;
+    height: 169px;
+    border-radius: 4px 0px 0px 4px;
+    background: var(--bgBlack);
+    right: 0;
+    top: 25%;
+    color: #fff;
+    overflow: hidden;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "FuturaDemiC";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 35px;
+    z-index: 50;
+  }
+  .fix_popup_menu span{
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: block;
+  }
+  .fix_popup_menu i{
+    width: 42px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: -3px;
+  }
+.popup_dummy{
+    z-index: 60;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.popup_menu_container{
+    width: 316px;
+}
+.popup_menu_container .popup_header{
+    background: var(--linkBlack);
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 23px;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 2px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.2em;
+}
+.popup_menu_container .popup_header i{
+    width: 33px;
+    height: 20px;
+}
+.popup_menu_container .popup_header .close_menu{
+    cursor: pointer;
+}
+.popup_menu_container .popup_content{
+    background: var(--mainBg);
+    border-radius: 0px 0px 0px 2px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    min-height: 100px;
+}
+.popup_menu_container .popup_content{
+    padding: 0px 23px;
+}
+.popup_menu_container .list_menu{
+    font-size: 14px;
+    font-family: "FuturaMediumC";
+    line-height: 16px;
+}
+.popup_menu_container .list_menu li:not(:last-child){
+    border-bottom: 0.5px solid var(--borderColor);
+}
+.popup_menu_container .list_menu a{
+    display: flex;
+    align-items: center;
+    padding: 18px 0px;
+    color: var(--linkBlack);
+}
+.popup_menu_container .list_menu a:hover,
+.popup_menu_container .list_menu a.active{
+    color: var(--red);
+}
+.popup_menu_container .list_menu a i{
+    margin-right: 5px;
+    font-size: 18px;
+}

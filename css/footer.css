@@ -1,0 +1,57 @@
+.footer{
+    font-family: "FuturaBookC Regular";
+}
+.footer_top{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer_top .footer_label{
+    font-family: "FuturaDemiC";
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+.footer_nav{
+    font-size: 13px;
+    line-height: 34px;
+}
+.footer_bottom{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 12px;
+    line-height: 14px;
+    border-top: 1px solid var(--gray2);
+}
+.footer_bottom .itm:not(:last-child){
+    margin-right: 5px;
+}
+.footer_row:not(:last-child){
+    margin-bottom: 25px;
+}
+.footer_row .title{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray1);
+    margin-bottom: 16px;
+}
+.footer .phone_list{
+    font-family: "FuturaMediumC";
+    font-size: 16px;
+    line-height: 20px;
+}
+.footer .phone_list a{
+    color: var(--linkBlack);
+}
+.footer .contact_bottom{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 15px;
+}
+.footer .contact_bottom i{
+    margin-right: 5px;
+}
+.footer a:hover{
+    color: var(--mainGreen);
+}

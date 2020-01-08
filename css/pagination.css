@@ -1,0 +1,34 @@
+.pagination{
+    font-family: "FuturaMediumC";
+    color: var(--titleColor);
+  }
+  .pagination .page-item .page-link{
+    color: var(--titleColor);
+    border-radius: 1px;
+    padding: .49rem 1rem;
+    border: 0.5px solid var(--borderColor4);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left:0px;
+  }
+  .pagination .page-item.active .page-link{
+    background-color: var(--mainGreen);
+    border-color: var(--mainGreen);
+    color: var(--mainBg);
+  }
+  .pagination .page-item .page-link i{
+    font-size: 10px;
+  }
+  .pagination .page-item.back{
+    margin-right: 8px;
+  }
+  .pagination .page-item.back i{
+    margin-right: 5px;
+  }
+  .pagination .page-item.next{
+    margin-left: 8px;
+  }
+  .pagination .page-item.next i{
+    margin-left: 5px;
+  }

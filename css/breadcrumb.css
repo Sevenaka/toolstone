@@ -1,0 +1,29 @@
+.breadcrumb{
+    background-color: transparent;
+    border-radius: initial;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    font-family: "FuturaBookC Regular";
+    color: var(--gray1);
+  }
+  .breadcrumb-item+.breadcrumb-item::before{
+    width: 3px;
+    height: 3px;
+    background: var(--linkBlack);
+    padding: 0px;
+    margin-right: .5rem;
+    border-radius: 1px;
+    content: "";
+  }
+  .breadcrumb-item+.breadcrumb-item{
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumb-item a,
+  .breadcrumb-item.active{
+    color: var(--gray1);
+  }
+  .breadcrumb-item a:hover{
+    color: var(--mainGreen);
+  }

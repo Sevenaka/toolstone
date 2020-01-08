@@ -1,0 +1,11 @@
+.btn_group{
+    display: flex;
+    font-family: "FuturaMediumC";
+    margin-bottom: 26px;
+  }
+  .btn_group .btn{
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 16px;
+    padding: .575rem 1.1rem;
+  }
