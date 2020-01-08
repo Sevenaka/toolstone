@@ -51,6 +51,7 @@
 .popup_menu_container .popup_header{
     background: var(--linkBlack);
     color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     padding: 12px 23px;
     font-size: 14px;
