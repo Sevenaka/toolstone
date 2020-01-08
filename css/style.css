@@ -366,3 +366,12 @@ h2.page_title.margin_32{
 .news_carousel .swiper_button{
   top: 26%;
 }
+.btn-uppercase{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "FuturaDemiC";
+}
+.btn-xl{
+  padding: .75rem 1.6rem;
+}

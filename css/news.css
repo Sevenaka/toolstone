@@ -28,6 +28,9 @@
     margin-bottom: 10px;
     color: var(--gray1);
 }
+.news_card.news_big .news_date:last-child{
+    margin-bottom: 0px;
+}
 .news_card.news_default .news_header{
     border: 1px solid var(--borderColor3);
 }
