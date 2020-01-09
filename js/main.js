@@ -31,11 +31,11 @@ new Swiper('.big_news_swiper', {
 
 new Swiper('.fluid_slider', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.next_slide',
+      prevEl: '.prev_slide',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination_slide',
     }
 });
 
@@ -44,11 +44,11 @@ new Swiper('.swiper_carousel', {
     spaceBetween: 30,
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.carousel_next',
+      prevEl: '.carousel_prev',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.carousel_pagination',
     }
 });
 

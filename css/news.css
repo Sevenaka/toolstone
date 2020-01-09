@@ -2,7 +2,7 @@
     position: relative;
 }
 .news_card.news_default{
-    margin-bottom: 50px;
+    margin-bottom: 64px;
 }
 .news_card .news_title a,
 .news_card > a{

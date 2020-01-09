@@ -399,3 +399,19 @@ h2.page_title.margin_32{
 .big_news_swiper.no_border .swiper-slide{
   padding: 0px;
 }
+.block_fluid{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+.subheader{
+  padding-top: 15px;
+  border: 0.5px solid var(--borderColor6);
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+.subheader + .main{
+  padding-top: 0px;
+}
+.no_margin_bottom{
+  margin-bottom: 0px!important;
+}
