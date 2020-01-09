@@ -1,8 +1,8 @@
 .media_slider .media_next{
-    right: 41px;
+    right: 15px;
 }
 .media_slider .media_prev{
-    left: 41px;
+    left: 15px;
 }
 .main_top_of{
     padding-top: 0px;
@@ -85,4 +85,14 @@
 }
 .training_about{
     border: 0px!important;
+}
+.arrow_container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.arrow_container .container{
+    height: 100%;
 }
