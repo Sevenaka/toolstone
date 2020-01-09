@@ -9,6 +9,7 @@
   --gray1: #53545A;
   --gray2: #CFCFCF;
   --gray3: #EFEFEF;
+  --gray4: #EEEEEE;
   --red: #E0121D;
   --titleColor: #010109;
   --borderColor: #E3E3E3;
@@ -438,4 +439,52 @@ h2.page_title.margin_32{
   line-height: 28px;
   margin-bottom: 32px;
   color: var(--titleColor);
+}
+.play{
+  position: absolute;
+  z-index: 8;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play .play_ico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  width: 63px;
+  height: 63px;
+  border: 6px solid rgba(222, 227, 239, 0.2);
+  border-radius: 50%;
+  color: #C0121B;
+}
+.play .text{
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
+  text-align: right;
+  max-width: 66px;
+  margin-right: 13px;
+}
+.back_to_top{
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  position: fixed;
+  left: 8px;
+  bottom: 40px;
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  z-index: 50;
+  cursor: pointer;
+}
+.back_to_top:hover{
+  opacity: 0.8;
 }

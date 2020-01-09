@@ -26,3 +26,38 @@
     padding-top: 132px;
     padding-bottom: 55px;
 }
+.video_list .item:not(:last-child){
+    margin-bottom: 40px;
+}
+.training_vide_text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 54px;
+    border-top: 0.5px solid var(--gray2);
+    margin-top: 55px;
+}
+.training_vide_text p{
+    margin: 0px auto;
+    max-width: 897px;
+}
+.training_rew{
+    padding-top: 32px;
+    padding-bottom: 68px;
+}
+.training_rew h4{
+    font-size: 30px;
+    line-height: 28px;
+    font-family: "FuturaMediumC";
+    margin-bottom: 26px;
+    color: var(--titleColor);
+}
+.rew_card{
+    display: block;
+    background: var(--gray4);
+    border-radius: 1px;
+    padding: 36px;
+}
+.rew_card img{
+    border-radius: 1px;
+}

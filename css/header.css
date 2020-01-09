@@ -6,6 +6,24 @@
     font-size: 0.75rem;
     font-family: "FuturaMediumC";
   }
+  .header_dummy_lg{
+    min-height: 73px;
+  }
+  .header_dummy_md{
+    min-height: 55px;
+    display: none;
+  }
+  .header_sticky.sticky + .header_dummy_md{
+    display: block;
+  }
+  .header_sticky.sticky,
+  .header_top.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+  }
   .header_top a{
     color: #939191;
   }
@@ -92,6 +110,7 @@
     border: 1px solid var(--borderColor);
     font-size: 0.81rem;
     padding: 15px 0px;
+    background: var(--mainBg);
   }
   .header_bottom a{
     color: var(--linkBlack);

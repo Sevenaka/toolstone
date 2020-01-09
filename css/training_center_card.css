@@ -21,7 +21,7 @@
     border-radius: 3px;
 }
 .training_card.video .training_header{
-    padding-bottom: 49%;
+    padding-bottom: 56%;
 }
 .training_card.video .training_header img{
     width: 100%;
@@ -81,4 +81,18 @@
     font-size: 16px;
     line-height: 18px;
     padding-right: 10px;
+}
+.training_card.video .training_header::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #01040C;
+    opacity: 0.3;
+}
+.video_list .training_card.video .training_header{
+    padding-bottom: 45%;
 }

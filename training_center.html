@@ -27,6 +27,9 @@
 
     <!-- FooterCals -->
     <link href="css/footer_cals.css" rel="stylesheet">
+
+    <!-- Fancybox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -240,7 +243,7 @@
 
         <!-- Training About -->
         <div class="training_about">
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="training_body">
@@ -258,8 +261,9 @@
             </div>
         </div>
 
+        <!-- Training Video -->
         <div class="training_video">
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-12">
                         <h4 class="training_title">Видео с семинаров</h4>
@@ -268,6 +272,12 @@
                                 <article class="training_card video">
                                     <a href="#">
                                         <header class="training_header">
+                                            <div class="play">
+                                                <div class="text">Смотреть видео</div>
+                                                <div class="play_ico">
+                                                    <i class="icon-play"></i>
+                                                </div>
+                                            </div>
                                             <div class="color_label label_purple">Семинар</div>
                                             <figure>
                                                 <picture>
@@ -287,6 +297,11 @@
                                         <article class="training_card video">
                                             <a href="#">
                                                 <header class="training_header">
+                                                    <div class="play">
+                                                        <div class="play_ico">
+                                                            <i class="icon-play"></i>
+                                                        </div>
+                                                    </div>
                                                     <div class="color_label label_purple">Семинар</div>
                                                     <figure>
                                                         <picture>
@@ -304,6 +319,11 @@
                                         <article class="training_card video">
                                             <a href="#">
                                                 <header class="training_header">
+                                                    <div class="play">
+                                                        <div class="play_ico">
+                                                            <i class="icon-play"></i>
+                                                        </div>
+                                                    </div>
                                                     <div class="color_label label_purple">Семинар</div>
                                                     <figure>
                                                         <picture>
@@ -318,6 +338,55 @@
                                         </article>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="training_vide_text">
+                            <p>
+                                По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности в группе двухкомпонентных клеев AKEMI®: По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности в группе двухкомпонентных клеев AKEMI®:По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Training rew -->
+        <div class="training_rew">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text_center">Отзывы</h4>
+
+                        <div class="swiper_wrapper">
+                            <div class="swiper-container rew_carousel">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <a class="rew_card" href="image/rew1.jpg" data-fancybox="rew" data-caption="Описание">
+                                        <img src="image/rew1.jpg" class="img-fluid" alt="" />
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a class="rew_card" href="image/rew3.jpg" data-fancybox="rew"  data-caption="Описание">
+                                        <img src="image/rew3.jpg" class="img-fluid" alt="" />
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a class="rew_card" href="image/rew2.jpg" data-fancybox="rew"  data-caption="Описание">
+                                        <img src="image/rew2.jpg" class="img-fluid" alt="" />
+                                    </a>
+                                  </div>
+                                  
+                                  <div class="swiper-slide">
+                                    <a class="rew_card" href="image/rew1.jpg" data-fancybox="rew"  data-caption="Описание">
+                                        <img src="image/rew1.jpg" class="img-fluid" alt="" />
+                                    </a>
+                                  </div>
+                                </div>
+    
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next rew_next swiper_button"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev rew_prev swiper_button"><i class="icon-ar_back"></i></div>
                             </div>
                         </div>
                     </div>
@@ -801,8 +870,16 @@
             </div>
         </div>
     </footer>
+
+    <div class="back_to_top">
+        <i class="icon-ar_up"></i>
+    </div>
     
-	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
