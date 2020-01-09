@@ -58,3 +58,7 @@
 .news_body_empty.empty_news{
     margin-bottom: 48px;
 }
+.news_body_empty.empty_fluid{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}

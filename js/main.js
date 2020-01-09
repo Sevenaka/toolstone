@@ -52,6 +52,21 @@ new Swiper('.swiper_carousel', {
     }
 });
 
+//swiper_carousel_centered
+new Swiper('.swiper_carousel_centered', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    }
+});
+
 new Swiper('.news_carousel', {
     slidesPerView: 4,
     spaceBetween: 30,
