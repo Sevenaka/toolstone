@@ -103,7 +103,7 @@
     font-size: 28px;
     position: absolute;
     top: -2px;
-    left: -1px;
+    left: -1.50px;
   }
   .header_bottom{
     font-family: "FuturaDemiC";
@@ -152,7 +152,7 @@
     cursor: pointer;
     padding-top: 2px;
   }
-@media (max-width: 1366px) {
+@media (max-width: 1382px) {
   .header .search_input{
     max-width: 187px;
     min-width: 187px;
@@ -173,7 +173,7 @@
     margin-right: 12px;
   }
 }
-@media (max-width: 1284px) {
+@media (max-width: 1300px) {
   .header_top .header_ico_link span{
     display: none;
   }
@@ -181,7 +181,7 @@
     display: none;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1205px) {
   .header_nav li .button{
     display: none;
   }
@@ -189,7 +189,7 @@
     display: flex;
   }
 }
-@media (max-width: 1188px) {
+@media (max-width: 1204px) {
   .header_nav li{
     position: relative;
   }

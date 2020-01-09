@@ -1,4 +1,41 @@
 .fix_popup_menu{
+    text-transform: uppercase;
+    font-family: "FuturaDemiC";
+    height: 34px;
+    background: var(--bgBlack);
+    color: #fff;
+    z-index: 50;
+    letter-spacing: 0.1em;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    border-radius: 4px 4px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 14px;
+    padding-right: 70px;
+    padding-left: 34px;
+    cursor: pointer;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: rotate(-90deg) translate(-90%, -50%);
+    -moz-transform: rotate(-90deg) translate(-90%, -50%);
+    -ms-transform: rotate(-90deg) translate(-90%, -50%);
+    -o-transform: rotate(-90deg) translate(-90%, -50%);
+    transform: rotate(-90deg) translate(-90%, -50%);
+}
+.fix_popup_menu i{
+    width: 33px;
+    height: 20px;
+    position: absolute;
+    right: 16.5px;
+}
+/*.fix_popup_menu{
     cursor: pointer;
     position: fixed;
     width: 34px;
@@ -34,7 +71,7 @@
     position: absolute;
     top: 20px;
     left: -3px;
-  }
+  }*/
 .popup_dummy{
     z-index: 60;
     position: fixed;
