@@ -61,6 +61,9 @@ body {
     max-width: 897px;
   }
 }
+.image_border_r{
+  border-radius: 3px;
+}
 .color_label.label_red{
   background: var(--textRed);
 }
@@ -424,4 +427,15 @@ h2.page_title.margin_32{
 }
 .no_margin_bottom{
   margin-bottom: 0px!important;
+}
+.other_news.border{
+  padding-top: 32px;
+  border-top: 0.5px solid var(--borderColor6);
+}
+.other_news .news_full_title{
+  font-family: "FuturaMediumC";
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 32px;
+  color: var(--titleColor);
 }

@@ -1,0 +1,84 @@
+.training_card{
+    position: relative;
+}
+.training_card.default{
+    border: 0.5px solid var(--borderColor);
+    border-radius: 1px;
+    padding-bottom: 30px;
+}
+.training_card > a{
+    color: var(--linkBlack);
+}
+.training_card.default{
+    margin-bottom: 64px;
+}
+.training_card .training_header{
+    border-bottom: 1px solid var(--borderColor3);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 74.1%;
+    border-radius: 3px;
+}
+.training_card.video .training_header{
+    padding-bottom: 49%;
+}
+.training_card.video .training_header img{
+    width: 100%;
+}
+.training_card .training_header figure{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.training_card .training_header figure picture{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.training_card .training_header figure picture img{
+    object-fit: cover;
+    vertical-align: middle;
+    -o-object-fit: cover;
+}
+.training_card .training_title{
+    font-family: "FuturaMediumC";
+}
+.training_card.default .training_title{
+    font-size: 30px;
+    line-height: 28px;
+    max-width: 300px;
+    margin: 30px auto 10px auto;
+}
+.training_card.video .training_title{
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 80px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.training_card  .training_section{
+    text-align: center;
+}
+.training_card .training_text{
+    font-size: 13px;
+    color: var(--gray1);
+    line-height: 28px;
+    max-width: 360px;
+    margin: 0px auto;
+}
+.training_card .training_footer{
+    text-align: center;
+    padding-top: 30px;
+}
+.video_list .training_card.video  .training_title{
+    font-size: 16px;
+    line-height: 18px;
+    padding-right: 10px;
+}

@@ -1,0 +1,28 @@
+.training_about{
+    padding-bottom: 120px;
+    padding-top: 92px;
+    border-bottom: 0.5px solid var(--borderColor6);
+}
+.training_about p{
+    font-size: 13px;
+    line-height: 28px;
+    color: var(--gray1);
+}
+.training_about p:not(:last-child){
+    margin-bottom: 32px;
+}
+.training_title{
+    font-family: "FuturaMediumC";
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--black);
+    margin-bottom: 32px;
+}
+.training_about .training_body{
+    padding-right: 100px;
+}
+.training_video{
+    border-bottom: 0.5px solid var(--borderColor6);
+    padding-top: 132px;
+    padding-bottom: 55px;
+}

@@ -115,6 +115,14 @@
 .news_card.news_big .news_section{
     width: 100%;
 }
+.news_card .news_time{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+.news_card .news_time span{
+    color: var(--textRed);
+}
 .news_card .news_category{
     font-size: 10px;
     margin-bottom: 6px;

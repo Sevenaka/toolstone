@@ -40,17 +40,6 @@
     line-height: 30px;
     letter-spacing: 0.01em;
 }
-.other_news{
-    padding-top: 32px;
-    border-top: 0.5px solid var(--borderColor6);
-}
-.news_full_title{
-    font-family: "FuturaMediumC";
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 32px;
-    color: var(--titleColor);
-}
 .news_body_empty .news_card{
     border: 0.5px solid var(--borderColor);
     padding: 32px 80px;
