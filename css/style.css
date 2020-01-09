@@ -40,6 +40,16 @@ body {
 .montserrat{
   font-family: 'Montserrat',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+@media (min-width: 768px) {
+  .container, .container-sm, .container-xl {
+    max-width: 924px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-sm, .container-xl {
+    max-width: 1190px;
+  }
+}
 @media (min-width: 1200px) {
   .container, .container-sm, .container-xl {
      max-width: 1390px;

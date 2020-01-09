@@ -9,6 +9,7 @@
   .header_top a{
     color: #939191;
   }
+  .header_nav li .button:hover,
   .header_phone a,
   .header_top a:hover{
     color: var(--gray2);
@@ -17,6 +18,9 @@
     position: relative;
     padding-right: 40px;
     padding-left: 15px;
+  }
+  .header_nav > li{
+    padding: 10px 0px;
   }
   .header_phone::after{
     position: absolute;
@@ -108,6 +112,10 @@
     cursor: pointer;
     text-transform: uppercase;
   }
+  .header_bottom .header_catalog span{
+    display: block;
+    padding-top: 2px;
+  }
   .header_bottom .header_catalog .ico{
     width: 18px;
     height: 12px;
@@ -117,3 +125,93 @@
     max-width: 207px;
     min-width: 207px;
   }
+  .header_top a.main_logo{
+    display: block;
+    margin-top: -5px;
+  }
+  .header_nav li .button{
+    cursor: pointer;
+    padding-top: 2px;
+  }
+@media (max-width: 1366px) {
+  .header .search_input{
+    max-width: 187px;
+    min-width: 187px;
+  }
+  .user_buttom,
+  .header_phone{
+    padding-left: 0px;
+  }
+  .header_nav li:not(:last-child){
+    margin-right: 20px;
+  }
+  .header_top .container > .row{
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1378px) {
+  .service_menu li:not(:last-child){
+    margin-right: 12px;
+  }
+}
+@media (max-width: 1284px) {
+  .header_top .header_ico_link span{
+    display: none;
+  }
+  .service_menu li:last-child{
+    display: none;
+  }
+}
+@media (min-width: 1189px) {
+  .header_nav li .button{
+    display: none;
+  }
+  .submenu_li .header_nav_response{
+    display: flex;
+  }
+}
+@media (max-width: 1188px) {
+  .header_nav li{
+    position: relative;
+  }
+  .submenu_li .header_nav_response{
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    width: 150px;
+    padding: 5px 15px;
+    left: 0;
+    left: 0;
+    top: 30px;
+    text-align: left;
+  }
+  .submenu_li .header_nav_response li{
+    margin-right: 0px;
+  }
+  .submenu_li .header_nav_response li:not(:last-child){
+    margin-bottom: 8px;
+  }
+  .submenu_li .header_nav_response li a{
+    color: var(--linkBlack);
+  }
+  .submenu_li .header_nav_response li a:hover{
+    color: var(--mainGreen);
+  }
+  .header_nav li.submenu_li:hover > ul{
+    display: block;
+  }
+  .header_nav li.submenu_li{
+    min-width: 44px;
+    text-align: center;
+  }
+}
+@media (max-width: 993px) {
+  .header_phone{
+    padding-right: 0px;
+  }
+  .header_phone::before,
+  .header_phone::after{
+    display: none;
+  }
+}
