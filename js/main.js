@@ -52,6 +52,18 @@ new Swiper('.swiper_carousel', {
     }
 });
 
+new Swiper('.media_slider', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.media_next',
+      prevEl: '.media_prev',
+    },
+    pagination: {
+        el: '.media_pagination',
+    }
+});
+
 //swiper_carousel_centered
 new Swiper('.swiper_carousel_centered', {
     slidesPerView: 1,
@@ -78,6 +90,15 @@ new Swiper('.rew_carousel', {
 
 new Swiper('.news_carousel', {
     slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+});
+
+new Swiper('.news_carousel_4', {
+    slidesPerView: 4,
     spaceBetween: 30,
     navigation: {
       nextEl: '.swiper-button-next',

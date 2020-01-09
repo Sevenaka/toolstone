@@ -1,0 +1,88 @@
+.media_slider .media_next{
+    right: 41px;
+}
+.media_slider .media_prev{
+    left: 41px;
+}
+.main_top_of{
+    padding-top: 0px;
+}
+.top_media{
+    position: relative;
+}
+.media_slider .swiper-slide{
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    position: relative;
+    padding-top: 107px;
+    padding-bottom: 86px;
+}
+.media_slider .swiper-slide::before{
+    content: "";
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+.media_slider .slide_body{
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+    width: 50%;
+    padding: 46px 101px 46px 61px;
+}
+.media_slider .slide_body h2{
+    font-family: FuturaMediumC;
+    font-size: 30px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.media_slider .slide_body p{
+    font-size: 13px;
+    line-height: 28px;
+    color: var(--borderColor);
+    margin-bottom: 0px;
+}
+.media_slider .container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.media_slider .slide_bottom{
+    margin-top: 50px;
+}
+.media_slider .media_play_btn{
+    position: relative;
+    height: 100%;
+}
+.media_slider .media_play_btn .play{
+    left: initial;
+    right: 0;
+    width: initial;
+    cursor: pointer;
+}
+.media_title_wrapper{
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+.training_about.full{
+    padding-top: 0px;
+}
+.training_title.full{
+    font-size: 40px;
+    line-height: 36px;
+    font-family: "FuturaDemiC";
+}
+.training_about{
+    border: 0px!important;
+}

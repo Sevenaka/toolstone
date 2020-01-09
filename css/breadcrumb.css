@@ -24,6 +24,13 @@
   .breadcrumb-item.active{
     color: var(--gray1);
   }
+  .media_title_wrapper .breadcrumb-item a, 
+  .media_title_wrapper .breadcrumb-item.active{
+    color: var(--borderColor);
+  }
   .breadcrumb-item a:hover{
     color: var(--mainGreen);
+  }
+  .media_title_wrapper h1.page_title{
+    color: #ffffff;
   }
