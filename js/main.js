@@ -107,27 +107,30 @@ new Swiper('.news_carousel_4', {
 });
 
 //RIGHT POPUP MENU
-var popupBtn = document.querySelector('.fix_popup_menu'),
-    popupDummy = document.querySelector('.popup_dummy'),
-    closeBtn = popupDummy.querySelector('.close_menu'),
-    menuContainer = popupDummy.querySelector('.popup_menu_container');
+var popupBtn = document.querySelector('.fix_popup_menu');
 
-popupBtn.addEventListener('click', function(){
-    classToggle(this, 'hide');
-    classToggle(popupDummy, 'hide');
-});
+if(popupBtn) {
+    var popupDummy = document.querySelector('.popup_dummy'),
+        closeBtn = popupDummy.querySelector('.close_menu'),
+        menuContainer = popupDummy.querySelector('.popup_menu_container');
 
-closeBtn.addEventListener('click', function(){
-    classToggle(popupBtn, 'hide');
-    classToggle(popupDummy, 'hide');
-});
-
-popupDummy.addEventListener('click', function(target){
-    if(target.composedPath()[0] === this) {
-        classToggle(popupBtn, 'hide');
+    popupBtn.addEventListener('click', function(){
         classToggle(this, 'hide');
-    }
-});
+        classToggle(popupDummy, 'hide');
+    });
+    
+    closeBtn.addEventListener('click', function(){
+        classToggle(popupBtn, 'hide');
+        classToggle(popupDummy, 'hide');
+    });
+    
+    popupDummy.addEventListener('click', function(target){
+        if(target.composedPath()[0] === this) {
+            classToggle(popupBtn, 'hide');
+            classToggle(this, 'hide');
+        }
+    });
+}
 
 /* BACK TO TOP */
 var backToTop = document.querySelector('.back_to_top');

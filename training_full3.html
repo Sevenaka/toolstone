@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    
+    <!-- Custom Style -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/news.css" rel="stylesheet">
+    <link href="css/pagination.css" rel="stylesheet">
+    <link href="css/btngroup.css" rel="stylesheet">
+    <link href="css/breadcrumb.css" rel="stylesheet">
+    <link href="css/popup_menu.css" rel="stylesheet">
+
+    <link href="css/training_center.css" rel="stylesheet">
+    <link href="css/training_center_card.css" rel="stylesheet">
+    <link href="css/training_full.css" rel="stylesheet">
+
+    <!-- FooterCals -->
+    <link href="css/footer_cals.css" rel="stylesheet">
+
+    <!-- Fancybox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MAIN HEADER -->
+    <header class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row align_center">
+                    <div class="cl">
+                        <a href="/" class="main_logo">
+                            <img src="image/logo.svg" alt="ToolStone">
+                        </a>
+                    </div>
+                    <div class="cl">
+                        <nav>
+                            <ul class="header_nav">
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li class="submenu_li">
+                                    <div class="button"><i class="icon-ar_bottom"></i></div>
+                                    <ul class="header_nav_response">
+                                        <li><a href="#">Гарантия и возврат</a></li>
+                                        <li><a href="#">Доставка и оплата</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="cl">
+                        <div class="header_search flex">
+                            <input type="text" class="search_input form-control" placeholder="Например: Festool для ремонта" />
+                            <button type="button" class="btn btn-success btn-lg btn_search flex"><i class="icon-search_white"></i></button>
+                        </div>
+                    </div>
+                    <div class="cl">
+                        <div class="header_phone">
+                            <div class="itm">
+                                <a href="tel:84956402213">8 (495) 640-22-13</a>
+                            </div>
+                            <div class="itm">
+                                <a href="tel:88007771426">8 (800) 777-14-26</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="header_ico_link flex align_center">
+                            <i class="icon-bookmark"></i> <span>Избранное</span>
+                        </a>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="header_ico_link flex align_center">
+                            <i class="icon-cart"></i> <span>Корзина</span>
+                        </a>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="user_buttom">
+                            <span>
+                                <i class="icon-user"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row align_center space_between">
+                    <div class="cl">
+                        <div class="header_catalog flex align_center no_sel">
+                            <i class="ico ico_header_menu ico_pattern"></i>  <span>Каталог</span>
+                        </div>
+                    </div>
+                    <div class="cl">
+                        <nav>
+                            <ul class="flex service_menu">
+                                <li><a href="#">Обработка искусственного камня</a></li>
+                                <li><a href="#">Обработка кварцевого агломерата</a></li>
+                                <li><a href="#">Обработка керамики Laminam и Dekton</a></li>
+                                <li><a href="#">Деревообработка</a></li>
+                                <li><a href="#">Тест центр и Обучение</a></li>
+                                <li><a href="#">Сервис и Запчасти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="stocks_link text_red">
+                            Акции
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div class="fix_popup_menu no_sel">
+        <i class="ico ico_pattern ico_right_menu2"></i> <span>УЧЕБНЫЙ ЦЕНТР</span>
+    </div>
+
+    <div class="popup_dummy hide">
+        <div class="popup_menu_container">
+            <div class="popup_header">
+                <div class="label">УЧЕБНЫЙ ЦЕНТР</div>
+                <span class="close_menu">
+                    <i class="ico ico_pattern ico_right_menu_red"></i>
+                </span>
+            </div>
+            <div class="popup_content">
+                <nav>
+                    <ul class="list_menu">
+                        <li><a href="#" class="active">Учебный центр</a></li>
+                        <li><a href="#">Обработка искуственного камня</a></li>
+                        <li><a href="#">Обработка кварцевого агломирата</a></li>
+                        <li><a href="#">Обработка керамики </a></li>
+                        <li><a href="#"><i class="icon-operator"></i> Помощь оператора</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main overflow_h">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item"><a href="#">Акции</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Акция 2</li>
+                </ol>
+            </nav>
+            <h1 class="page_title">Семинар</h1>
+
+            <section class="main_section container-lg">
+                <h2 class="page_title text_center margin_32">Продукция AKEMI® (Германия) для искусственного акрилового камня и кварцевого агломерата.</h2>
+                <article class="training_full">
+                    <div class="top_training_date">
+                        Даты: <span>с 23 февраля 2019 г. - 31 мая 2019 г.</span>
+                    </div>
+                    <div class="training_top_picture">
+                        <div class="color_label label_blue">Инфа</div>
+                        <img src="image/training_full_big.jpg" class="img-fluid" alt="Title" />
+                    </div>
+                    <div class="text_center training_about main_top_of">
+                        <div class="btn_middle">
+                            <a href="#" class="btn btn btn-success btn_def btn-xl spacing5">Регистрация</a>
+                        </div>
+                        <div class="container-md">
+                            <p>
+                                По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности в группе двухкомпонентных клеев AKEMI®: По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности в группе двухкомпонентных клеев AKEMI®:По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности в группе двухкомпонентных клеев AKEMI®:По результатам проведенных показательных сравнений можно выделить следующие отличительные особенности в группе двухкомпонентных клеев AKEMI®:
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- FooterCals -->
+    <div class="footer_cals">
+        <div class="container-md relative">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="page_title text_center margin_md">Нужна помощь?</h2>
+                </div>
+                <div class="col-md-9">
+                    <div class="form_bg relative">
+                        <p>Наши специалисты помогут: <a class="hide_link montserrat" href="tel:88007771426">8 (800)-777-14-26</a>, <a class="hide_link montserrat" href="tel:84956402213">8 (495)-640-22-13</a></p>
+                        <p>или по электронной почте: <a class="hide_link" href="mailto:info@toolstone.ru">info@toolstone.ru</a> или <a href="#">у нас в магазине</a>.</p>
+                        <form class="cals_big_form">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="input_wrapper">
+                                        <span class="required" title="Обязательно для заполнения">*</span>
+                                        <input type="text" class="form-control" id="name" placeholder="Ваше имя" />
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input_wrapper">
+                                        <span class="required" title="Обязательно для заполнения">*</span>
+                                        <input type="text" class="form-control" id="phone" placeholder="Ваш телефон" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <div class="input_wrapper">
+                                        <span class="required" title="Обязательно для заполнения">*</span>
+                                        <textarea rows="5" class="form-control" placeholder="Текст Вашего сообщения" id="text"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row align_center">
+                                <div class="form-group col-md-8">
+                                    <div class="custom-control custom-checkbox no_sel">
+                                        <input type="checkbox" class="custom-control-input" id="personal">
+                                        <label class="custom-control-label" for="personal">Согласие на обработку <a href="#">личных данных</a></label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4 text-right">
+                                    <button type="submit" class="btn btn btn-success btn_def btn-xl">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3 cals_image relative">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer_logo footer_row">
+                            <a href="/">
+                                <img src="image/logo_black.svg" alt="ToolStone" />
+                            </a>
+                        </div>
+                        <div class="footer_soc footer_row">
+                            <div class="title">Мы в соцсетях:</div>
+                            <ul class="social_list flex">
+                                <li class="vk"><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
+                                <li class="fb"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li class="insta"><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                                <li class="yt"><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_row">
+                            <div class="title">Контакты:</div>
+                            <ul class="mes_list flex">
+                                <li><a href="#" target="_blank">Viber</a></li>
+                                <li><a href="#" target="_blank">Telegram</a></li>
+                                <li><a href="#" target="_blank">WhatsApp</a></li>
+                            </ul>
+                            <div class="phone_list">
+                                <div class="phone">
+                                    <a href="tel:84956402213">8 (495) 640-22-13</a>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:88007771426">8 (800) 777-14-26</a>
+                                </div>
+                            </div>
+                            <div class="contact_bottom flex align_center">
+                                <i class="icon-clock"></i> Всегда онлайн
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">О Компании</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Компания</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Преимущества</a></li>
+                                <li><a href="#">Наши партнеры</a></li>
+                                <li><a href="#">Сертификаты</a></li>
+                                <li><a href="#">Мы в соцсетях</a></li>
+                                <li><a href="#">Политика конфеденциальности</a></li>
+                                <li><a href="#">Скачать Сувенирные товары FanShop</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Услуги</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Тест центр Toolstone</a></li>
+                                <li><a href="#">Учебный практический центр Toolstone</a></li>
+                                <li><a href="#">Демонстрация в работе инструмента Festool</a></li>
+                                <li><a href="#">Сервис по ремонту</a></li>
+                                <li><a href="#">Запчасти Festool</a></li>
+                                <li><a href="#">Сервис по заточке режущего инструмента</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Информация</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Наши контакты</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="flex">
+                            <div class="itm"> &copy; 2019 ToolStone. </div>
+                            <div class="itm">E-mail: <a class="hide_link" href="mailto:info@toolstone.ru">info@toolstone.ru</a>.</div>
+                            <div class="itm"><a href="#">Политтика конфеденциальности</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back_to_top">
+        <i class="icon-ar_up"></i>
+    </div>
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

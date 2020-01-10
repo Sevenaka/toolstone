@@ -405,7 +405,7 @@ h2.page_title.margin_32{
   font-family: "FuturaDemiC";
 }
 .btn-xl{
-  padding: .75rem 1.6rem;
+  padding: .75rem 1.6rem .52rem 1.6rem;
 }
 .swiper_carousel_centered .swiper-slide:not(.swiper-slide-active) {
   opacity: 0.2;
@@ -585,4 +585,7 @@ h2.page_title.margin_32{
   line-height: 30px;
   letter-spacing: 0.01em;
   color: var(--gray1);
+}
+.spacing5{
+  letter-spacing: 0.5em;
 }

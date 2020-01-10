@@ -70,6 +70,17 @@
     line-height: 16px;
     position: absolute;
   }
+  .header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+  }
+  .header_dummy_xg{
+    display: block;
+    height: 128px;
+  }
   .header_nav{
     display: flex;
   }

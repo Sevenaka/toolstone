@@ -229,3 +229,22 @@
 .training_more .title{
     margin-bottom: 26px;
 }
+.training_full .top_training_date{
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray1);
+    text-align: center;
+    margin-bottom: 32px;
+}
+.training_full .top_training_date span{
+    color: var(--textRed);
+}
+.training_top_picture{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-bottom: 48px;
+}
+.btn_middle{
+    margin-bottom: 39px;
+}

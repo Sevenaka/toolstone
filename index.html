@@ -8,10 +8,74 @@
 	<link href="css/all.min.css" rel="stylesheet">
 	<link href="css/swiper.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+
+	<style>
+		.element_center,
+		html,
+		body{
+			height: 100vh;
+		}
+		body{
+			background: #EFEFEF;
+		}
+		.element_center{
+			display: flex;
+			justify-content: center;
+			padding-top: 30px;
+		}
+		.element_list{
+			max-width: 640px;
+    		width: 100%;
+		}
+		.elem_row{
+			background: white;
+			margin-bottom: 15px;
+			padding: 30px;
+		}
+		.elem_row label{
+			display: block;
+			color: black;
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.elem_row ul li:not(:last-child){
+			margin-bottom: 10px;
+		}
+	</style>
 </head>
 
 <body>
-
+	<div class="element_center">
+		<div class="element_list">
+			<div class="elem_row">
+				<label>Шапка</label>
+				<ul class="elem_nav">
+					<li><a href="header_fixed.html">Закрепленная шапка 1</a></li>
+					<li><a href="header_fixed2.html">Закрепленная шапка 2</a></li>
+					<li><a href="subheader_sticky.html">Прилипающая подшапка</a></li>
+				</ul>
+			</div>
+			<div class="elem_row">
+				<label>Новости/Статьи</label>
+				<ul class="elem_nav">
+					<li><a href="news.html">Все новости</a></li>
+					<li><a href="news_full.html">Полная новость</a></li>
+					<li><a href="article.html">Все статьи</a></li>
+					<li><a href="article_full.html">Полная статья</a></li>
+				</ul>
+			</div>
+			<div class="elem_row">
+				<label>Уч. центр</label>
+				<ul class="elem_nav">
+					<li><a href="training_center.html">Общая</a></li>
+					<li><a href="training_full.html">Полная страница 1</a></li>
+					<li><a href="training_full2.html">Полная страница 2</a></li>
+					<li><a href="training_full3.html">Полная страница 3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
