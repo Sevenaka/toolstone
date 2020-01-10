@@ -10,6 +10,7 @@
   --gray2: #CFCFCF;
   --gray3: #EFEFEF;
   --gray4: #EEEEEE;
+  --gray5: #9299B1;
   --red: #E0121D;
   --titleColor: #010109;
   --borderColor: #E3E3E3;
@@ -84,10 +85,7 @@ body {
   color: var(--mainBg);
   z-index: 5;
   position: absolute;
-  min-height: 24px;
-  padding: 5px 23px;
   font-family: "FuturaDemiC";
-  width: 170px;
   -moz-transform: rotate(-46deg);
   -ms-transform: rotate(-46deg);
   -webkit-transform: rotate(-46deg);
@@ -97,11 +95,23 @@ body {
   left: -38px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 13px;
-  line-height: 13px;
   display: flex;
+  width: 170px;
   align-items: center;
   justify-content: center;
+}
+.color_label:not(.sm){
+  font-size: 13px;
+  min-height: 24px;
+  padding: 5px 23px;
+  line-height: 13px;
+}
+.color_label.sm{
+  font-size: 10px;
+  line-height: 12px;
+  padding: 2px 23px;
+  top: 5px;
+  left: -72px;
 }
 ul[class]{
   padding: 0px;
@@ -514,4 +524,65 @@ h2.page_title.margin_32{
 }
 .swiper_bullets.swiper_bullets_mrg{
   margin-bottom: 122px;
+}
+.nav-tabs{
+  border: 0px;
+}
+.nav-tabs .nav-link{
+  font-family: "FuturaDemiC";
+  font-size: 14px;
+  line-height: 16px;
+  padding: .8rem 1.5rem;
+  border-radius: 1px 1px 0px 0px;
+}
+.nav-tabs .nav-link.active{
+  border-color: var(--gray2);
+  border-bottom: 0px;
+}
+.table{
+  border: 0.5px solid var(--gray2);
+  border-radius: 1px;
+  font-size: 16px;
+  font-family: Calibri,Arial,sans-serif; 
+  color: var(--black);
+}
+.table th{
+  font-family: "FuturaMediumC";
+}
+.table td{
+  font-size: 14px;
+}
+.table strong{
+  font-family: "FuturaDemiC";
+}
+.table td, .table th{
+  border-color: var(--gray2);
+}
+.table.table_same tr th,
+.table.table_same tr td{
+  width: 50%;
+}
+.table td, .table th{
+  padding: 23px;
+}
+.table th{
+  position: relative;
+  overflow: hidden;
+}
+.table .old_price{
+  font-size: 12px;
+  color: var(--gray5);
+  text-decoration-line: line-through;
+}
+.table i.icon-ruble{
+  font-size: 10px;
+}
+.table .old_price i{
+  font-size: 8px;
+}
+.inf_text{
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: var(--gray1);
 }
