@@ -196,7 +196,7 @@ ul[class] li{
   padding-bottom: 64px;
   min-height: 400px;
 }
-h1, h2, h3{
+h1, h2, h3, h4, h5{
   font-family: "FuturaMediumC";
   color: var(--titleColor);
 }
@@ -482,7 +482,7 @@ h2.page_title.margin_32{
   line-height: 13px;
   color: #ffffff;
   text-align: right;
-  max-width: 66px;
+  max-width: 87px;
   margin-right: 13px;
 }
 .back_to_top{
