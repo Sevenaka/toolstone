@@ -84,6 +84,17 @@
   .header_nav{
     display: flex;
   }
+  .header_top.dynamic{
+    will-change: transform;
+    transform: translateZ(0);
+    transition: transform .2s linear,height .12s;
+  }
+  .header_top.header_pinned{
+    transform: translateY(0);
+  }
+  .header_top.header_unpinned{
+    transform: translateY(-100%);
+  }
   .header_nav li:not(:last-child){
     margin-right: 28px;
   }

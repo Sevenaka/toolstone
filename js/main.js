@@ -174,3 +174,26 @@ if(subheaderSticky) {
     }
 }
 
+//DYNAMIC HEADER
+var dynamicHeader = document.querySelector('.header_top.dynamic');
+
+if(dynamicHeader) {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = () => {
+        var currentScrollPos = window.pageYOffset;
+        if(currentScrollPos >= 100) {
+            if (prevScrollpos > currentScrollPos) {
+                dynamicHeader.classList.remove('header_unpinned');
+                dynamicHeader.classList.add('header_pinned');
+            }
+            else {
+                dynamicHeader.classList.remove('header_pinned');
+                dynamicHeader.classList.add('header_unpinned');
+            }
+        } else {
+            dynamicHeader.classList.remove('header_unpinned');
+            dynamicHeader.classList.add('header_pinned');
+        }
+        prevScrollpos = currentScrollPos;
+    }
+}
