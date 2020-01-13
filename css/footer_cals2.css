@@ -1,0 +1,123 @@
+.footer_cals{
+    background: var(--footerCals);
+    padding-top: 47px;
+    padding-bottom: 83px;
+    position: relative;
+    overflow: hidden;
+}
+.form_bg{
+    background: var(--mainBg);
+    padding: 32px 31px;
+    font-family: "FuturaBookC Regular";
+    z-index: 5;
+    border-radius: 6px;
+}
+.form_bg:after {
+    left: 100%;
+    top: 35%;
+    content: " ";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    border: 20px solid transparent;
+    border-left-color: var(--mainBg);
+    border-right: 0;
+    border-top: 0;
+}
+.footer_cals h2.page_title{
+    letter-spacing: 0.01em;
+    margin-bottom: 17px;
+    max-width: 100%;
+}
+.form_bg p{
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 9px;
+    color: var(--gray1);
+    font-family: 'Montserrat',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.form_bg p .montserrat{
+    font-size: 13px;
+    line-height: 28px;
+    color: var(--black);
+}
+.form_bg .cals_big_form{
+    margin-top: 21px;
+}
+.form-row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.form-row>.col, .form-row>[class*=col-]{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.form-group{
+    margin-bottom: 16px;
+}
+.cals_image::after{
+    content: "";
+    background: url('../image/cals_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 311px;
+    height: 413px;
+    bottom: -84px;
+    right: 20px;
+}
+.footer_cals > .container-md > .row{
+    position: relative;
+    z-index: 5;
+}
+.footer_cals::before{
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 67px;
+    background: url('../image/ico/cals_ico2.svg');
+    right: 20%;
+    top: 11%;
+}
+.footer_cals .cals_container::before{
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 32px;
+    background: url('../image/ico/cals_ico2.svg');
+    left: -80px;
+    bottom: 40%;
+}
+.footer_cals::after{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 47px;
+    background: url('../image/ico/cals_ico2.svg');
+    left: 5%;
+    top: 25%;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+}
+.footer_cals .cals_container::before,
+.footer_cals::after,
+.footer_cals::before{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.row_max_w{
+    padding-right: 30%;
+}
+a.str{
+    font-family: "FuturaMediumC";
+}
+a.str,
+a.email{
+    font-size: 12px;
+}
