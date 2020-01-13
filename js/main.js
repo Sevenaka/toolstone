@@ -197,3 +197,13 @@ if(dynamicHeader) {
         prevScrollpos = currentScrollPos;
     }
 }
+
+
+//IMAGE LAZY LOAD INIT
+var lazyElements = document.querySelectorAll('.lazy');
+
+if(lazyElements.length) {
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+}
