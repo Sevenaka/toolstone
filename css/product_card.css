@@ -1,0 +1,91 @@
+.product_card{
+    border-radius: 2px;
+    border: 1px solid var(--borderColor7);
+    position: relative;
+    margin-bottom: 30px;
+    background: var(--mainBg);
+}
+.product_card .product_image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 74.1%;
+}
+.product_card .product_image figure{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.product_card .product_image figure picture{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.product_card .product_body{
+    padding: 22px 15px;
+}
+.product_card .product_body .product_title{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "FuturaMediumC";
+    margin-bottom: 10px;
+}
+.product_card .product_body a{
+    color: #000000;
+}
+.product_card .product_starline{
+    margin-bottom: 20px;
+}
+.product_card .product_starline .star_list{
+    color: var(--yellow);
+    font-size: 18px;
+}
+.product_card .product_starline .star_list i:not(:last-child){
+    margin-right: 7px;
+}
+.product_card .product_starline  .star_count{
+    color: var(--gray5);
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaBookC Regular";
+}
+.product_card .product_price .price{
+    color: var(--black);
+    font-family: "FuturaDemiC";
+    font-size: 24px;
+    line-height: 26px;
+}
+.product_card .product_price .price_old{
+    font-size: 16px;
+    color: var(--gray5);
+    line-height: 16x;
+    font-family: "FuturaBookC Regular";
+    text-decoration-line: line-through;
+}
+.product_card .product_price > div:not(:last-child){
+    margin-right: 12px;
+}
+.product_card .add_card{
+    font-size: 18px;
+    padding: .375rem .75rem .1rem .75rem;
+}
+.product_card .product_bookmark{
+    font-size: 19px;
+    color: #000000;
+    position: absolute;
+    z-index: 5;
+    right: 22px;
+    top: 20px;
+    cursor: pointer;
+}
+.product_card .product_bookmark:hover{
+    color: var(--mainGreen);
+}

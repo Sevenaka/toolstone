@@ -1,0 +1,27 @@
+.brand_row{
+    border-bottom: 1px solid var(--gray2);
+}
+.brand_row:first-child{
+    border-top: 1px solid var(--gray2);
+}
+.brand_row .col:not(:last-child){
+    border-right: 1px solid var(--gray2);
+}
+
+.brand_card{
+    display: block;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    color: var(--linkBlack);
+    font-size: 14px;
+    line-height: 20px;
+}
+.brand_card img{
+    margin-bottom: 15.15px;
+}
+.brand_card .desc{
+    max-width: 148px;
+    font-family: "FuturaBookC Regular";
+    margin: 0px auto;
+}
