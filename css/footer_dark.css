@@ -1,18 +1,31 @@
-/* WHITE FOOTER */
+/* WHITE DARK */
 .footer{
     font-family: "FuturaBookC Regular";
 }
+.footer.footer_dark{
+    background: var(--linkBlack);
+}
+.footer.footer_dark,
+.footer.footer_dark a{
+    color: #ffffff;
+}
 .footer_top{
-    padding-top: 50px;
     padding-bottom: 50px;
+}
+.footer_labels{
+    border-bottom: 0.5px solid var(--footerDarkLine);
+    padding: 25px 0px;
+    margin-bottom: 32px;
 }
 .footer_top .footer_label{
     font-family: "FuturaDemiC";
+    letter-spacing: 0.05em;
     font-size: 12px;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     display: block;
+    color: var(--borderColor);
 }
 .footer_nav{
     font-size: 13px;
@@ -23,7 +36,7 @@
     padding-bottom: 23px;
     font-size: 12px;
     line-height: 14px;
-    border-top: 0.5px solid var(--gray2);
+    border-top: 0.5px solid var(--footerDarkLine);
 }
 .footer_bottom .itm:not(:last-child){
     margin-right: 5px;
@@ -32,18 +45,18 @@
     margin-bottom: 25px;
 }
 .footer_row .title{
-    font-size: 12px;
+    font-size: 13px;
     line-height: 20px;
-    color: var(--gray1);
+    color: var(--borderColor);
     margin-bottom: 16px;
 }
 .footer .phone_list{
-    font-family: "FuturaMediumC";
-    font-size: 16px;
-    line-height: 20px;
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 16px;
 }
-.footer .phone_list a{
-    color: var(--linkBlack);
+.footer .mes_list a{
+    color: var(--mainGreen);
 }
 .footer .contact_bottom{
     margin-top: 20px;
@@ -55,4 +68,10 @@
 }
 .footer a:hover{
     color: var(--mainGreen);
+}
+.footer .footer_bottom a{
+    color: var(--mainGreen);
+}
+.footer_dark .social_list a{
+    border-color: var(--gray1);
 }

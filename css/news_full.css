@@ -6,7 +6,7 @@
     margin-bottom: 32px;
 }
 .news_full{
-    padding-bottom: 44px;
+    padding-bottom: 32px;
 }
 .news_full .news_body{
     color: var(--linkBlack);
@@ -45,7 +45,7 @@
     padding: 32px 80px;
 }
 .news_body_empty.empty_news{
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 }
 .fluid_slider_theme .swiper-slide::before{
     content: "";
@@ -80,4 +80,7 @@
 }
 .fluid_slider{
     font-family: "FuturaMediumC";
+}
+.news_body_empty h4{
+    margin-bottom: 32px;
 }
