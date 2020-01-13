@@ -9,16 +9,20 @@
 }
 
 .brand_card{
-    display: block;
+    display: flex;
     text-align: center;
     padding-top: 56px;
     padding-bottom: 56px;
     color: var(--linkBlack);
     font-size: 14px;
     line-height: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.brand_card img{
+.brand_card .brand_img{
     margin-bottom: 15.15px;
+    width: 100%;
 }
 .brand_card .desc{
     max-width: 148px;
