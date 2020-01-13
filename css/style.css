@@ -525,6 +525,7 @@ h2.page_title.margin_32{
   font-size: 14px;
   line-height: 14px;
   font-family: "FuturaDemiC";
+  letter-spacing: 0.1em;
 }
 .back_to_top:hover{
   opacity: 0.8;

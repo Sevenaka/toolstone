@@ -78,7 +78,7 @@
     width: 76px;
     height: 67px;
     background: url('../image/ico/cals_ico2.svg');
-    right: 20%;
+    right: 10%;
     top: 11%;
 }
 .footer_cals .cals_container::before{
