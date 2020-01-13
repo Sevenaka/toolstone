@@ -255,4 +255,9 @@
   .header_phone::after{
     display: none;
   }
+
+  /*отключить*/
+  .header_bottom{
+    display: none;
+  }
 }

@@ -1,8 +1,6 @@
 .breadcrumb{
     background-color: transparent;
     border-radius: initial;
-    padding: 0px;
-    margin-bottom: 5px;
     font-size: 0.75rem;
     font-family: "FuturaBookC Regular";
     color: var(--gray1);
@@ -15,10 +13,6 @@
     margin-right: .5rem;
     border-radius: 1px;
     content: "";
-  }
-  .breadcrumb-item+.breadcrumb-item{
-    display: flex;
-    align-items: center;
   }
   .breadcrumb-item a,
   .breadcrumb-item.active{
@@ -33,4 +27,38 @@
   }
   .media_title_wrapper h1.page_title{
     color: #ffffff;
+  }
+  @media (min-width: 993px) {
+    .breadcrumb-item+.breadcrumb-item{
+      display: flex;
+      align-items: center;
+    }
+    .breadcrumb{
+      padding: 0px;
+      margin-bottom: 5px;
+    }
+  }
+  @media (max-width: 993px) {
+    .breadcrumb{
+      overflow-x: scroll;
+      display: -webkit-box;
+      width: 100%;
+      padding: 0px 15px;
+      margin-bottom: 0;
+      flex-wrap: initial;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .breadcrumb-item{
+      display: block;
+      white-space: nowrap;
+    }
+    .breadcrumb-item:last-child{
+      padding-right: 15px;
+    }
+    nav[aria-label=breadcrumb]{
+      margin-left: -15px;
+      margin-right: -15px;
+    }
   }
