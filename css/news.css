@@ -149,3 +149,6 @@
     background: #01040C;
     opacity: 0.3;
 }
+.news_card.news_video .news_header{
+    padding-bottom: 60%;
+}

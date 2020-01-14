@@ -107,7 +107,18 @@
     background: url('../image/imagebg1.png');
     left: -130px;
 }
+.inf_img.proiz::before{
+    background: url('../image/imagebg3.png');
+    left: -130px;
+}
 .inf_img.training::before{
     right: -130px;
     background: url('../image/imagebg2.png');
+}
+.pd_bt_6a{
+    padding-bottom: 48px;
+}
+.inf_body_right,
+.inf_body_left{
+    padding-top: 24px;
 }

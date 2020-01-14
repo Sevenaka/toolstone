@@ -676,9 +676,12 @@ ul:last-child:not([class]){
   padding-top: 0px;
 }
 .pd-bt-8a{
-  padding-bottom: 64px;
+  padding-bottom: 64px!important;
 }
 .btn-outline-light,
 .btn-outline-success{
   border-width: 2px;
+}
+.main_bot_of{
+  padding-bottom: 0px;
 }
