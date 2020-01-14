@@ -9,5 +9,44 @@
 }
 .rew_card_text{
     background: var(--footerCals);
-    padding: 40px 24px;
+    padding: 40px 25px;
+    position: relative;
+    color: var(--black3);
+}
+.rew_card_text .rew_img{
+    position: absolute;
+    top: 40px;
+    left: 25px;
+}
+.rew_card_text .rew_img img{
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+}
+.rew_card_text .rew_inf{
+    padding-left: 94px;
+}
+.rew_card_text .rew_inf p{
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+.rew_card_text .rew_user::before{
+    content: "";
+    height: 0.5px;
+    width: 107px;
+    background: var(--gray2);
+    margin-bottom: 20px;
+    display: block;
+}
+.rew_card_text .rew_user .name{
+    font-size: 16px;
+    font-family: "FuturaMediumC";
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+.rew_card_text .rew_user .city{
+    font-size: 13px;
+    line-height: 23px; 
+    letter-spacing: 0.05em;
 }

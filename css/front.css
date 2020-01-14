@@ -136,3 +136,27 @@
 .section_black.section_info_text p{
     color: var(--mainBg);
 }
+.row_partners:first-child{
+    border-top: 0.5px solid var(--gray2);
+}
+.row_partners{
+    border-bottom: 0.5px solid var(--gray2);
+}
+.partner_card{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding-top: 36px;
+    padding-bottom: 28px;
+}
+.partner_col{
+    border-right: 0.5px solid var(--gray2);
+}
+.partner_col:first-child{
+    border-left: 0.5px solid var(--gray2);
+}
+.partner_list{
+    margin-bottom: 32px;
+}
