@@ -509,6 +509,9 @@ h2.page_title.margin_32{
   justify-content: center;
   align-items: center;
 }
+.play.play_inline{
+  position: relative;
+}
 .play .play_ico{
   display: flex;
   justify-content: center;
@@ -520,9 +523,20 @@ h2.page_title.margin_32{
   border-radius: 50%;
   color: #C0121B;
 }
+.play.cursor{
+  cursor: pointer;
+}
+.play.play_sm .play_ico{
+  width: 37px;
+  height: 37px;
+  font-size: 10px;
+}
 .play .play_ico i{
   margin-left: 3px;
   margin-top: 1px;
+}
+.play.play_sm i{
+  margin: 0px;
 }
 .play .text{
   font-size: 13px;
@@ -531,6 +545,9 @@ h2.page_title.margin_32{
   text-align: right;
   max-width: 87px;
   margin-right: 13px;
+}
+.play.play_black .text{
+  color: var(--linkBlack);
 }
 .back_to_top{
   width: 40px;
@@ -660,4 +677,8 @@ ul:last-child:not([class]){
 }
 .pd-bt-8a{
   padding-bottom: 64px;
+}
+.btn-outline-light,
+.btn-outline-success{
+  border-width: 2px;
 }

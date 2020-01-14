@@ -52,4 +52,62 @@
 .front_section.border_top{
     border-top: 0.5px solid var(--borderColor6);
     padding-top: 32px;
+    padding-bottom: 48px;
+}
+.ront_section.section_about{
+    padding-top: 48px;
+}
+.section_about .about_bottom{
+    margin-top: 48px;
+}
+.section_about .about_bottom .itm:not(:last-child){
+    margin-right: 30px;
+}
+.section_info_text p{
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: var(--gray1);
+}
+.inf_img{
+    position: relative;
+}
+.inf_img img{
+    position: relative;
+    z-index: 2;
+}
+.inf_body_left,
+.inf_img.about{
+    padding-right: 30px;
+}
+.inf_img.training,
+.inf_body_right{
+    padding-left: 30px;
+}
+.inf_img.training{
+    text-align: right;
+}
+.front_section.pd_top_a6{
+    padding-top: 48px;
+}
+.section_info_text{
+    overflow: hidden;
+}
+.inf_img::before{
+    content: "";
+    width: 315px;
+    height: 231px;
+    position: absolute;
+    top: -70px;
+    background-position: center!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+}
+.inf_img.about::before{
+    background: url('../image/imagebg1.png');
+    left: -130px;
+}
+.inf_img.training::before{
+    right: -130px;
+    background: url('../image/imagebg2.png');
 }

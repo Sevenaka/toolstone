@@ -94,12 +94,53 @@ new Swiper('.front_big_slider', {
 });
 
 new Swiper('.front_new_product', {
-    slidesPerView: 4,
-    spaceBetween: 30,
     navigation: {
       nextEl: '.new-next',
       prevEl: '.new-prev',
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        740: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        968: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1224: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+    }
+});
+
+new Swiper('.front_akcii_product', {
+    navigation: {
+      nextEl: '.akcii-next',
+      prevEl: '.akcii-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        740: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        968: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1224: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+    }
 });
 
 new Swiper('.rew_carousel', {
