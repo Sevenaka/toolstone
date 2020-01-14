@@ -93,6 +93,15 @@ new Swiper('.front_big_slider', {
     }
 });
 
+new Swiper('.front_new_product', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.new-next',
+      prevEl: '.new-prev',
+    },
+});
+
 new Swiper('.rew_carousel', {
     slidesPerView: 3,
     spaceBetween: 31,
