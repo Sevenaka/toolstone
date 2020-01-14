@@ -1,6 +1,7 @@
 /* WHITE DARK */
 .footer{
     font-family: "FuturaBookC Regular";
+    padding-top: 32px;
 }
 .footer.footer_dark{
     background: var(--linkBlack);
@@ -29,11 +30,19 @@
 }
 .footer_nav{
     font-size: 13px;
-    line-height: 34px;
+    line-height: 16px;
+}
+.footer .footer_label{
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "FuturaMediumC";
+    margin-bottom: 22px;
+    color: var(--mainGreen);
 }
 .footer_bottom{
     padding-top: 23px;
     padding-bottom: 23px;
+    margin-top: 64px;
     font-size: 12px;
     line-height: 14px;
     border-top: 0.5px solid var(--footerDarkLine);
@@ -80,4 +89,11 @@
     margin-top: 7px;
     font-size: 10px;
     line-height: 11px;
+}
+.footer .footer_nav li:not(:last-child){
+    margin-bottom: 28px;
+}
+.footer .footer_nav li a{
+    max-width: 150px;
+    display: inline-block;
 }

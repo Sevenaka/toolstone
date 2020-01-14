@@ -30,6 +30,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 24px;
+    font-family: 'Open Sans', sans-serif;
 }
 .rew_card_text .rew_user::before{
     content: "";

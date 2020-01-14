@@ -1,7 +1,6 @@
 .training_about{
     padding-bottom: 64px;
-    padding-top: 92px;
-    border-bottom: 0.5px solid var(--borderColor6);
+    padding-top: 64px;
 }
 .training_about p{
     font-size: 13px;
@@ -22,7 +21,6 @@
     padding-right: 100px;
 }
 .training_video{
-    border-bottom: 0.5px solid var(--borderColor6);
     padding-top: 32px;
     padding-bottom: 64px;
 }
@@ -30,20 +28,17 @@
     margin-bottom: 40px;
 }
 .training_vide_text{
+    margin-top: 64px;
     text-align: center;
     font-size: 14px;
     line-height: 30px;
-    padding-top: 64px;
-    border-top: 0.5px solid var(--gray2);
-    margin-top: 64px;
 }
 .training_vide_text p{
     margin: 0px auto;
     max-width: 897px;
 }
 .training_rew{
-    padding-top: 32px;
-    padding-bottom: 68px;
+    padding-bottom: 48px;
 }
 .training_rew.bg{
     background: var(--footerCals);
@@ -55,4 +50,7 @@
     font-family: "FuturaMediumC";
     margin-bottom: 26px;
     color: var(--titleColor);
+}
+.other_news .news_card.news_default{
+    margin-bottom: 48px;
 }

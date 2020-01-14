@@ -27,7 +27,7 @@
   --yellow: #FFC700;
   --blue: #0C6AF6;
   --purple: #B85FE2;
-  --footerDarkLine: #3a3c43;
+  --footerDarkLine: #1a1f2b;
 }
 body {
   margin: 0;
@@ -538,6 +538,7 @@ h2.page_title.margin_32{
   width: 37px;
   height: 37px;
   font-size: 10px;
+  border-width: 3px;
 }
 .play .play_ico i{
   margin-left: 3px;
@@ -574,6 +575,9 @@ h2.page_title.margin_32{
   color: #ffffff;
   z-index: 50;
   cursor: pointer;
+}
+.h_100{
+  height: 100%;
 }
 .btn_def{
   text-transform: uppercase;
@@ -692,6 +696,9 @@ ul:last-child:not([class]){
 .pd-bt-6a{
   padding-bottom: 48px!important;
 }
+.pd_top_a8{
+  padding-top: 64px!important;
+}
 .btn-outline-light,
 .btn-outline-success{
   border-width: 2px;
@@ -701,4 +708,14 @@ ul:last-child:not([class]){
 }
 .margin_bt_mn{
   margin-bottom: -1px;
+}
+.hr_border{
+  border-top: 0.5px solid var(--gray2);
+}
+.hr_border.fluid{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+.mr_bt_a6{
+  margin-bottom: 48px;
 }
