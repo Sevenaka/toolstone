@@ -1,6 +1,7 @@
 :root{
   --black: #000000;
   --black2: #060B12;
+  --black3: #020817;
   --mainBg: #fff;
   --bgBlack: #13191D;
   --maintext: #212529;
@@ -160,12 +161,12 @@ ul[class] li{
 }
 .btn-outline-secondary{
   color: var(--linkBlack);
-  border-color: var(--borderColor2);
+  border-color: var(--borderColor3);
 }
 .btn-outline-secondary:hover{
   color: var(--linkBlack);
-  background-color: var(--borderColor2);
-  border-color: var(--borderColor2);
+  background-color: var(--borderColor3);
+  border-color: var(--borderColor3);
 }
 .btn{
   border-radius: 2px;
@@ -264,6 +265,13 @@ h3.page_title{
   line-height: 26px;
   color: var(--titleColor);
   margin-bottom: 24px;
+}
+h4.page_title{
+  font-family: "FuturaMediumC";
+  font-size: 30px;
+  line-height: 28px;
+  color: var(--titleColor);
+  margin-bottom: 32px;
 }
 .page_title.margin_sm{
   margin-bottom: 15px;
@@ -549,6 +557,9 @@ h2.page_title.margin_32{
 .play.play_black .text{
   color: var(--linkBlack);
 }
+.section_black .play .text{
+  color: var(--red);
+}
 .back_to_top{
   width: 40px;
   height: 40px;
@@ -678,10 +689,16 @@ ul:last-child:not([class]){
 .pd-bt-8a{
   padding-bottom: 64px!important;
 }
+.pd-bt-6a{
+  padding-bottom: 48px!important;
+}
 .btn-outline-light,
 .btn-outline-success{
   border-width: 2px;
 }
 .main_bot_of{
   padding-bottom: 0px;
+}
+.margin_bt_mn{
+  margin-bottom: -1px;
 }
