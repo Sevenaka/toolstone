@@ -1,12 +1,3 @@
-.media_slider .media_next{
-    right: 15px;
-}
-.media_slider .media_prev{
-    left: 15px;
-}
-.main_top_of{
-    padding-top: 0px;
-}
 .top_media{
     position: relative;
 }
@@ -85,16 +76,6 @@
 }
 .training_about{
     border: 0px!important;
-}
-.arrow_container{
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-.arrow_container .container{
-    height: 100%;
 }
 .top_media.background{
     padding-top: 107px;

@@ -1,5 +1,6 @@
 :root{
   --black: #000000;
+  --black2: #060B12;
   --mainBg: #fff;
   --bgBlack: #13191D;
   --maintext: #212529;
@@ -11,7 +12,8 @@
   --gray3: #EFEFEF;
   --gray4: #EEEEEE;
   --gray5: #9299B1;
-  --footerCals: #E7EAFF;
+  --gray6: #455667;
+  --footerCals: #f3f5ff;
   --red: #E0121D;
   --titleColor: #010109;
   --borderColor: #E3E3E3;
@@ -183,6 +185,22 @@ ul[class] li{
 .form-control::placeholder{
   color: #989999;
 }
+.arrow_container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.arrow_container .container{
+  height: 100%;
+}
+.arrow_container .swiper-button-next{
+  right: 15px;
+}
+.arrow_container .swiper-button-prev{
+  left: 15px;
+}
 .ico{
   display: inline-block;
 }
@@ -216,6 +234,9 @@ ul[class] li{
 h1, h2, h3, h4, h5{
   font-family: "FuturaMediumC";
   color: var(--titleColor);
+}
+body.bg_gray{
+  background: var(--footerCals);
 }
 .text_center{
   text-align: center;
@@ -627,4 +648,7 @@ ul:last-child:not([class]){
 }
 .icon-ruble{
   font-size: 12px;
+}
+.main_top_of{
+  padding-top: 0px;
 }

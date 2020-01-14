@@ -1,0 +1,48 @@
+.front_big_slider .bg_slide{
+    position: relative;
+    overflow: hidden;
+    color: var(--black2);
+}
+.front_big_slider .bg_slide .title{
+    width: 100%;
+    font-size: 50px;
+    line-height: 58px;
+}
+.front_big_slider .bg_slide .text{
+    font-size: 18px;
+    font-family: "FuturaMediumC";
+    line-height: 21px;
+    max-width: 455px;
+}
+.front_big_slider .bg_slide .img_list .itm:not(:last-child){
+    margin-right: 35px;
+}
+.front_big_slider .btn{
+    border-width: 2px;
+    text-transform: uppercase;
+    padding: .695rem 1.3rem .595rem 1.3rem;
+    margin-top: 41px;
+}
+.front_big_slider .slide_text{
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 108px 77px;
+}
+.front_big_slider .center_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.front_big_slider .slide_color{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}

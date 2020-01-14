@@ -1,0 +1,40 @@
+.rew_card{
+    display: block;
+    background: var(--gray4);
+    border-radius: 1px;
+    padding: 36px;
+}
+.rew_card img{
+    border-radius: 1px;
+}
+.rew_card_text{
+    background: var(--mainBg);
+    padding: 40px 24px;
+}
+.rew_card_text .rew_head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rew_card_text .rew_head .img{
+    margin-right: 15px;
+}
+.rew_card_text .rew_head .name{
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--linkBlack);
+    font-family: "FuturaMediumC";
+}
+.rew_card_text .rew_head .city{
+    letter-spacing: 0.05em;
+    color: var(--gray6);
+    font-size: 13px;
+    line-height: 23px;
+}
+.rew_card_text  .text{
+    font-size: 13px;
+    line-height: 23px;
+}
+.rew_card_text  .text p{
+    margin-bottom: 0px;
+}

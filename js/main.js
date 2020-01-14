@@ -79,12 +79,35 @@ new Swiper('.swiper_carousel_centered', {
     }
 });
 
+new Swiper('.front_big_slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: '.front-next',
+      prevEl: '.front-prev',
+    },
+    pagination: {
+        el: '.front-pagination',
+    }
+});
+
 new Swiper('.rew_carousel', {
     slidesPerView: 3,
     spaceBetween: 31,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    }
+});
+
+new Swiper('.rew_carousel_2', {
+    slidesPerView: 3,
+    spaceBetween: 31,
+    navigation: {
+      nextEl: '.rew2-next',
+      prevEl: '.rew2-prev',
     }
 });
 
