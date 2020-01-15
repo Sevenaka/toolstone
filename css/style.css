@@ -746,6 +746,9 @@ ul:last-child:not([class]){
   .mr_bt_4a{
     margin-bottom: 32px!important;
   }
+  .pd_tp_4a{
+    padding-top: 32px!important;
+  }
   h1.page_title{
     font-size: 34px;
     line-height: 39px;
@@ -770,6 +773,9 @@ ul:last-child:not([class]){
   }
   .mobile_reverse{
     flex-wrap: wrap-reverse;
+  }
+  .pd_tp_4a{
+    padding-top: 20px!important;
   }
   .mr_bt_12a{
     margin-bottom: 30px;

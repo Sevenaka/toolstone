@@ -1,0 +1,32 @@
+.complect_card{
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.complect_card .image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 2px;
+    background: #C4C4C4;
+}
+.complect_card .image .image_wrp{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.complect_card .image .image_wrp img{
+    object-fit: cover;
+    vertical-align: middle;
+    -o-object-fit: cover;
+    border-radius: 2px;
+}

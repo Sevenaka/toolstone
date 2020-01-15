@@ -78,13 +78,10 @@
     border: 0px!important;
 }
 .top_media.background{
-    padding-top: 107px;
-    padding-bottom: 101px;
     background-position: center!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
     color: var(--borderColor);
-    margin-bottom: 96px;
 }
 .top_media.background::before{
     content: "";
@@ -103,14 +100,8 @@
     z-index: 20;
 }
 .top_media .media_body h2{
-    font-size: 40px;
-    line-height: 36px;
     color: #ffffff;
     font-family: "FuturaDemiC";
-    max-width: 890px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
 }
 .top_media.background .play{
     position: initial;
@@ -158,10 +149,7 @@
     padding-bottom: 35px;
 }
 .training_social{
-    padding-top: 48px;
-    padding-bottom: 80px;
     background: var(--footerCals);
-    margin-bottom: 32px;
 }
 .training_social .title{
     font-size: 30px;
@@ -207,8 +195,6 @@
     line-height: 44px;
 }
 .training_more {
-    padding-top: 64px;
-    padding-bottom: 79px;
     border-top: 0.5px solid var(--gray2);
 }
 .training_more .tab-content:not(:last-child){
@@ -235,4 +221,55 @@
 }
 .btn_middle{
     margin-bottom: 39px;
+}
+.start_complect{
+    border-top: 0.5px solid var(--gray2);
+}
+@media (min-width: 994px) {
+    .top_media .media_body h2{
+        font-size: 40px;
+        line-height: 36px;
+        max-width: 890px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+    .top_media.background{
+        padding-top: 107px;
+        padding-bottom: 101px;
+        margin-bottom: 96px;
+    }
+    .training_more {
+        padding-top: 64px;
+        padding-bottom: 79px;
+    }
+    .training_social{
+        padding-top: 48px;
+        padding-bottom: 80px;
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 993px) {
+    .training_social{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    .top_media .media_body h2{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .top_media.background{
+        padding-top: 89px;
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+    }
+    .training_more {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .training_social a.social_card{
+        margin-bottom: 30px;
+    }
 }
