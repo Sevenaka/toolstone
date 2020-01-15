@@ -3,7 +3,6 @@
     text-align: center;
     position: relative;
     color: var(--black);
-    margin-bottom: 32px;
 }
 .category_card .head_img{
     position: relative;
@@ -46,4 +45,14 @@
 }
 .category_card.big .cat_title{
     padding: 0px 50px;
+}
+@media (min-width: 994px) {
+    .category_card{
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 993px) {
+    .category_card{
+        margin-bottom: 15px;
+    }
 }

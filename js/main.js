@@ -143,21 +143,28 @@ new Swiper('.front_akcii_product', {
     }
 });
 
-new Swiper('.rew_carousel', {
-    slidesPerView: 3,
-    spaceBetween: 31,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-});
-
 new Swiper('.rew_carousel_2', {
-    slidesPerView: 3,
-    spaceBetween: 31,
     navigation: {
       nextEl: '.rew2-next',
       prevEl: '.rew2-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        740: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        968: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1224: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
     }
 });
 
@@ -171,11 +178,27 @@ new Swiper('.news_carousel', {
 });
 
 new Swiper('.news_carousel_4', {
-    slidesPerView: 4,
-    spaceBetween: 30,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        740: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        968: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1224: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
     }
 });
 

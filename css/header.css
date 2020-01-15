@@ -1,11 +1,9 @@
 .header_top{
-    background: #0D1214;
-    color: #939191;
-    padding-bottom: 17px;
-    padding-top: 16px;
-    font-size: 0.75rem;
-    font-family: "FuturaMediumC";
-  }
+  background: #0D1214;
+  color: #939191;
+  font-size: 0.75rem;
+  font-family: "FuturaMediumC";
+}
   .header_dummy_lg{
     min-height: 73px;
   }
@@ -131,7 +129,6 @@
     font-family: "FuturaDemiC";
     border: 1px solid var(--borderColor);
     font-size: 0.81rem;
-    padding: 15px 0px;
     background: var(--mainBg);
   }
   .header_bottom a{
@@ -151,6 +148,9 @@
   }
   .header_bottom .header_catalog{
     cursor: pointer;
+    letter-spacing: 0.02em;
+    font-size: 13px;
+    line-height: 14px;
     text-transform: uppercase;
   }
   .header_bottom .header_catalog span{
@@ -247,6 +247,18 @@
     text-align: center;
   }
 }
+@media (min-width: 994px) {
+  .header_top{
+    padding-bottom: 17px;
+    padding-top: 16px;
+  }
+  .header_bottom{
+    padding: 15px 0px;
+  }
+  .header .mobile_menu_btn{
+    display: none;
+  }
+}
 @media (max-width: 993px) {
   .header_phone{
     padding-right: 0px;
@@ -257,7 +269,39 @@
   }
 
   /*отключить*/
-  .header_bottom{
+  .header .header_top nav,
+  .header .user_buttom,
+  .header .header_ico_link,
+  .header .header_phone,
+  .header .header_bottom nav,
+  .header .header_search{
     display: none;
+  }
+  .header_top{
+    padding-bottom: 19px;
+    padding-top: 19px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+  }
+  .header .main_logo img{
+    max-width: 94px;
+  }
+  .header_bottom{
+    padding: 10px 0px;
+  }
+  .header .mobile_menu_btn{
+    cursor: pointer;
+  }
+  .header .mobile_menu_btn i{
+    width: 33px;
+    height: 16px;
+  }
+  .header::before{
+    content: "";
+    height: 60px;
+    display: block;
   }
 }

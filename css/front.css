@@ -3,11 +3,6 @@
     overflow: hidden;
     color: var(--black2);
 }
-.front_big_slider .bg_slide .title{
-    width: 100%;
-    font-size: 50px;
-    line-height: 58px;
-}
 .front_big_slider .bg_slide .text{
     font-size: 18px;
     font-family: "FuturaMediumC";
@@ -21,17 +16,11 @@
     border-width: 2px;
     text-transform: uppercase;
     padding: .695rem 1.3rem .595rem 1.3rem;
-    margin-top: 41px;
 }
 .front_big_slider .slide_text{
     position: relative;
     z-index: 5;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    padding: 108px 77px;
 }
 .front_big_slider .center_image{
     display: flex;
@@ -44,7 +33,6 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 50%;
 }
 .main_front h2.page_title{
     margin-bottom: 32px;
@@ -79,14 +67,6 @@
     position: relative;
     z-index: 2;
     border-radius: 2px;
-}
-.inf_body_left,
-.inf_img.about{
-    padding-right: 30px;
-}
-.inf_img.training,
-.inf_body_right{
-    padding-left: 30px;
 }
 .inf_img.training{
     text-align: right;
@@ -154,9 +134,69 @@
 .partner_col{
     border-right: 0.5px solid var(--gray2);
 }
-.partner_col:first-child{
-    border-left: 0.5px solid var(--gray2);
-}
 .partner_list{
     margin-bottom: 32px;
+}
+@media (min-width: 994px) {
+    .inf_body_left,
+    .inf_img.about{
+        padding-right: 30px;
+    }
+    .inf_img.training,
+    .inf_body_right{
+        padding-left: 30px;
+    }
+    .partner_col:first-child{
+        border-left: 0.5px solid var(--gray2);
+    }
+    .front_big_slider .slide_text{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        padding: 108px 77px;
+    }
+    .front_big_slider .slide_color{
+        width: 50%;
+    }
+    .front_big_slider .bg_slide .title{
+        width: 100%;
+        font-size: 50px;
+        line-height: 58px;
+    }
+    .front_big_slider .btn{
+        margin-top: 41px;
+    }
+}
+@media (max-width: 993px) {
+    .front_big_slider .slide_color{
+        width: 100%;
+    }
+    .section_popular_cat{
+        padding-top: 24px;
+    }
+    .partner_col{
+        border-bottom: 0.5px solid var(--gray2);
+    }
+    .row_partners{
+        margin-bottom: -1px;
+        border-left: 0.5px solid var(--gray2);
+    }
+    .inf_img{
+        display: flex;
+        justify-content: center;
+    }
+    .front_big_slider .slide_text{
+        padding: 30px 0px;
+    }
+    .front_big_slider .bg_slide .title{
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .front_big_slider .btn{
+        margin-top: 10px;
+    }
+    .front_big_slider .img_list{
+        justify-content: center;
+    }
 }

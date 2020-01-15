@@ -1,7 +1,5 @@
-/* WHITE DARK */
 .footer{
     font-family: "FuturaBookC Regular";
-    padding-top: 32px;
 }
 .footer.footer_dark{
     background: var(--linkBlack);
@@ -40,9 +38,6 @@
     color: var(--mainGreen);
 }
 .footer_bottom{
-    padding-top: 23px;
-    padding-bottom: 23px;
-    margin-top: 64px;
     font-size: 12px;
     line-height: 14px;
     border-top: 0.5px solid var(--footerDarkLine);
@@ -124,9 +119,6 @@
     justify-content: center;
     font-size: 18px;
 }
-.footer_row.double_margin{
-    margin-bottom: 54px;
-}
 .footer_social_list li{
     font-size: 22px;
 }
@@ -136,4 +128,38 @@
 .footer.footer_dark .footer_social_list li a{
     display: block;
     color: var(--mainGreen);
+}
+@media (min-width: 994px) {
+    .footer_bottom{
+        padding-top: 23px;
+        padding-bottom: 23px;
+        margin-top: 64px;
+    }
+    .footer{
+        padding-top: 32px;
+    }
+    .footer_row.double_margin{
+        margin-bottom: 54px;
+    }
+}
+@media (max-width: 993px) {
+    .footer .col{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer_bottom{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .footer{
+        padding-top: 30px;
+    }
+    .footer .form_inpt{
+        max-width: 70%;
+    }
+    .footer_row.double_margin{
+        margin-bottom: 34px;
+    }
 }

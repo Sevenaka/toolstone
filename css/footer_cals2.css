@@ -1,13 +1,10 @@
 .footer_cals{
     background: var(--footerCals);
-    padding-top: 47px;
-    padding-bottom: 83px;
     position: relative;
     overflow: hidden;
 }
 .form_bg{
     background: var(--mainBg);
-    padding: 32px 31px;
     font-family: "FuturaBookC Regular";
     z-index: 5;
     border-radius: 6px;
@@ -56,18 +53,6 @@
 .form-group{
     margin-bottom: 16px;
 }
-.cals_image::after{
-    content: "";
-    background: url('../image/cals_image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 311px;
-    height: 413px;
-    bottom: -84px;
-    right: 20px;
-}
 .footer_cals > .container-md > .row{
     position: relative;
     z-index: 5;
@@ -79,7 +64,6 @@
     height: 67px;
     background: url('../image/ico/cals_ico2.svg');
     right: 10%;
-    top: 11%;
 }
 .footer_cals .cals_container::before{
     content: "";
@@ -111,13 +95,52 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.row_max_w{
-    padding-right: 30%;
-}
 a.str{
     font-family: "FuturaMediumC";
 }
 a.str,
 a.email{
     font-size: 12px;
+}
+@media (min-width: 994px) {
+    .footer_cals{
+        padding-top: 47px;
+        padding-bottom: 83px;
+    }
+    .form_bg{
+        padding: 32px 31px;
+    }
+    .row_max_w{
+        padding-right: 30%;
+    }
+    .cals_image::after{
+        content: "";
+        background: url('../image/cals_image.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 311px;
+        height: 413px;
+        bottom: -84px;
+        right: 20px;
+    }
+    .footer_cals::before{
+        top: 11%;
+    }
+}
+@media (max-width: 993px) {
+    .footer_cals{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .form_bg{
+        padding: 20px;
+    }
+    .form_bg .form-group.text-right{
+        text-align: left!important;
+    }
+    .footer_cals::before{
+        top: 4%;
+    }
 }

@@ -9,22 +9,13 @@
 }
 .rew_card_text{
     background: var(--footerCals);
-    padding: 40px 25px;
     position: relative;
     color: var(--black3);
-}
-.rew_card_text .rew_img{
-    position: absolute;
-    top: 40px;
-    left: 25px;
 }
 .rew_card_text .rew_img img{
     width: 74px;
     height: 74px;
     border-radius: 50%;
-}
-.rew_card_text .rew_inf{
-    padding-left: 94px;
 }
 .rew_card_text .rew_inf p{
     font-size: 17px;
@@ -50,4 +41,25 @@
     font-size: 13px;
     line-height: 23px; 
     letter-spacing: 0.05em;
+}
+@media (min-width: 994px) {
+    .rew_card_text{
+        padding: 40px 25px;
+    }
+    .rew_card_text .rew_img{
+        position: absolute;
+        top: 40px;
+        left: 25px;
+    }
+    .rew_card_text .rew_inf{
+        padding-left: 94px;
+    }
+}
+@media (max-width: 993px) {
+    .rew_card_text .rew_img{
+        margin-bottom: 20px;
+    }
+    .rew_card_text{
+        padding: 20px;
+    }
 }

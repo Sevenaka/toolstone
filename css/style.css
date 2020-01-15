@@ -252,26 +252,14 @@ h1.page_title{
   margin-bottom: 32px;
 }
 h2.page_title{
-  font-size: 40px;
-  line-height: 36px;
   font-family: "FuturaDemiC";
-  margin-bottom: 48px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 h3.page_title{
-  font-size: 24px;
-  line-height: 26px;
   color: var(--titleColor);
-  margin-bottom: 24px;
 }
 h4.page_title{
   font-family: "FuturaMediumC";
-  font-size: 30px;
-  line-height: 28px;
   color: var(--titleColor);
-  margin-bottom: 32px;
 }
 .page_title.margin_sm{
   margin-bottom: 15px;
@@ -427,7 +415,6 @@ a:hover{
   position: relative;
 }
 .swiper_wrapper .swiper-pagination{
-  bottom: -52px;
   left: 0;
   width: 100%;
 }
@@ -440,9 +427,6 @@ a:hover{
 }
 h2.page_title.margin_32{
   margin-bottom: 32px;
-}
-.swiper_bullets{
-  margin-bottom: 82px;
 }
 .swiper_carousel img{
   width: 100%;
@@ -697,15 +681,6 @@ ul:last-child:not([class]){
 .main_top_of{
   padding-top: 0px;
 }
-.pd-bt-8a{
-  padding-bottom: 64px!important;
-}
-.pd-bt-6a{
-  padding-bottom: 48px!important;
-}
-.pd_top_a8{
-  padding-top: 64px!important;
-}
 .btn-outline-light,
 .btn-outline-success{
   border-width: 2px;
@@ -728,4 +703,74 @@ ul:last-child:not([class]){
 }
 .green{
   color: var(--mainGreen)!important;
+}
+@media (min-width: 994px) {
+  .pd-bt-8a{
+    padding-bottom: 64px!important;
+  }
+  .pd-bt-6a{
+    padding-bottom: 48px!important;
+  }
+  .pd_top_a8{
+    padding-top: 64px!important;
+  }
+  h2.page_title{
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 48px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3.page_title{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  h4.page_title{
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+  .swiper_bullets{
+    margin-bottom: 82px;
+  }
+  .swiper_wrapper .swiper-pagination{
+    bottom: -52px;
+  }
+}
+@media (max-width: 993px) {
+  .mobile_reverse{
+    flex-wrap: wrap-reverse;
+  }
+  .pd-bt-8a{
+    padding-bottom: 30px!important;
+  }
+  .pd-bt-6a{
+    padding-bottom: 20px!important;
+  }
+  .pd_top_a8{
+    padding-top: 30px!important;
+  }
+  h2.page_title{
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+  h3.page_title{
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  h4.page_title{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 22px;
+  }
+  .swiper_bullets{
+    margin-bottom: 42px;
+  }
+  .swiper_wrapper .swiper-pagination{
+    bottom: -36px;
+  }
 }

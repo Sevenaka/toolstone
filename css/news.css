@@ -1,9 +1,6 @@
 .news_card{
     position: relative;
 }
-.news_card.news_default{
-    margin-bottom: 64px;
-}
 .news_card .news_title a,
 .news_card > a{
     color: var(--linkBlack);
@@ -151,4 +148,14 @@
 }
 .news_card.news_video .news_header{
     padding-bottom: 60%;
+}
+@media (min-width: 994px) {
+    .news_card.news_default{
+        margin-bottom: 64px;
+    }
+}
+@media (max-width: 993px) {
+    .news_card.news_default{
+        margin-bottom: 30px;
+    }
 }
