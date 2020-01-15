@@ -1,0 +1,18 @@
+.sort_list .item:not(:last-child){
+    margin-right: 14px;
+}
+.sort_list .item .sort_link{
+    cursor: pointer;
+}
+.sort_list .item .sort_link.active{
+    
+}
+.sort_list .item.item_label{
+    color: var(--gray1);
+}
+.sort_list{
+    font-family: "FuturaBookC Regular";
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 16px;
+}
