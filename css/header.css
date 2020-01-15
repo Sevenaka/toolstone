@@ -43,7 +43,7 @@
   .header_phone::after{
     position: absolute;
     color: var(--gray1);
-    content: "\e90b";
+    content: "\e90d";
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;

@@ -50,22 +50,26 @@
 .footer_bottom .itm:not(:last-child){
     margin-right: 5px;
 }
+.footer_row:{
+    font-size: 13px;
+    line-height: 15px;
+}
 .footer_row:not(:last-child){
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .footer_row .title{
     font-size: 13px;
-    line-height: 20px;
-    color: var(--borderColor);
-    margin-bottom: 16px;
+    line-height: 15px;
+    color: var(--gray2);
+    margin-bottom: 13px;
 }
-.footer .phone_list{
+.footer .phone{
     font-family: "FuturaDemiC";
     font-size: 14px;
     line-height: 16px;
 }
-.footer .mes_list a{
-    color: var(--mainGreen);
+.footer .phone_list .phone:not(:last-child){
+    margin-bottom: 6px;
 }
 .footer .contact_bottom{
     margin-top: 20px;
@@ -96,4 +100,40 @@
 .footer .footer_nav li a{
     max-width: 150px;
     display: inline-block;
+}
+.footer .form_inpt{
+    position: relative;
+}
+.footer .form_inpt .form-control{
+    border: 1px solid var(--borderColor5);
+    background: transparent;
+}
+.footer .form_inpt .mail_button{
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+    color: var(--mainGreen);
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.footer_row.double_margin{
+    margin-bottom: 54px;
+}
+.footer_social_list li{
+    font-size: 22px;
+}
+.footer_social_list li:not(:last-child){
+    margin-right: 28px;
+}
+.footer.footer_dark .footer_social_list li a{
+    display: block;
+    color: var(--mainGreen);
 }
