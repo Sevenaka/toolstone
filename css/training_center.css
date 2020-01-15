@@ -1,34 +1,19 @@
-.training_about{
-    padding-bottom: 64px;
-    padding-top: 64px;
-}
 .training_about p{
     font-size: 13px;
     line-height: 28px;
     color: var(--gray1);
 }
-.training_about p:not(:last-child){
-    margin-bottom: 32px;
-}
 .training_title{
     font-family: "FuturaMediumC";
-    font-size: 24px;
-    line-height: 26px;
     color: var(--black);
-    margin-bottom: 32px;
-}
-.training_about .training_body{
-    padding-right: 100px;
 }
 .training_video{
     padding-top: 32px;
-    padding-bottom: 64px;
 }
 .video_list .item:not(:last-child){
     margin-bottom: 40px;
 }
 .training_vide_text{
-    margin-top: 64px;
     text-align: center;
     font-size: 14px;
     line-height: 30px;
@@ -53,4 +38,61 @@
 }
 .other_news .news_card.news_default{
     margin-bottom: 48px;
+}
+@media (min-width: 622px) and (max-width: 992px) {
+    .video_list{
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .video_list .item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 994px) {
+    .training_about{
+        padding-bottom: 64px;
+        padding-top: 64px;
+    }
+    .training_title{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 32px;
+    }
+    .training_about .training_body{
+        padding-right: 100px;
+    }
+    .training_about p:not(:last-child){
+        margin-bottom: 32px;
+    }
+    .training_vide_text{
+        margin-top: 64px;
+    }
+}
+@media (max-width: 993px) {
+    .training_title{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .training_about p:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .training_about .col-md-4{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .training_about .col-md-4 .flex{
+        justify-content: center;
+    }
+    .training_vide_text{
+        margin-top: 30px;
+    }
+    .training_video{
+        padding-bottom: 30px;
+    }
+    .col_big_video{
+        margin-bottom: 30px;
+    }
 }

@@ -40,8 +40,6 @@ new Swiper('.fluid_slider', {
 });
 
 new Swiper('.swiper_carousel', {
-    slidesPerView: 3,
-    spaceBetween: 30,
     loop: true,
     navigation: {
       nextEl: '.carousel_next',
@@ -49,6 +47,24 @@ new Swiper('.swiper_carousel', {
     },
     pagination: {
         el: '.carousel_pagination',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        740: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        968: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1224: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
     }
 });
 
@@ -169,11 +185,27 @@ new Swiper('.rew_carousel_2', {
 });
 
 new Swiper('.news_carousel', {
-    slidesPerView: 3,
-    spaceBetween: 30,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        740: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        968: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1224: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
     }
 });
 
