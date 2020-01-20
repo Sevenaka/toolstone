@@ -209,6 +209,24 @@ new Swiper('.news_carousel', {
     }
 });
 
+//banner_fluid_slide
+new Swiper('.banner_fluid_slide', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+        el: '.banner_slide-pagination',
+    }
+});
+
+//banner_fluid_slide product
+new Swiper('.card_slide .banner_fluid_slide', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+        el: '.card_banner_slide-pagination',
+    }
+});
+
 new Swiper('.news_carousel_4', {
     navigation: {
       nextEl: '.swiper-button-next',

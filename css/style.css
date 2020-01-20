@@ -97,8 +97,8 @@ body {
   -webkit-transform: rotate(-46deg);
   -o-transform: rotate(-46deg);
   transform: rotate(-46deg);
-  top: 30px;
-  left: -38px;
+  top: 32px;
+  left: -40px;
   text-align: center;
   text-transform: uppercase;
   display: flex;
@@ -727,6 +727,84 @@ ul:last-child:not([class]){
 }
 .margin_bt_mn{
   margin-bottom: -1px!important;
+}
+.banner_fluid_slide .slide{
+  color: #020611;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 140px;
+}
+.swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:not(:first-child){
+  margin-left: 100px;
+}
+.swiper_wrapper:not(.card_slide) .banner_fluid_slide .image_list .img:last-child{
+  margin-left: 74px;
+}
+.swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
+  margin-left: 160px;
+}
+.banner_fluid_slide .label{
+  font-size: 22px;
+  line-height: 22px;
+  font-family: "FuturaMediumC";
+  margin-bottom: 5px;
+}
+.banner_fluid_slide h3{
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "FuturaDemiC";
+}
+.swiper_wrapper:not(.card_slide) .banner_fluid_slide .brand_logo{
+  margin-top: 10px;
+}
+.banner_fluid_slide .swiper-pagination{
+  bottom: 8px!important;
+}
+.banner_fluid_slide .swiper-pagination .swiper-pagination-bullet{
+  background: white;
+  border-color: white;
+  opacity: 1;
+}
+.banner_fluid_slide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  border-color: var(--red);
+  background: var(--red);
+}
+.swiper_wrapper.card_slide{
+  padding-bottom: 30px;
+}
+.swiper_wrapper.card_slide .slide{
+  padding: 45px 30px 40px 30px;
+  text-align: center;
+}
+.swiper_wrapper.card_slide .slide .brand_logo{
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  right: 34px;
+}
+.swiper_wrapper.card_slide .slide .image_list{
+  margin-bottom: 20px;
+}
+.swiper_wrapper.card_slide .slide .image_list .img:not(.brand_logo){
+  margin: 0px auto;
+  display: block;
+}
+.swiper_wrapper.card_slide .slide .btn{
+  margin-top: 18px;
+}
+.swiper_wrapper.card_slide .slide .item_info{
+  display: inline-block;
+}
+.swiper_wrapper.card_slide .banner_fluid_slide .label{
+  text-align: left;
 }
 @media (min-width: 994px) {
   .pd-bt-8a{
