@@ -54,6 +54,9 @@
       scrollbar-width: none;
       -webkit-overflow-scrolling: touch;
     }
+    .breadcrumb::-webkit-scrollbar{
+      display: none;
+    }
     .breadcrumb-item{
       display: block;
       white-space: nowrap;

@@ -15,7 +15,7 @@
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/footer_dark.css" rel="stylesheet">
     <link href="css/news.css" rel="stylesheet">
     <link href="css/pagination.css" rel="stylesheet">
     <link href="css/btngroup.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <link href="css/training_full.css" rel="stylesheet">
 
     <!-- FooterCals -->
-    <link href="css/footer_cals.css" rel="stylesheet">
+    <link href="css/footer_cals2.css" rel="stylesheet">
 
     <!-- Complect Card -->
     <link href="css/complect_card.css" rel="stylesheet">
@@ -38,7 +38,7 @@
 
 <body>
     <!-- MAIN HEADER -->
-    <header class="header">
+    <header class="header fixed">
         <div class="header_top">
             <div class="container">
                 <div class="row align_center">
@@ -417,16 +417,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="news_full_title">Видео по обработке керамики</h2>
+                        <h2 class="news_full_title">Видео с предыдущих семинаров:</h2>
 
                         <div class="swiper_wrapper">
-                            <div class="swiper-container news_carousel">
+                            <div class="swiper-container news_carousel3">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
-                                    <article class="news_card news_default">
+                                    <article class="news_card news_default news_video">
                                         <a href="#">
                                             <header class="news_header">
                                                 <div class="color_label label_blue">Инфа</div>
+                                                <div class="play">
+                                                    <div class="play_ico">
+                                                        <i class="icon-play"></i>
+                                                    </div>
+                                                </div>
                                                 <figure>
                                                     <picture class="img-fluid">
                                                         <img src="image/news3.jpg" alt="Title" class="img-fluid" />
@@ -450,10 +455,15 @@
                                     </article>
                                   </div>
                                   <div class="swiper-slide">
-                                    <article class="news_card news_default">
+                                    <article class="news_card news_default news_video">
                                         <a href="#">
                                             <header class="news_header">
                                                 <div class="color_label label_green">ПОЛЕЗНОЕ</div>
+                                                <div class="play">
+                                                    <div class="play_ico">
+                                                        <i class="icon-play"></i>
+                                                    </div>
+                                                </div>
                                                 <figure>
                                                     <picture>
                                                         <img src="image/news2.jpg" alt="Title" class="img-fluid" />
@@ -509,10 +519,15 @@
                                     </article>
                                   </div>
                                   <div class="swiper-slide">
-                                    <article class="news_card news_default">
+                                    <article class="news_card news_default news_video">
                                         <a href="#">
                                             <header class="news_header">
                                                 <div class="color_label label_red">Акция</div>
+                                                <div class="play">
+                                                    <div class="play_ico">
+                                                        <i class="icon-play"></i>
+                                                    </div>
+                                                </div>
                                                 <figure>
                                                     <picture>
                                                         <img src="image/news1.jpg" alt="Title" class="img-fluid" />
@@ -536,10 +551,15 @@
                                     </article>
                                   </div>
                                   <div class="swiper-slide">
-                                    <article class="news_card news_default">
+                                    <article class="news_card news_default news_video">
                                         <a href="#">
                                             <header class="news_header">
                                                 <div class="color_label label_red">Акция</div>
+                                                <div class="play">
+                                                    <div class="play_ico">
+                                                        <i class="icon-play"></i>
+                                                    </div>
+                                                </div>
                                                 <figure>
                                                     <picture>
                                                         <img src="image/news1.jpg" alt="Title" class="img-fluid" />
@@ -565,8 +585,8 @@
                                 </div>
     
                                 <!-- Add Arrows -->
-                                <div class="swiper-button-next swiper_button"><i class="icon-ar_next"></i></div>
-                                <div class="swiper-button-prev swiper_button"><i class="icon-ar_back"></i></div>
+                                <div class="swiper-button-next swiper_button news_carousel3-next"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev swiper_button news_carousel3-prev"><i class="icon-ar_back"></i></div>
                             </div>
                         </div>
 
@@ -576,10 +596,10 @@
 
                         <div class="hr_border fluid mr-tp-6a mr_bt_4a"></div>
 
-                        <h2 class="news_full_title">Новости и статьи</h2>
+                        <h2 class="news_full_title">Новости и статьи:</h2>
 
                         <div class="btn_group">
-                            <a href="#" type="button" class="btn btn-success">Всё</a>
+                            <a href="#" type="button" class="btn btn-danger">Всё</a>
                             <a href="#" type="button" class="btn btn-outline-secondary">Акции на обучение</a>
                             <a href="#" type="button" class="btn btn-outline-secondary">Спецпредложения</a>
                         </div>
@@ -636,7 +656,7 @@
                                     </article>
                                   </div>
                                   <div class="swiper-slide">
-                                    <article class="news_card news_default news_video">
+                                    <article class="news_card news_default">
                                         <a href="#">
                                             <header class="news_header">
                                                 <div class="color_label label_red">Акция</div>
@@ -771,17 +791,17 @@
 
     <!-- FooterCals -->
     <div class="footer_cals">
-        <div class="container-md relative">
+        <div class="container-lg cals_container relative">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="page_title text_center margin_md">Нужна помощь?</h2>
+                    <h2 class="page_title">Нужна помощь?</h2>
                 </div>
                 <div class="col-md-9">
                     <div class="form_bg relative">
-                        <p>Наши специалисты помогут: <a class="hide_link montserrat" href="tel:88007771426">8 (800)-777-14-26</a>, <a class="hide_link montserrat" href="tel:84956402213">8 (495)-640-22-13</a></p>
-                        <p>или по электронной почте: <a class="hide_link" href="mailto:info@toolstone.ru">info@toolstone.ru</a> или <a href="#">у нас в магазине</a>.</p>
+                        <p>Наши специалисты помогут: <a class="hide_link str" href="tel:88007771426">8 (800)-777-14-26</a>, <a class="hide_link str" href="tel:84956402213">8 (495)-640-22-13</a></p>
+                        <p>или по электронной почте: <a class="email" href="mailto:info@toolstone.ru">info@toolstone.ru</a> или <a class="hide_link" href="#">у нас в магазине</a>.</p>
                         <form class="cals_big_form">
-                            <div class="form-row">
+                            <div class="form-row row_max_w">
                                 <div class="form-group col-md-6">
                                     <div class="input_wrapper">
                                         <span class="required" title="Обязательно для заполнения">*</span>
@@ -825,45 +845,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer_top">
+    <footer class="footer footer_dark">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="footer_logo footer_row">
-                            <a href="/">
-                                <img src="image/logo_black.svg" alt="ToolStone" />
-                            </a>
-                        </div>
-                        <div class="footer_soc footer_row">
-                            <div class="title">Мы в соцсетях:</div>
-                            <ul class="social_list flex">
-                                <li class="vk"><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
-                                <li class="fb"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-                                <li class="insta"><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
-                                <li class="yt"><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_row">
-                            <div class="title">Контакты:</div>
-                            <ul class="mes_list flex">
-                                <li><a href="#" target="_blank">Viber</a></li>
-                                <li><a href="#" target="_blank">Telegram</a></li>
-                                <li><a href="#" target="_blank">WhatsApp</a></li>
-                            </ul>
-                            <div class="phone_list">
-                                <div class="phone">
-                                    <a href="tel:84956402213">8 (495) 640-22-13</a>
-                                </div>
-                                <div class="phone">
-                                    <a href="tel:88007771426">8 (800) 777-14-26</a>
-                                </div>
-                            </div>
-                            <div class="contact_bottom flex align_center">
-                                <i class="icon-clock"></i> Всегда онлайн
-                            </div>
-                        </div>
-                    </div>
                     <div class="col">
                         <label class="footer_label">О Компании</label>
                         <nav>
@@ -880,7 +864,7 @@
                         </nav>
                     </div>
                     <div class="col">
-                        <label class="footer_label">Услуги</label>
+                        <label class="footer_label">Новости</label>
                         <nav>
                             <ul class="footer_nav">
                                 <li><a href="#">Тест центр Toolstone</a></li>
@@ -889,6 +873,19 @@
                                 <li><a href="#">Сервис по ремонту</a></li>
                                 <li><a href="#">Запчасти Festool</a></li>
                                 <li><a href="#">Сервис по заточке режущего инструмента</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Услуги</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -906,17 +903,56 @@
                         </nav>
                     </div>
                     <div class="col">
-                        <label class="footer_label">Наши контакты</label>
-                        <nav>
-                            <ul class="footer_nav">
-                                <li><a href="#">Как заказать</a></li>
-                                <li><a href="#">Доставка</a></li>
-                                <li><a href="#">Оплата</a></li>
-                                <li><a href="#">Гарантия</a></li>
-                                <li><a href="#">Возврат и обмен</a></li>
-                                <li><a href="#">Пользовательское соглашение</a></li>
+                        <label class="footer_label">Контакты</label>
+                        <div class="footer_row">
+                            <div class="title">Телефон:</div>
+                            <div class="phone_list">
+                                <div class="phone">
+                                    <a href="tel:84956402213">8 (495) 640-22-13</a>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:88007771426">8 (800) 777-14-26</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_row">
+                            E-mail: <a class="green" href="mailto:info@toolstone.ru">info@toolstone.ru</a>
+                        </div>
+                        <div class="footer_row">
+                            Алрес: <span class="green">г. Москва, Каширское ш., д.41, 2 эт.</span>
+                        </div>
+                        <div class="footer_row double_margin">
+                            <div class="title">Будте в кусе новостей:</div>
+                            <form>
+                                <div class="form_inpt">
+                                    <input class="form-control" name="email" id="mes_email" placeholder="Ваш e-mail:" />
+                                    <button class="mail_button" type="submit"><i class="icon-mail"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="footer_row">
+
+                            <ul class="mes_list flex align_center">
+                                <li><a href="#" target="_blank">WhatsApp</a></li>
+                                <li><a href="#" target="_blank">Viber</a></li>
+                                <li><a href="#" target="_blank">Telegram</a></li>
                             </ul>
-                        </nav>
+                            
+                            <div class="phone">
+                                <a href="tel:8(929)525-73-77">8 (929) 525-73-77</a>
+                            </div>
+                        </div>
+
+                        <div class="footer_soc footer_row">
+                            <div class="title">Мы в соцсетях:</div>
+                            <ul class="footer_social_list flex">
+                                <li class="vk"><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
+                                <li class="fb"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li class="insta"><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                                <li class="yt"><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -928,9 +964,11 @@
                     <div class="col-12">
                         <div class="flex">
                             <div class="itm"> &copy; 2019 ToolStone. </div>
-                            <div class="itm">E-mail: <a class="hide_link" href="mailto:info@toolstone.ru">info@toolstone.ru</a>.</div>
                             <div class="itm"><a href="#">Политтика конфеденциальности</a></div>
                         </div>
+                    </div>
+                    <div class="col-12 footer_in_txt">
+                        Полное копирование текстов, страниц, разделов и изображений запрещено. Цитирование отдельных фраз возможно только с указанием гиперссылки на сайт toolstone.ru 
                     </div>
                 </div>
             </div>

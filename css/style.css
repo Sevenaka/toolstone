@@ -155,9 +155,6 @@ ul[class] li{
 .btn-lg{
   padding: .25rem 0.80rem;
 }
-.btn-lg.btn_search{
-  font-size: 1rem;
-}
 .btn-success{
   background-color: var(--mainGreen);
   border-color: var(--mainGreen);
