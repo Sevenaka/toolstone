@@ -335,3 +335,24 @@ if(lazyElements.length) {
         elements_selector: ".lazy"
     });
 }
+
+//Header scroll change
+
+var headerFixed = document.querySelector('.header.fixed');
+if(headerFixed) {
+    window.onscroll = function() {headerChange()};
+
+    var scrollBr = 100;
+
+    if(window.pageYOffset >= scrollBr) {
+        headerFixed.classList.add('change_header');
+    }
+
+    function headerChange() {
+        if(window.pageYOffset >= scrollBr) {
+            headerFixed.classList.add('change_header');
+        } else {
+            headerFixed.classList.remove('change_header');
+        }
+    }
+}

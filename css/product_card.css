@@ -56,6 +56,7 @@
     font-size: 14px;
     line-height: 16px;
     font-family: "FuturaBookC Regular";
+    margin-bottom: -5px;
 }
 .product_card .product_price .price{
     color: var(--black);
@@ -69,6 +70,7 @@
     line-height: 16x;
     font-family: "FuturaBookC Regular";
     text-decoration-line: line-through;
+    margin-top: 1px;
 }
 .product_card .product_price > div:not(:last-child){
     margin-right: 12px;

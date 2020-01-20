@@ -4,9 +4,6 @@
   font-size: 0.75rem;
   font-family: "FuturaMediumC";
 }
-  .header_dummy_lg{
-    min-height: 73px;
-  }
   .header_dummy_md{
     min-height: 55px;
     display: none;
@@ -14,8 +11,13 @@
   .header_sticky.sticky + .header_dummy_md{
     display: block;
   }
-  .header_sticky.sticky,
-  .header_top.fixed{
+  .header.fixed::before{
+    content: "";
+    display: block;
+    height: 73px;
+  }
+  .header.fixed .header_top,
+  .header_sticky.sticky{
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +35,6 @@
   .header_phone{
     position: relative;
     padding-right: 40px;
-    padding-left: 15px;
   }
   .header_nav > li{
     padding: 10px 0px;
@@ -68,7 +69,7 @@
     line-height: 16px;
     position: absolute;
   }
-  .header.fixed{
+  .header.fixed_big{
     position: fixed;
     top: 0;
     left: 0;
@@ -103,6 +104,9 @@
     margin-right: 6px;
     font-size: 17px;
   }
+  .header_ico_link:hover i{
+    color: var(--mainGreen);
+  }
   .header_ico_link i.icon-bookmark{
     font-size: 14px;
   }
@@ -114,16 +118,26 @@
     width: 28px;
     height: 28px;
     display: block;
-    border: 1.5px solid rgba(83, 84, 90, 0.3);
     position: relative;
     border-radius: 50%;
     overflow: hidden;
+  }
+  .user_buttom:not(.user_auth) span{
+    border: 1.5px solid rgba(83, 84, 90, 0.3);
+  }
+  header.header .header_top .user_buttom.user_auth span{
+    background-position: center!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
   }
   .user_buttom span i{
     font-size: 28px;
     position: absolute;
     top: -2px;
     left: -1.50px;
+  }
+  .user_buttom:hover span i{
+    color: var(--mainGreen);
   }
   .header_bottom{
     font-family: "FuturaDemiC";

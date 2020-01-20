@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5{
   font-family: "FuturaMediumC";
   color: var(--titleColor);
 }
-body.bg_gray{
+.bg_gray{
   background: var(--footerCals);
 }
 .text_center{
@@ -266,11 +266,12 @@ h4.page_title{
 }
 .btn_fluid_loading{
   font-family: "FuturaDemiC";
-  color: var(--black);
+  color: var(--mainGreen);
   border:0.5px solid var(--borderColor4);
   border-radius: 1px;
   text-transform: uppercase;
   padding: .6rem .75rem;
+  font-size: 14px;
 }
 .btn_fluid_loading:hover {
   color: var(--black);
@@ -680,12 +681,6 @@ ul:last-child:not([class]){
 .btn-outline-success{
   border-width: 2px;
 }
-.main_bot_of{
-  padding-bottom: 0px;
-}
-.margin_bt_mn{
-  margin-bottom: -1px;
-}
 .hr_border{
   border-top: 0.5px solid var(--gray2);
 }
@@ -696,6 +691,39 @@ ul:last-child:not([class]){
 .green{
   color: var(--mainGreen)!important;
 }
+.cr_no_mrg .news_card{
+  margin-bottom: 0px!important;
+}
+.section_title_btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.section_title_btn .page_title{
+  margin-bottom: 0px;
+}
+.section_title_btn .btn{
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: inherit;
+}
+.section_title_btn .btn_group{
+  margin-bottom: 0px;
+}
+.btn-danger{
+  background-color: var(--red);
+  border-color: var(--red);
+}
+.front_section.bg_gray{
+  border: 0px;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+.margin_bt_mn{
+  margin-bottom: -1px!important;
+}
 @media (min-width: 994px) {
   .pd-bt-8a{
     padding-bottom: 64px!important;
@@ -705,6 +733,9 @@ ul:last-child:not([class]){
   }
   .pd_top_a8{
     padding-top: 64px!important;
+  }
+  .pd_top_a4{
+    padding-top: 32px!important;
   }
   h2.page_title{
     font-size: 40px;
@@ -757,10 +788,16 @@ ul:last-child:not([class]){
   .mr_bt_a6{
     margin-bottom: 48px;
   }
+  .main_bot_of{
+    padding-bottom: 0px!important;
+  }
 }
 @media (max-width: 993px) {
   .mr_bt_a6{
     margin-bottom: 20px;
+  }
+  .pd_top_a4{
+    padding-top: 32px!important;
   }
   h1.page_title{
     font-size: 24px;
