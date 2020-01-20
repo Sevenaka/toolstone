@@ -139,6 +139,9 @@ ul[class] li{
 .align_center{
   align-items: center;
 }
+.align_bottom{
+  align-items: flex-end;
+}
 .align_content{
   align-content: center;
 }
@@ -272,6 +275,7 @@ h4.page_title{
   text-transform: uppercase;
   padding: .6rem .75rem;
   font-size: 14px;
+  background: #ffffff;
 }
 .btn_fluid_loading:hover {
   color: var(--black);
@@ -777,6 +781,9 @@ ul:last-child:not([class]){
   .mr_bt_4a{
     margin-bottom: 32px!important;
   }
+  .mr_bt_3a{
+    margin-bottom: 24px!important;
+  }
   .pd_tp_4a{
     padding-top: 32px!important;
   }
@@ -831,6 +838,9 @@ ul:last-child:not([class]){
   }
   .mr-tp-6a{
     margin-top: 20px!important;
+  }
+  .mr_bt_3a{
+    margin-bottom: 20px!important;
   }
   .mr_bt_4a{
     margin-bottom: 20px!important;

@@ -4,8 +4,9 @@
 .sort_list .item .sort_link{
     cursor: pointer;
 }
+.sort_list .item .sort_link:hover,
 .sort_list .item .sort_link.active{
-    
+    color: var(--red);
 }
 .sort_list .item.item_label{
     color: var(--gray1);

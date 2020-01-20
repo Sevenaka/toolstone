@@ -1,13 +1,16 @@
-.brand_row{
-    border-bottom: 1px solid var(--gray2);
-}
-.brand_row:first-child{
-    border-top: 1px solid var(--gray2);
-}
 .brand_row .col:not(:last-child){
     border-right: 1px solid var(--gray2);
 }
-
+.brand_row .col{
+    border-bottom: 1px solid var(--gray2);
+    padding: 0px;
+}
+.brand_row .row{
+    margin: 0px;
+}
+.brand_row:first-child .col{
+    border-top: 1px solid var(--gray2);
+}
 .brand_card{
     display: flex;
     text-align: center;
@@ -28,4 +31,7 @@
     max-width: 148px;
     font-family: "FuturaBookC Regular";
     margin: 0px auto;
+}
+.section_title_btn .sort_list{
+    margin-bottom: 0px;
 }
