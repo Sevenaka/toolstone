@@ -93,7 +93,7 @@
   .header_nav li:not(:last-child){
     margin-right: 28px;
   }
-  .service_menu li:not(:last-child){
+  .service_menu > li:not(:last-child){
     margin-right: 32px;
   }
   .header_ico_link i{
@@ -143,9 +143,6 @@
   }
   .header_bottom a{
     color: var(--linkBlack);
-  }
-  .header_bottom li:hover a{
-    color: var(--red);
   }
   .header_bottom .stocks_link{
     font-size: 14px;
@@ -208,9 +205,57 @@
   min-width: 250px;
   justify-content: flex-end;
 }
+.header_bottom .service_menu > li > a{
+  display: block;
+}
 .btn-lg.btn_search{
   font-size: 1rem;
   min-height: 40px;
+}
+.header_bottom .header_catalog:hover,
+.header_bottom .service_menu > li:hover > a{
+  color: var(--red);
+}
+.service_menu > li{
+  position: relative;
+}
+.service_menu > li .expand_menu{
+  position: absolute;
+  z-index: 10;
+  border-radius: 2px;
+  background: var(--mainBg);
+  font-size: 15px;
+  line-height: 14px;
+  padding: 5px 24px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+  min-width: 354px;
+  display: none;
+}
+.service_menu > li:hover .expand_menu{
+  display: block;
+}
+.service_menu > li .expand_menu::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background: var(--red);
+  border-radius: 0.5px;
+  height: 3px;
+}
+.service_menu > li .expand_menu li:not(:last-child){
+  border-bottom: 1px solid var(--borderColor);
+}
+.service_menu > li .expand_menu li a{
+  display: block;
+  margin: 0px -24px;
+  padding: 13px 24px;
+  border-radius: 2px;
+}
+.service_menu > li .expand_menu > li:hover > a{
+  background: var(--footerCals);
+  color: var(--red);
 }
 @media (max-width: 1382px) {
   .header .search_input{
@@ -229,7 +274,7 @@
   }
 }
 @media (max-width: 1378px) {
-  .service_menu li:not(:last-child){
+  .service_menu > li:not(:last-child){
     margin-right: 12px;
   }
 }
@@ -300,7 +345,7 @@
     padding-bottom: 17px;
     padding-top: 16px;
   }
-  .header_bottom .service_menu > li{
+  .header_bottom .service_menu > li > a{
     padding: 15px 0px;
   }
   .header .mobile_menu_btn{
@@ -342,7 +387,7 @@
   .header .main_logo img{
     max-width: 94px;
   }
-  .header_bottom .service_menu > li{
+  .header_bottom .service_menu > li > a{
     padding: 10px 0px;
   }
   .header .mobile_menu_btn{
