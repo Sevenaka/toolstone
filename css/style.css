@@ -698,12 +698,6 @@ ul:last-child:not([class]){
 .cr_no_mrg .news_card{
   margin-bottom: 0px!important;
 }
-.section_title_btn{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
 .section_title_btn .page_title{
   margin-bottom: 0px;
 }
@@ -876,8 +870,24 @@ ul:last-child:not([class]){
   .main_bot_of{
     padding-bottom: 0px!important;
   }
+  .section_title_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .section_title_btn .sort_list{
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 993px) {
+  .section_title_btn{
+    margin-bottom: 20px;
+  }
+  .section_title_btn .btn_group:not(:last-child),
+  .section_title_btn .sort_list{
+    margin-bottom: 20px;
+  }
   .mr_bt_a6{
     margin-bottom: 20px;
   }

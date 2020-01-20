@@ -11,11 +11,6 @@
   .header_sticky.sticky + .header_dummy_md{
     display: block;
   }
-  .header.fixed::before{
-    content: "";
-    display: block;
-    height: 73px;
-  }
   .header.fixed .header_top,
   .header_sticky.sticky{
     position: fixed;
@@ -29,8 +24,9 @@
   }
   .header_nav li .button:hover,
   .header_phone a,
+  .header_top a.active,
   .header_top a:hover{
-    color: var(--gray2);
+    color: #ffffff;
   }
   .header_phone{
     position: relative;
@@ -282,6 +278,11 @@
   .header .mobile_menu_btn{
     display: none;
   }
+  .header.fixed::before{
+    content: "";
+    display: block;
+    height: 73px;
+  }
 }
 @media (max-width: 993px) {
   .header_phone{
@@ -325,7 +326,7 @@
   }
   .header::before{
     content: "";
-    height: 60px;
+    height: 51px;
     display: block;
   }
 }
