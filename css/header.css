@@ -219,6 +219,7 @@
   font-size: 1rem;
   min-height: 40px;
 }
+.header_bottom .header_catalog.active,
 .header_bottom .header_catalog:hover,
 .header_bottom .service_menu > li:hover > a{
   color: var(--red);
@@ -397,6 +398,7 @@
   overflow-y: scroll;
   margin-left: -20px;
   padding-left: 20px;
+  padding-bottom: 40px;
 }
 .category_bgilist_scroll{
   height: 100%;
@@ -407,6 +409,7 @@
   padding-right: 30px;
   position: relative;
   padding-bottom: 40px;
+  border-right: 0.5px solid var(--borderColor);
 }
 .category_bgilist_scroll .category_btd{
   font-size: 18px;
@@ -490,10 +493,6 @@
   line-height: 16px;
   font-family: "FuturaMediumC";
   margin-top: 11px;
-}
-.category_menu .brand_col{
-  position: relative;
-  z-index: 10;
 }
 @media (min-width: 1330px) and (max-width: 1834px) {
   .service_menu > li .expand_menu > li .expand_menu_block{

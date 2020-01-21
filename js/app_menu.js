@@ -20,16 +20,19 @@ var app = new Vue({
 
             closeCat.addEventListener('click', function() {
                 categoryMenu.classList.remove('open');
+                headerCatalogBrn.classList.remove('active');
                 body.classList.remove('scroll_hide');
             });
 
             headerCatalogBrn.addEventListener('click', function() {
                 if(categoryMenu.classList.contains('open')){
                     categoryMenu.classList.remove('open');
+                    headerCatalogBrn.classList.remove('active');
                     body.classList.remove('scroll_hide');
                 } else {
                     categoryMenu.classList.add('open');
                     body.classList.add('scroll_hide');
+                    headerCatalogBrn.classList.add('active');
 
                     var catHeight = categoryMenu.clientHeight - 53;
 
