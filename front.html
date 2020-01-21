@@ -45,6 +45,498 @@
 </head>
 
 <body>
+    <!-- Header Category Menu -->
+    <div class="category_menu" id="category">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col_header">
+                    <div class="category_filter flex">
+                        <div class="category_btns flex">
+                            <div @click="changeFilter(1)" :class="['item', {active: filter == 1}]">
+                                <span>По бренду</span>
+                            </div>
+                            <div @click="changeFilter(2)" :class="['item', {active: filter == 2}]">
+                                <span>По категориям</span>
+                            </div>
+                        </div>
+                        <div class="btn_last flex">
+                            <div class="cat_bt">
+                                <span class="close_cat"><i class="icon-close"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col_content">
+                    <div class="row">
+                        <div class="col-md-3 brand_col">
+                            <div class="category_brand_list custom_scrollbar" v-if="filter == 2">
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link def_link">
+                                    <div class="brand_link_content">
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category_brand_list custom_scrollbar" v-if="filter == 1">
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand1.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand2.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand3.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand1.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand2.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand3.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand3.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="brand_link">
+                                    <div class="brand_link_content">
+                                        <img src="image/menubrand3.png" alt="" />
+                                        <div class="label">
+                                            Качественный инструмент из Германии 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 relative">
+                            <div class="category_bgilist_scroll custom_scrollbar">
+                                <div class="category_btd flex">
+                                    <div class="itm">
+                                        <span>Обработка кварцевого агломерата</span>
+                                    </div>
+                                    <div class="itm active">
+                                        <span>Струбцины и зажимной инструмент</span>
+                                    </div>
+                                </div>
+                                <div class="category_big_list">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc1.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc2.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc3.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc4.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc5.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- Col 5 -->
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc1.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc2.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc3.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc4.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc5.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- Col 5 -->
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc1.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc2.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc3.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc4.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc5.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- Col 5 -->
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc1.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc2.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc3.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc4.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="menu_card" href="#">
+                                                <div class="image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img src="image/menuc5.png" alt="" class="img-fluid" >
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                                <div class="name">
+                                                    Аккумуляторные инструменты
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- MAIN HEADER -->
     <header class="header fixed">
         <div class="header_top">
@@ -121,31 +613,355 @@
                     <div class="cl">
                         <nav>
                             <ul class="flex service_menu">
-                                <li>
+                                <li class="li_expand">
                                     <a href="#">Обработка искусственного камня</a>
 
                                     <!-- Expand Menu -->
                                     <ul class="expand_menu">
-                                        <li><a href="#">Технология и обучение</a></li>
+                                        <li>
+                                            <a href="#">Технология и обучение</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
                                         <li><a href="#">Стартовый комплект инструмента для искусственного камня</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
-                                        <li><a href="#">Технология и обучение</a></li>
+                                        <li><a href="#">Раскрой и пиление</a></li>
+                                        <li><a href="#">Фрезерование</a></li>
+                                        <li><a href="#">Шлифование</a></li>
+                                        <li>
+                                            <a href="#">Полирование</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Пылеудаление</a></li>
+                                        <li><a href="#">Струбцины и зажимной инструмент</a></li>
+                                        <li><a href="#">Термоформинг</a></li>
+                                        <li><a href="#">Мойки, раковины, аксессуары</a></li>
+                                        <li><a href="#">Клей, плунжеры, аппликаторы </a></li>
+                                        <li><a href="#">Организация рабочего места</a></li>
+                                        <li><a href="#">Измерительный и ручной инструмент, СИЗ </a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Обработка кварцевого агломерата</a></li>
-                                <li><a href="#">Обработка керамики Laminam и Dekton</a></li>
-                                <li><a href="#">Деревообработка</a></li>
+                                <li class="li_expand">
+                                    <a href="#">Обработка кварцевого агломерата</a>
+                                    <!-- Expand Menu -->
+                                    <ul class="expand_menu">
+                                        <li>
+                                            <a href="#">Технология и обучение</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Стартовый комплект инструмента для искусственного камня</a></li>
+                                        <li><a href="#">Раскрой и пиление</a></li>
+                                        <li><a href="#">Фрезерование</a></li>
+                                        <li><a href="#">Шлифование</a></li>
+                                        <li>
+                                            <a href="#">Полирование</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Пылеудаление</a></li>
+                                        <li><a href="#">Струбцины и зажимной инструмент</a></li>
+                                        <li><a href="#">Термоформинг</a></li>
+                                        <li><a href="#">Мойки, раковины, аксессуары</a></li>
+                                        <li><a href="#">Клей, плунжеры, аппликаторы </a></li>
+                                        <li><a href="#">Организация рабочего места</a></li>
+                                        <li><a href="#">Измерительный и ручной инструмент, СИЗ </a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_expand">
+                                    <a href="#">Обработка керамики Laminam и Dekton</a>
+
+                                    <!-- Expand Menu -->
+                                    <ul class="expand_menu">
+                                        <li>
+                                            <a href="#">Технология и обучение</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Стартовый комплект инструмента для искусственного камня</a></li>
+                                        <li><a href="#">Раскрой и пиление</a></li>
+                                        <li><a href="#">Фрезерование</a></li>
+                                        <li><a href="#">Шлифование</a></li>
+                                        <li>
+                                            <a href="#">Полирование</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Пылеудаление</a></li>
+                                        <li><a href="#">Струбцины и зажимной инструмент</a></li>
+                                        <li><a href="#">Термоформинг</a></li>
+                                        <li><a href="#">Мойки, раковины, аксессуары</a></li>
+                                        <li><a href="#">Клей, плунжеры, аппликаторы </a></li>
+                                        <li><a href="#">Организация рабочего места</a></li>
+                                        <li><a href="#">Измерительный и ручной инструмент, СИЗ </a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_expand">
+                                    <a href="#">Деревообработка</a>
+
+                                    <!-- Expand Menu -->
+                                    <ul class="expand_menu">
+                                        <li>
+                                            <a href="#">Технология и обучение</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Стартовый комплект инструмента для искусственного камня</a></li>
+                                        <li><a href="#">Раскрой и пиление</a></li>
+                                        <li><a href="#">Фрезерование</a></li>
+                                        <li><a href="#">Шлифование</a></li>
+                                        <li>
+                                            <a href="#">Полирование</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Пылеудаление</a></li>
+                                        <li><a href="#">Струбцины и зажимной инструмент</a></li>
+                                        <li><a href="#">Термоформинг</a></li>
+                                        <li><a href="#">Мойки, раковины, аксессуары</a></li>
+                                        <li><a href="#">Клей, плунжеры, аппликаторы </a></li>
+                                        <li><a href="#">Организация рабочего места</a></li>
+                                        <li><a href="#">Измерительный и ручной инструмент, СИЗ </a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Тест центр и Обучение</a></li>
-                                <li><a href="#">Сервис и Запчасти</a></li>
+                                <li class="li_expand">
+                                    <a href="#">Сервис и Запчасти</a>
+                                    <!-- Expand Menu -->
+                                    <ul class="expand_menu">
+                                        <li>
+                                            <a href="#">Технология и обучение</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Стартовый комплект инструмента для искусственного камня</a></li>
+                                        <li><a href="#">Раскрой и пиление</a></li>
+                                        <li><a href="#">Фрезерование</a></li>
+                                        <li><a href="#">Шлифование</a></li>
+                                        <li>
+                                            <a href="#">Полирование</a>
+
+                                            <!-- Expand menu 2 -->
+                                            <div class="expand_menu_block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <ul class="block_menu">
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                            <li><a href="#">Погружные пилы</a></li>
+                                                        </ul>
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <div class="expand_image">
+                                                            <img src="image/expand.jpg" class="img-fluid" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Пылеудаление</a></li>
+                                        <li><a href="#">Струбцины и зажимной инструмент</a></li>
+                                        <li><a href="#">Термоформинг</a></li>
+                                        <li><a href="#">Мойки, раковины, аксессуары</a></li>
+                                        <li><a href="#">Клей, плунжеры, аппликаторы </a></li>
+                                        <li><a href="#">Организация рабочего места</a></li>
+                                        <li><a href="#">Измерительный и ручной инструмент, СИЗ </a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -2252,10 +3068,15 @@
     
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Add Vue -->
+    <script src="js/vue.min.js"></script>
 
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/lazyload.min.js"></script> <!-- https://github.com/verlok/lazyload -->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Category Menu -->
+    <script src="js/app_menu.js"></script>
 </body>
 </html>

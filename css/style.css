@@ -2,6 +2,7 @@
   --black: #000000;
   --black2: #060B12;
   --black3: #020817;
+  --black4: #020611;
   --mainBg: #fff;
   --bgBlack: #13191D;
   --maintext: #212529;
@@ -38,6 +39,9 @@ body {
   color: var(--maintext);
   text-align: left;
   background-color: var(--bg);
+}
+body.scroll_hide{
+  overflow: hidden;
 }
 .relative{
   position: relative;
@@ -718,7 +722,7 @@ ul:last-child:not([class]){
   margin-bottom: -1px!important;
 }
 .banner_fluid_slide .slide{
-  color: #020611;
+  color: var(--black4);
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -777,6 +781,25 @@ ul:last-child:not([class]){
 }
 .swiper_wrapper.card_slide .banner_fluid_slide .label{
   text-align: left;
+}
+.custom_scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.custom_scrollbar::-webkit-scrollbar-track {
+  border-left: 0.5px solid var(--borderColor);
+  border-right: 0.5px solid var(--borderColor);
+}
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background: var(--gray2);
+  border-radius: 0.5px;
+  background-clip: content-box;
+  border: 3px solid transparent;
+}
+.custom_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 0.5px;
+  background-clip: content-box;
+  border: 3px solid transparent;
 }
 @media (min-width: 770px) and (max-width: 1000px) {
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
