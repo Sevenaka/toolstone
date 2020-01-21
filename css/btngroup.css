@@ -19,3 +19,7 @@
 .btn_group .btn-outline-secondary{
  background: #ffffff;
 }
+.sort_group .btn{
+  padding: .41rem 0.3rem .31rem 0.3rem;
+  width: 42px;
+}

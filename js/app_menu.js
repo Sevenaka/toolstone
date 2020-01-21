@@ -12,6 +12,8 @@ var app = new Vue({
         var body = document.body;
         var headerCatalogBrn = document.querySelector('.header_catalog');
         var categoryMenu = document.querySelector('.category_menu');
+        var categoryFilterBtn = document.querySelectorAll('.category_filter .category_btns .item');
+        var lavalamp = document.querySelector('.category_menu .category_btns .lavalamp');
 
         if(categoryMenu) {
             var categoryList = document.querySelector('.category_brand_list');
@@ -33,6 +35,22 @@ var app = new Vue({
                     categoryMenu.classList.add('open');
                     body.classList.add('scroll_hide');
                     headerCatalogBrn.classList.add('active');
+
+                    if(categoryFilterBtn.length) {
+                        lavalamp.style.width = categoryFilterBtn[0].clientWidth+"px";
+
+                        categoryFilterBtn.forEach(function(item) {
+                            item.addEventListener('click', function() {
+                                lavalamp.style.width = item.clientWidth+"px";
+                                lavalamp.style.left = item.offsetLeft+'px';
+
+                                categoryList.scrollTo({
+                                    top: 0
+                                });
+                            });
+                        });
+                        
+                    }
 
                     var catHeight = categoryMenu.clientHeight - 53;
 

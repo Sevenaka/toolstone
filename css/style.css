@@ -525,6 +525,9 @@ h2.page_title.margin_32{
   border-radius: 50%;
   color: #C0121B;
 }
+.play.border_gray .play_ico{
+  border: 2px solid #CFCFCF;
+}
 .play.cursor{
   cursor: pointer;
 }
@@ -699,6 +702,7 @@ ul:last-child:not([class]){
 .cr_no_mrg .news_card{
   margin-bottom: 0px!important;
 }
+.section_title_btn .news_full_title,
 .section_title_btn .page_title{
   margin-bottom: 0px;
 }
@@ -783,7 +787,7 @@ ul:last-child:not([class]){
   text-align: left;
 }
 .custom_scrollbar::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 .custom_scrollbar::-webkit-scrollbar-track {
   border-left: 0.5px solid var(--borderColor);
@@ -800,6 +804,17 @@ ul:last-child:not([class]){
   border-radius: 0.5px;
   background-clip: content-box;
   border: 3px solid transparent;
+}
+.front_section.border_top{
+  border-top: 0.5px solid var(--borderColor6);
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+.no_pd_top{
+  padding-top: 0px!important;
+}
+.no_mr_top{
+  margin-top: 0px!important;
 }
 @media (min-width: 770px) and (max-width: 1000px) {
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
@@ -873,6 +888,9 @@ ul:last-child:not([class]){
   }
   .pd_top_a4{
     padding-top: 32px!important;
+  }
+  .mr_bt_a4{
+    margin-top: 32px!important;
   }
   h2.page_title{
     font-size: 40px;
@@ -952,6 +970,9 @@ ul:last-child:not([class]){
   }
   .section_title_btn{
     margin-bottom: 20px;
+  }
+  .mr_bt_a4{
+    margin-top: 20px!important;
   }
   .section_title_btn .btn_group:not(:last-child),
   .section_title_btn .sort_list{

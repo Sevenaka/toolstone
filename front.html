@@ -25,6 +25,12 @@
     <link href="css/breadcrumb.css" rel="stylesheet">
     <link href="css/popup_menu.css" rel="stylesheet">
 
+    <!-- Big Slider -->
+    <link href="css/big_slider.css" rel="stylesheet">
+
+    <!-- Info section -->
+    <link href="css/section_info.css" rel="stylesheet">
+
     <!-- Category -->
     <link href="css/category_card.css" rel="stylesheet">
 
@@ -52,6 +58,7 @@
                 <div class="col-12 col_header">
                     <div class="category_filter flex">
                         <div class="category_btns flex">
+                            <div class="lavalamp"></div>
                             <div @click="changeFilter(1)" :class="['item', {active: filter == 1}]">
                                 <span>По бренду</span>
                             </div>
@@ -60,6 +67,14 @@
                             </div>
                         </div>
                         <div class="btn_last flex">
+                            <div class="arr_btn flex">
+                                <span class="prev">
+                                    <i class="icon-ar_back"></i>
+                                </span>
+                                <span class="next">
+                                    <i class="icon-ar_next"></i>
+                                </span>
+                            </div>
                             <div class="cat_bt">
                                 <span class="close_cat"><i class="icon-close"></i></span>
                             </div>
@@ -982,7 +997,8 @@
                 <div class="swiper-container front_big_slider bg_gray swiper_bullets">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide bg_slide">
-                        <div class="slide_color" style="background: #FFCA00;"></div>
+                        <div class="color_label label_red">АКЦИЯ</div>
+                        <div class="slide_color" style="background: #44b02d;"></div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 col-md-6">
@@ -994,17 +1010,14 @@
                                     <div class="slide_text">
                                         <div class="img_list align_center flex">
                                             <div class="itm">
-                                                <img src="image/slidelogo1.png" alt="" />
-                                            </div>
-                                            <div class="itm">
-                                                <img src="image/slidelogo2.png" alt="" />
+                                                <img src="image/big_slide2.png" alt="" />
                                             </div>
                                         </div>
-                                        <h3 class="title">Новинка от Mirka!</h3>
+                                        <h3 class="title">Новые пылесосы CTL Mini, CTL Midi и CTM Midi.</h3>
                                         <p class="text">
-                                            Аккумуляторные шлифовальные машинки компакт-класса AOS-B 130NV и AROS-B 150NV
+                                            Доступны с января 2019г.
                                         </p>
-                                        <a href="#" class="btn btn-outline-success btn_def btn-xl">ПОДРОБНЕЕ</a>
+                                        <a href="#" class="btn btn-outline-light btn_def btn-xl">ПОДРОБНЕЕ</a>
                                     </div>
                                 </div>
                             </div>
@@ -1023,10 +1036,7 @@
                                     <div class="slide_text">
                                         <div class="img_list align_center flex">
                                             <div class="itm">
-                                                <img src="image/slidelogo1.png" alt="" />
-                                            </div>
-                                            <div class="itm">
-                                                <img src="image/slidelogo2.png" alt="" />
+                                                <img src="image/big_slide2.png" alt="" />
                                             </div>
                                         </div>
                                         <h3 class="title">Новинка от Mirka!</h3>
@@ -1323,7 +1333,7 @@
                                 <a href="#" type="button" class="btn btn-outline-secondary">Новинки</a>
                                 <a href="#" type="button" class="btn btn-outline-secondary">Лидеры</a>
                             </div>
-                            <a class="btn btn-outline-success btn_def btn-xl" href="#">
+                            <a class="btn btn-outline-success btn_def" href="#">
                                 Перейти в каталог
                             </a>
                         </div>
@@ -1631,7 +1641,7 @@
                                 <a href="#" type="button" class="btn btn-outline-secondary">Акции</a>
                                 <a href="#" type="button" class="btn btn-outline-secondary">Спецпредложения</a>
                             </div>
-                            <a class="btn btn-outline-success btn_def btn-xl" href="#">
+                            <a class="btn btn-outline-success btn_def" href="#">
                                 Перейти в каталог
                             </a>
                         </div>
@@ -2382,7 +2392,7 @@
                     <div class="col-12">
                         <div class="section_title_btn">
                             <h3 class="page_title">Новости:</h3>
-                            <a class="btn btn-outline-success btn_def btn-xl" href="#">
+                            <a class="btn btn-outline-success btn_def" href="#">
                                 Все новости
                             </a>
                         </div>
@@ -2548,7 +2558,7 @@
                                 <a href="#" type="button" class="btn btn-outline-secondary">Статьи</a>
                                 <a href="#" type="button" class="btn btn-outline-secondary">Видео</a>
                             </div>
-                            <a class="btn btn-outline-success btn_def btn-xl" href="#">
+                            <a class="btn btn-outline-success btn_def" href="#">
                                 Перейти в рраздел
                             </a>
                         </div>

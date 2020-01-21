@@ -21,6 +21,17 @@
     <link href="css/breadcrumb.css" rel="stylesheet">
     <link href="css/popup_menu.css" rel="stylesheet">
 
+    <!-- News -->
+    <link href="css/news.css" rel="stylesheet">
+
+    <!-- Category -->
+    <link href="css/category_card.css" rel="stylesheet">
+
+    <!-- Big Slider -->
+    <link href="css/big_slider.css" rel="stylesheet">
+
+    <!-- Info section -->
+    <link href="css/section_info.css" rel="stylesheet">
 
     <!-- Catalog -->
     <link href="css/catalog.css" rel="stylesheet">
@@ -30,6 +41,9 @@
 
     <!-- FooterCals -->
     <link href="css/footer_cals2.css" rel="stylesheet">
+
+    <!-- Fancybox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -140,235 +154,385 @@
             <h1 class="page_title">Каталог</h1>
         </div>
 
-        <!-- Brand List -->
-        <section class="main_section brand_section pd-bt-6a">
-            <div class="brand_row fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand11.png" />
+        <section class="main_section brand_section">
+            <h2 class="page_title text_center mr_bt_a4">Каталог бренда Mirka</h2>
+
+            <div class="front_slider">
+                <div class="swiper_wrapper">
+                    <div class="swiper-container front_big_slider bg_gray swiper_bullets">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide bg_slide">
+                            <div class="color_label label_blue">НОВИНКА</div>
+                            <div class="slide_color" style="background: #44b02d;"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="center_image">
+                                            <img class="img-fluid" src="image/front_sloide_big.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="slide_text">
+                                            <div class="img_list align_center flex">
+                                                <div class="itm">
+                                                    <img src="image/big_slide2.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <h3 class="title">Новинка от Mirka!</h3>
+                                            <p class="text">
+                                                Аккумуляторные шлифовальные машинки компакт-класса AOS-B 130NV и AROS-B 150NV
+                                            </p>
+                                            <a href="#" class="btn btn-outline-light btn_def btn-xl">ПОДРОБНЕЕ</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                
-                                <div class="desc">
-                                    Качественный инструмент из Германии
+                            </div>
+                          </div>
+                          <div class="swiper-slide bg_slide">
+                            <div class="slide_color" style="background: #b9e26d;"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="center_image">
+                                            <img class="img-fluid" src="image/front_sloide_big.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="slide_text">
+                                            <div class="img_list align_center flex">
+                                                <div class="itm">
+                                                    <img src="image/big_slide2.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <h3 class="title">Новинка от Mirka!</h3>
+                                            <p class="text">
+                                                Аккумуляторные шлифовальные машинки компакт-класса AOS-B 130NV и AROS-B 150NV
+                                            </p>
+                                            <a href="#" class="btn btn-outline-light btn_def btn-xl">ПОДРОБНЕЕ</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand22.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand33.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Шлифовальные системы
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand44.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand55.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand66.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
+    
+                        <!-- Add Arrows -->
+                        <div class="arrow_container">
+                            <div class="container relative">
+                                <div class="swiper-button-next front-next swiper_button"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev front-prev swiper_button"><i class="icon-ar_back"></i></div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination front-pagination"></div>
                 </div>
             </div>
+        </section>
 
-            <div class="brand_row fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand11.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Качественный инструмент из Германии
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand22.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand33.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Шлифовальные системы
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand44.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand55.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand66.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="brand_row fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand11.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Качественный инструмент из Германии
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand22.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand33.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Шлифовальные системы
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand44.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand55.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="brand_card" href="#">
-                                <div class="brand_img">
-                                    <img alt="title" src="image/brand66.png" />
-                                </div>
-                                
-                                <div class="desc">
-                                    Профессиональный инструмент и оснастка
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container pd_top_a4">
+        <!-- Category -->
+        <section class="front_section pd-bt-6a">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <button class="btn btn_fluid_loading btn-outline-secondary btn-block">ПОКАЗАТЬ ВСЕ КАТЕГОРИИ</button>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <div class="color_label label_red">Акция</div>
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product1.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Раскрой и пиление
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product121.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Фрезерование
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Струбцины и зажимной инструмент
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Химия для кварцевого агломерата
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <div class="color_label label_blue">ОБУЧЕНИЕ</div>
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Технология и обучение по работе с кварцем
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <div class="color_label label_blue">ОБУЧЕНИЕ</div>
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <div class="color_label label_red">Акция</div>
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product1.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Раскрой и пиление
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product121.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Фрезерование
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Струбцины и зажимной инструмент
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Химия для кварцевого агломерата
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <div class="color_label label_blue">ОБУЧЕНИЕ</div>
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Обработка кромок
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <a href="#" class="category_card">
+                            <div class="head_img">
+                                <figure>
+                                    <picture class="picture_lazy">
+                                        <img data-src="image/product123.jpg" alt="" class="img-fluid lazy" />
+                                    </picture>
+                                </figure>
+                            </div>
+                            <div class="cat_title">
+                                Технология и обучение по работе с кварцем
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-            
+        </section>
+
+        <section class="front_section section_info_text section_about border_top pd_top_a8 pd-bt-8a">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-6">
+                        <div class="inf_img proiz">
+                            <img src="image/front_about.jpg" class="img-fluid" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                        <div class="inf_body_right">
+                            <h2 class="h2.page_title">О бренде Mirka.</h2>
+                            <p>
+                                ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.<br/>ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). 
+                            </p>
+                            <div class="about_bottom no_mr_top itm_sm_mr flex">
+                                <div class="itm">
+                                    <a href="#" class="btn btn-outline-success btn_def btn-xl">ПОДРОБНЕЕ</a>
+                                </div>
+                                <div class="itm">
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play border_gray play_inline play_sm play_black ">
+                                        <div class="text">Смотреть видео</div>
+                                        <div class="play_ico">
+                                            <i class="icon-play"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="main_section product_section pd_top_a4 bg_gray pd-bt-6a">
@@ -2276,6 +2440,162 @@
             </div>
         </section>
 
+        <section class="front_section border_top other_news main_bot_of">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section_title_btn">
+                            <h2 class="news_full_title">Новости бренда Mirka:</h2>
+                            <a class="btn btn-outline-success btn_def" href="#">
+                                Все новости
+                            </a>
+                        </div>
+
+                        <div class="swiper_wrapper">
+                            <div class="swiper-container news_carousel">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <article class="news_card news_default">
+                                        <a href="#">
+                                            <header class="news_header">
+                                                <div class="color_label label_blue">Инфа</div>
+                                                <figure>
+                                                    <picture class="img-fluid">
+                                                        <img src="image/news3.jpg" alt="Title" class="img-fluid" />
+                                                    </picture>
+                                                </figure>
+                                            </header>
+                                            <section class="news_section">
+                                                <div class="news_date">23 февраля 2019 г.</div>
+                                                <h4 class="news_title">Первый слет блогеров "Столярный Мир" 2018.</h4>
+                                            </section>
+                                        </a>
+                                        <footer class="news_footer">
+                                            <div class="news_category">
+                                                Категория: <a href="#">Искусственный акриловый камень</a>
+                                            </div>
+                                            <div class="news_soc flex">
+                                                <div class="itm no_sel"><a href="#" target="_blank"><i class="icon-facebook"></i></a></div>
+                                                <div class="itm no_sel"><a href="#" target="_blank">...</a></div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <article class="news_card news_default">
+                                        <a href="#">
+                                            <header class="news_header">
+                                                <div class="color_label label_green">ПОЛЕЗНОЕ</div>
+                                                <figure>
+                                                    <picture>
+                                                        <img src="image/news2.jpg" alt="Title" class="img-fluid" />
+                                                    </picture>
+                                                </figure>
+                                            </header>
+                                            <section class="news_section">
+                                                <div class="news_date">23 февраля 2019 г.</div>
+                                                <h4 class="news_title">Novastar™ - новейший высокоэффективный абразив от Mirka на пленочной основе.</h4>
+                                            </section>
+                                        </a>
+                                        <footer class="news_footer">
+                                            <div class="news_category">
+                                                Категория: <a href="#">Интересное от мастеров своего дела</a>
+                                            </div>
+                                            <div class="news_soc flex">
+                                                <div class="itm no_sel"><a href="#" target="_blank"><i class="icon-facebook"></i></a></div>
+                                                <div class="itm no_sel"><a href="#" target="_blank">...</a></div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <article class="news_card news_default">
+                                        <a href="#">
+                                            <header class="news_header">
+                                                <div class="color_label label_red">Акция</div>
+                                                <figure>
+                                                    <picture>
+                                                        <img src="image/news1.jpg" alt="Title" class="img-fluid" />
+                                                    </picture>
+                                                </figure>
+                                            </header>
+                                            <section class="news_section">
+                                                <div class="news_date">23 февраля 2019 г.</div>
+                                                <h4 class="news_title">Участие ToolStone на выставке "Фестиваль Столярного Дела 2016".</h4>
+                                            </section>
+                                        </a>
+                                        <footer class="news_footer">
+                                            <div class="news_category">
+                                                Категория: <a href="#">Новости ToolStone</a>
+                                            </div>
+                                            <div class="news_soc flex">
+                                                <div class="itm no_sel"><a href="#" target="_blank"><i class="icon-facebook"></i></a></div>
+                                                <div class="itm no_sel"><a href="#" target="_blank">...</a></div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <article class="news_card news_default">
+                                        <a href="#">
+                                            <header class="news_header">
+                                                <div class="color_label label_red">Акция</div>
+                                                <figure>
+                                                    <picture>
+                                                        <img src="image/news1.jpg" alt="Title" class="img-fluid" />
+                                                    </picture>
+                                                </figure>
+                                            </header>
+                                            <section class="news_section">
+                                                <div class="news_date">23 февраля 2019 г.</div>
+                                                <h4 class="news_title">Участие ToolStone на выставке "Фестиваль Столярного Дела 2016".</h4>
+                                            </section>
+                                        </a>
+                                        <footer class="news_footer">
+                                            <div class="news_soc flex">
+                                                <div class="itm no_sel"><a href="#" target="_blank"><i class="icon-facebook"></i></a></div>
+                                                <div class="itm no_sel"><a href="#" target="_blank">...</a></div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <article class="news_card news_default">
+                                        <a href="#">
+                                            <header class="news_header">
+                                                <div class="color_label label_red">Акция</div>
+                                                <figure>
+                                                    <picture>
+                                                        <img src="image/news1.jpg" alt="Title" class="img-fluid" />
+                                                    </picture>
+                                                </figure>
+                                            </header>
+                                            <section class="news_section">
+                                                <div class="news_date">23 февраля 2019 г.</div>
+                                                <h4 class="news_title">Участие ToolStone на выставке "Фестиваль Столярного Дела 2016".</h4>
+                                            </section>
+                                        </a>
+                                        <footer class="news_footer">
+                                            <div class="news_soc flex">
+                                                <div class="itm no_sel"><a href="#" target="_blank"><i class="icon-facebook"></i></a></div>
+                                                <div class="itm no_sel"><a href="#" target="_blank">...</a></div>
+                                            </div>
+                                        </footer>
+                                    </article>
+                                  </div>
+                                </div>
+    
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next swiper_button"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev swiper_button"><i class="icon-ar_back"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Banner Slide -->
         <section class="section_slide_banner">
             <div class="container">
@@ -2524,7 +2844,13 @@
     
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="js/lazyload.min.js"></script> <!-- https://github.com/verlok/lazyload -->
+
 	<script src="js/main.js"></script>
 </body>
 </html>
