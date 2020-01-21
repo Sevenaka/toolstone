@@ -10,6 +10,9 @@
 .section_about .about_bottom.itm_sm_mr .itm:not(:last-child){
     margin-right: 10px;
 }
+.section_about .about_bottom.itm_sm_mr .itm.last{
+    margin-left: 20px;
+}
 .section_info_text p{
     font-size: 13px;
     line-height: 28px;

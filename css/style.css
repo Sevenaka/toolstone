@@ -525,6 +525,14 @@ h2.page_title.margin_32{
   border-radius: 50%;
   color: #C0121B;
 }
+.play .shield_ico{
+  background: url('../image/ico/garancy.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 37px;
+  height: 37px;
+}
 .play.border_gray .play_ico{
   border: 2px solid #CFCFCF;
 }
@@ -552,8 +560,14 @@ h2.page_title.margin_32{
   max-width: 87px;
   margin-right: 13px;
 }
+.play.text_lg .text{
+  max-width: 120px;
+}
 .play.play_black .text{
   color: var(--linkBlack);
+}
+.play.play_black2 .text{
+  color: var(--black4);
 }
 .section_black .play .text{
   color: var(--red);
