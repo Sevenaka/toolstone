@@ -1,0 +1,150 @@
+.full_product .product_title{
+    font-size: 40px;
+    line-height: 36px;
+    font-family: "FuturaDemiC";
+    color: var(--black);
+    margin-bottom: 32px;
+    padding-right: 100px;
+}
+.full_product .product_desc_text{
+    font-size: 13px;
+    line-height: 28px;
+    color: var(--gray1);
+}
+.full_product .product_info_bottom{
+    margin-left: -20px;
+}
+.full_product .product_info_bottom .itm:not(:last-child){
+    margin-right: 30px;
+}
+.product_table{
+    color: var(--black);
+}
+.product_table th{
+    font-size: 11px;
+    line-height: 30px;
+    color: var(--black4);
+}
+.product_table th.name{
+    width: 34%;
+}
+.product_table .th_price{
+    width: 10%;
+}
+.product_table .th_count{
+    width: 45%;
+}
+.product_table .num{
+    width: 6%;
+}
+.product_table .price .old{
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--gray5);
+    margin-bottom: 6px;
+}
+.product_table .price .old span{
+    text-decoration-line: line-through;
+}
+.product_table .price .current{
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 16px;
+}
+.product_table td,
+.product_table th{
+    vertical-align: middle;
+}
+.product_table .card_count{
+    margin-right: 8px;
+}
+.product_table .card_count .input_dym{
+    max-width: 69px;
+    min-width: 69px;
+    text-align: center;
+    border: 0.5px solid var(--borderColor2);
+    border-radius: 2px;
+    font-size: 12px;
+    height: 40px;
+    font-family: "FuturaBookC Regular";
+    background-color: var(--mainBg);
+    padding: 0.8rem;
+    width: 100%;
+    color: var(--gray5);
+}
+.product_table .card_count .input_dym strong{
+    font-family: "FuturaDemiC";
+    color: var(--black);
+}
+.product_table .card_count .btn{
+    width: 40px;
+    padding: .375rem .15rem .1rem .15rem;
+}
+.product_table form .btn{
+    font-size: 18px;
+}
+.product_table form  .add_btn{
+    padding: .375rem .75rem .1rem .75rem;
+}
+.table.product_table td, 
+.table.product_table th{
+    padding: 15px 10px;
+}
+.table.product_table thead th{
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: 'Montserrat',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.table.product_table .tabel_center{
+    text-align: center;
+}
+.table.product_table {
+    border-radius: 2px;
+    font-family: 'Montserrat',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.table.product_table .sku{
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--gray1);
+    margin-top: 2px;
+}
+.table.product_table .sku span{
+    padding-left: 5px;
+    color: var(--titleColor);
+}
+.table.product_table strong{
+    font-family: "FuturaDemiC";
+}
+.table.product_table td{
+    position: relative;
+}
+.table_label{
+    position: absolute;
+    background: var(--yellow);
+    color: #ffffff;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 2px;
+    z-index: 1;
+}
+@media (min-width: 994px) {
+    
+}
+@media (max-width: 993px) {
+    
+}
+@media (max-width: 1330px) {
+    .table_wrapper{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .table_wrapper table{
+        min-width: 1010px;
+    }
+}

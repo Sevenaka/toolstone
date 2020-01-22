@@ -10,6 +10,8 @@
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/swiper.min.css" rel="stylesheet">
+
+    <link href="css/fotorama.css" rel="stylesheet">
     
     <!-- Custom Style -->
     <link href="css/fonts.css" rel="stylesheet">
@@ -28,6 +30,7 @@
     <link href="css/product_card.css" rel="stylesheet">
     <link href="css/sort_btn.css" rel="stylesheet">
     <link href="css/full_product.css" rel="stylesheet">
+    <link href="css/product_filter.css" rel="stylesheet">
 
     <!-- FooterCals -->
     <link href="css/footer_cals2.css" rel="stylesheet">
@@ -144,15 +147,36 @@
             <h1 class="page_title">Оснастка, диски и запчасти для торцовочных пил</h1>
         </div>
 
-        <section class="product_section">
+        <!-- Product info -->
+        <section class="product_section full_product pd-bt-6a">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        1
+                    <div class="col-12 col-md-5 col-lg-5 col-xl-3">
+                        <div class="product_image">
+                            <div class="fotorama" 
+                                data-nav="thumbs" 
+                                data-fit="contain" 
+                                data-allowfullscreen="true"
+                                data-width="100%" 
+                                data-ratio="1/1"
+                                data-thumbmargin="23"
+                                data-thumbwidth="61"
+                                data-thumbheight="61">
+                                <a href="image/fullprod1.jpg"></a>
+                                <a href="image/fullprod2.jpg"></a>
+                                <a href="image/fullprod3.jpg"></a>
+                                <a href="image/fullprod1.jpg"></a>
+                                <a href="image/fullprod1.jpg"></a>
+                                <a href="image/fullprod1.jpg"></a>
+                                <a href="image/fullprod1.jpg"></a>
+                                <a href="image/fullprod1.jpg"></a>
+                                <a href="image/fullprod1.jpg"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="product_info">
-                            <h2>Оснастка, диски и запчасти для торцовочных пил</h2>
+                    <div class="col-12 col-md-7 col-lg-7 col-xl-9">
+                        <div class="product_info pd_tp_3a">
+                            <h2 class="product_title">Оснастка, диски и запчасти для торцовочных пил</h2>
                             <div class="product_desc_text mr_bt_4a">
                                 <p>
                                     ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.
@@ -182,6 +206,424 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product params -->
+        <section class="front_section border_top pd-tp-6a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="product_filter">
+                            <form>
+                                <div class="filter_header">
+                                    <div class="label">ПОДБОР ПАРАМЕТРОВ</div>
+                                </div>
+                                <div class="filter_content">
+                                    <div class="filter_collapse">
+                                        <div class="collapse_label no_sel">
+                                            <i class="icon-ar_bottom"></i> <span>Розничная цена</span>
+                                        </div>
+                                        <div class="collapse_content">
+                                            <div class="collapse_wrp">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter_collapse">
+                                        <div class="collapse_label no_sel">
+                                            <i class="icon-ar_bottom"></i> <span>Производитель 23</span>
+                                        </div>
+                                        <div class="collapse_content">
+                                            <div class="collapse_wrp">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc1">
+                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc2">
+                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc3">
+                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc4">
+                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter_collapse">
+                                        <div class="collapse_label no_sel">
+                                            <i class="icon-ar_bottom"></i> <span>Диаметр тарелки (мм) 122</span>
+                                        </div>
+                                        <div class="collapse_content">
+                                            <div class="collapse_wrp">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc1">
+                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc2">
+                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc3">
+                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc4">
+                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter_collapse">
+                                        <div class="collapse_label no_sel">
+                                            <i class="icon-ar_bottom"></i> <span>Крепление тарелки 4</span>
+                                        </div>
+                                        <div class="collapse_content">
+                                            <div class="collapse_wrp">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc1">
+                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc2">
+                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc3">
+                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc4">
+                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter_collapse">
+                                        <div class="collapse_label no_sel">
+                                            <i class="icon-ar_bottom"></i> <span>Расход воздуха (л/мин) 224</span>
+                                        </div>
+                                        <div class="collapse_content">
+                                            <div class="collapse_wrp">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc1">
+                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc2">
+                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc3">
+                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc4">
+                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter_collapse">
+                                        <div class="collapse_label no_sel">
+                                            <i class="icon-ar_bottom"></i> <span>Вес, кг 14</span>
+                                        </div>
+                                        <div class="collapse_content">
+                                            <div class="collapse_wrp">
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc1">
+                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc2">
+                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc3">
+                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox no_sel">
+                                                        <input type="checkbox" class="custom-control-input" id="chc4">
+                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter_bottom text_center">
+                                        <button class="btn btn-outline-success btn_def btn-xl">
+                                            СБРОСИТЬ ФИЛЬТР
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="table_wrapper">
+                            <table class="product_table table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="name" scope="col">Наименование</th>
+                                        <th class="num" scope="col">D, мм</th>
+                                        <th class="num" scope="col">H, мм</th>
+                                        <th class="num" scope="col">L, мм</th>
+                                        <th class="num" scope="col">Z</th>
+                                        <th class="num" scope="col">S, мм</th>
+                                        <th class="th_price" scope="col">Цена</th>
+                                        <th class="th_count" scope="col">Количество</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="name">
+                                                Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                            </a>
+                                            <div class="sku">
+                                                Артикул: 
+                                                <span>​KIT1602ARMWH</span>
+                                            </div>
+                                        </td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td>
+                                            <div class="price">
+                                                <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <form class="flex">
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success add_btn">
+                                                    <i class="icon-cart"></i>
+                                                </button>
+                                            </form>
+                                            <div class="table_label">
+                                                <i class="icon-shield"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="name">
+                                                Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                            </a>
+                                            <div class="sku">
+                                                Артикул: 
+                                                <span>​KIT1602ARMWH</span>
+                                            </div>
+                                        </td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td>
+                                            <div class="price">
+                                                <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <form class="flex">
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success add_btn">
+                                                    <i class="icon-cart"></i>
+                                                </button>
+                                            </form>
+                                            <div class="table_label">
+                                                <i class="icon-shield"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="name">
+                                                Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                            </a>
+                                            <div class="sku">
+                                                Артикул: 
+                                                <span>​KIT1602ARMWH</span>
+                                            </div>
+                                        </td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td>
+                                            <div class="price">
+                                                <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <form class="flex">
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success add_btn">
+                                                    <i class="icon-cart"></i>
+                                                </button>
+                                            </form>
+                                            <div class="table_label">
+                                                <i class="icon-shield"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="name">
+                                                Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                            </a>
+                                            <div class="sku">
+                                                Артикул: 
+                                                <span>​KIT1602ARMWH</span>
+                                            </div>
+                                        </td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td>
+                                            <div class="price">
+                                                <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <form class="flex">
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success add_btn">
+                                                    <i class="icon-cart"></i>
+                                                </button>
+                                            </form>
+                                            <div class="table_label">
+                                                <i class="icon-shield"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="name">
+                                                Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                            </a>
+                                            <div class="sku">
+                                                Артикул: 
+                                                <span>​KIT1602ARMWH</span>
+                                            </div>
+                                        </td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td class="tabel_center"><strong>6</strong></td>
+                                        <td>
+                                            <div class="price">
+                                                <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <form class="flex">
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success add_btn">
+                                                    <i class="icon-cart"></i>
+                                                </button>
+                                            </form>
+                                            <div class="table_label">
+                                                <i class="icon-shield"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -379,12 +821,18 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
+
+    <!-- Fotorama -->
+    <script src="js/fotorama.js"></script>
     
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="js/lazyload.min.js"></script> <!-- https://github.com/verlok/lazyload -->
 
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- product -->
+    <script src="js/app_product.js"></script>
 </body>
 </html>
