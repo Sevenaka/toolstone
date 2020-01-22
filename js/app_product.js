@@ -32,7 +32,7 @@ function inputValidateNum(input) {
     input.value = input.value.replace(/[^\d,]/g, '');
 };
 
-//Collapse filter
+//Collapse filter functions
 var collapse = document.querySelectorAll('.filter_collapse .collapse_label');
 
 if(collapse.length){
