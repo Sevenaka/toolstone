@@ -26,6 +26,9 @@
     <!-- Category -->
     <link href="css/category_card.css" rel="stylesheet">
 
+    <!-- Range Slider -->
+    <link href="css/ion.rangeSlider.min.css" rel="stylesheet">
+
     <!-- Catalog -->
     <link href="css/product_card.css" rel="stylesheet">
     <link href="css/sort_btn.css" rel="stylesheet">
@@ -221,15 +224,40 @@
                             <form>
                                 <div class="filter_header">
                                     <div class="label">ПОДБОР ПАРАМЕТРОВ</div>
+                                    <a href="#" class="reload">
+                                        <i class="icon-loader"></i>
+                                    </a>
                                 </div>
                                 <div class="filter_content">
-                                    <div class="filter_collapse">
+                                    <div class="filter_collapse show">
                                         <div class="collapse_label no_sel">
                                             <i class="icon-ar_bottom"></i> <span>Розничная цена</span>
                                         </div>
-                                        <div class="collapse_content">
+                                        <div class="collapse_content collapse_price">
                                             <div class="collapse_wrp">
-                                                
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="range_input no_sel">
+                                                            <span class="sep">от</span>
+                                                            <input name="r_min" value="261 200" type="text" class="range_min" />
+                                                            <div class="cr">
+                                                                <i class="icon-ruble"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="range_input no_sel">
+                                                            <span class="sep">до</span>
+                                                            <input name="r_max" value="2 400 000" type="text" class="range_max" />
+                                                            <div class="cr">
+                                                                <i class="icon-ruble"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="range_wrapper">
+                                                    <input type="text" class="js-range-slider" name="price_range" value="" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -242,26 +270,26 @@
                                             <div class="collapse_wrp">
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc1">
-                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc11">
+                                                        <label class="custom-control-label" for="chc11">Круглые</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc2">
-                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc22">
+                                                        <label class="custom-control-label" for="chc22">Квадратные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc3">
-                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc33">
+                                                        <label class="custom-control-label" for="chc33">Прямоугольные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc4">
-                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc44">
+                                                        <label class="custom-control-label" for="chc44">Вертикальные</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -276,26 +304,26 @@
                                             <div class="collapse_wrp">
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc1">
-                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc111">
+                                                        <label class="custom-control-label" for="chc111">Круглые</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc2">
-                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc222">
+                                                        <label class="custom-control-label" for="chc222">Квадратные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc3">
-                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc333">
+                                                        <label class="custom-control-label" for="chc333">Прямоугольные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc4">
-                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc444">
+                                                        <label class="custom-control-label" for="chc444">Вертикальные</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -344,26 +372,26 @@
                                             <div class="collapse_wrp">
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc1">
-                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc1111">
+                                                        <label class="custom-control-label" for="chc1111">Круглые</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc2">
-                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc2222">
+                                                        <label class="custom-control-label" for="chc2222">Квадратные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc3">
-                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc3333">
+                                                        <label class="custom-control-label" for="chc3333">Прямоугольные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc4">
-                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc4444">
+                                                        <label class="custom-control-label" for="chc4444">Вертикальные</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -378,26 +406,26 @@
                                             <div class="collapse_wrp">
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc1">
-                                                        <label class="custom-control-label" for="chc1">Круглые</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc11111">
+                                                        <label class="custom-control-label" for="chc11111">Круглые</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc2">
-                                                        <label class="custom-control-label" for="chc2">Квадратные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc22222">
+                                                        <label class="custom-control-label" for="chc22222">Квадратные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc3">
-                                                        <label class="custom-control-label" for="chc3">Прямоугольные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc33333">
+                                                        <label class="custom-control-label" for="chc33333">Прямоугольные</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox no_sel">
-                                                        <input type="checkbox" class="custom-control-input" id="chc4">
-                                                        <label class="custom-control-label" for="chc4">Вертикальные</label>
+                                                        <input type="checkbox" class="custom-control-input" id="chc44444">
+                                                        <label class="custom-control-label" for="chc44444">Вертикальные</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -829,6 +857,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="js/lazyload.min.js"></script> <!-- https://github.com/verlok/lazyload -->
+
+    <!-- Range Slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
 
     <script src="js/main.js"></script>
     

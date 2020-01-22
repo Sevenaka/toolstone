@@ -103,48 +103,51 @@
   .icon-list:before {
     content: "\e910";
   }
-  .icon-location:before {
+  .icon-loader:before {
     content: "\e911";
   }
-  .icon-mail:before {
+  .icon-location:before {
     content: "\e912";
   }
-  .icon-menu:before {
+  .icon-mail:before {
     content: "\e913";
   }
-  .icon-metro:before {
+  .icon-menu:before {
     content: "\e914";
   }
-  .icon-money:before {
+  .icon-metro:before {
     content: "\e915";
   }
-  .icon-operator:before {
+  .icon-money:before {
     content: "\e916";
   }
-  .icon-play:before {
+  .icon-operator:before {
     content: "\e917";
   }
-  .icon-ruble:before {
+  .icon-play:before {
     content: "\e918";
   }
-  .icon-search_white:before {
+  .icon-ruble:before {
     content: "\e919";
   }
-  .icon-shield:before {
+  .icon-search_white:before {
     content: "\e91a";
   }
-  .icon-star:before {
+  .icon-shield:before {
     content: "\e91b";
   }
   .icon-star_stroke:before {
     content: "\e91c";
   }
-  .icon-user:before {
+  .icon-star:before {
     content: "\e91d";
   }
-  .icon-vk:before {
+  .icon-user:before {
     content: "\e91e";
   }
-  .icon-youtube:before {
+  .icon-vk:before {
     content: "\e91f";
+  }
+  .icon-youtube:before {
+    content: "\e920";
   }

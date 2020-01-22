@@ -835,6 +835,55 @@ ul:last-child:not([class]){
 .no_mr_top{
   margin-top: 0px!important;
 }
+.irs-grid-text{
+  display: none;
+}
+.irs--flat .irs-line{
+  height: 3px!important;
+  border-radius: 1px!important;
+  background: #C4C4C4!important;
+}
+.irs--flat .irs-bar{
+  height: 3px!important;
+  background-color: var(--mainGreen)!important;
+}
+.irs--flat .irs-handle{
+  height: 10px!important;
+}
+.irs--flat .irs-handle>i:first-child{
+  background-color: var(--mainGreen)!important;
+}
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
+  background-color: var(--mainGreen)!important;
+  border-radius: 1px!important;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before{
+  border-top-color: var(--mainGreen)!important;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  bottom: initial!important;
+  top: -6px;
+}
+.irs-from, .irs-to, .irs-single{
+  top: 40px!important;
+  z-index: 10;
+}
+.irs-min, .irs-max{
+  visibility: visible!important;
+  border-radius: 1px!important;
+}
+.irs-grid{
+  bottom: 8px!important;
+}
+.irs--flat .irs-grid-pol{
+  background-color: var(--mainGreen)!important;
+}
 @media (min-width: 770px) and (max-width: 1000px) {
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
     margin-left: 30px;

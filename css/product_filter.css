@@ -1,7 +1,6 @@
 .product_filter{
     border-radius: 2px;
     background: var(--mainBg);
-    overflow: hidden;
     position: relative;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
     color: var(--black);
@@ -9,6 +8,7 @@
 .product_filter .filter_header{
     background: var(--black4);
     padding: 17px 23px 13px 23px;
+    position: relative;
 }
 .product_filter .filter_header .label{
     text-transform: uppercase;
@@ -18,8 +18,17 @@
     line-height: 14px;
     letter-spacing: 0.2em;
 }
+.product_filter .filter_header .reload{
+    position: absolute;
+    color: var(--red);
+    font-size: 20px;
+    right: 16px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
 .product_filter .filter_content{
-    padding: 17px 23px 25px 23px;
+    padding: 0px 23px 25px 23px;
 }
 .product_filter .filter_bottom{
     margin-top: 24px;
@@ -72,6 +81,7 @@
     margin-bottom: 0;
     max-height: 1000000px;
     padding-bottom: 21px;
+    width: 100%;
 }
 .product_filter .filter_collapse:not(.show) .collapse_content .collapse_wrp{
     margin-bottom: -2000px;
@@ -88,4 +98,47 @@
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+.product_filter .filter_collapse .range_wrapper{
+    padding-top: 20px;
+}
+.range_input{
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+    background: #ffffff;
+    overflow: hidden;
+    border: 0.5px solid var(--borderColor5);
+    padding-left: 15px;
+    padding-right: 14px;
+    cursor: text;
+}
+.range_input input{
+    width: 100%;
+    border: 0px;
+    height: 40px;
+    padding-top: 5px;
+    outline: none!important;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+    font-family: "FuturaDemiC";
+}
+.range_input .sep{
+    font-size: 12px;
+    font-family: "FuturaBookC Regular";
+    color: #989999;
+    padding-right: 7px;
+}
+.range_input .cr{
+    color: var(--black);
+    padding-left: 7px;
+}
+.range_input .cr i{
+    font-size: 10px;
+}
+.collapse_price{
+    margin: 0px -23px;
+    padding: 0px 23px;
 }
