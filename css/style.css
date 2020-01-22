@@ -884,6 +884,9 @@ ul:last-child:not([class]){
 .irs--flat .irs-grid-pol{
   background-color: var(--mainGreen)!important;
 }
+.col_banner_slide{
+  margin-bottom: 30px;
+}
 @media (min-width: 770px) and (max-width: 1000px) {
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
     margin-left: 30px;
