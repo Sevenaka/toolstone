@@ -235,7 +235,7 @@ ul[class] li{
   user-select: none;   
 }
 .main{
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 64px;
   min-height: 400px;
 }
@@ -383,7 +383,7 @@ a{
 }
 .hide_link:hover,
 a:hover{
-  color: var(--mainGreen);
+  color: var(--red);
 }
 .swiper_button{
   width: 53px;

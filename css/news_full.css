@@ -74,7 +74,7 @@
     font-family: "FuturaMediumC";
 }
 .news_body_empty h4{
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 @media (min-width: 994px) {
     .news_full .news_body ul:not([class]) li{

@@ -5,6 +5,14 @@
     border: 0.5px solid var(--borderColor);
     border-radius: 1px;
 }
+.training_card.default .training_footer .btn{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    padding: .675rem 1.2rem .575rem 1.2rem;
+    font-family: "FuturaDemiC";
+    letter-spacing: 0.1em;
+}
 .training_card > a{
     color: var(--linkBlack);
 }

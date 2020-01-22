@@ -1,12 +1,12 @@
 .fix_popup_menu{
     text-transform: uppercase;
-    font-family: "FuturaDemiC";
+    font-family: 'Ubuntu', sans-serif;
     height: 34px;
+    font-weight: 500;
     background: var(--bgBlack);
     color: #fff;
     z-index: 50;
     letter-spacing: 0.1em;
-    position: fixed;
     right: 0px;
     top: 0px;
     border-radius: 4px 4px 0px 0px;
@@ -29,49 +29,18 @@
     -o-transform: rotate(-90deg) translate(-90%, -50%);
     transform: rotate(-90deg) translate(-90%, -50%);
 }
+.fix_popup_menu:not(.sticky){
+    position: fixed;
+}
+.fix_popup_menu.sticky{
+    position: fixed;
+}
 .fix_popup_menu i{
     width: 33px;
     height: 20px;
     position: absolute;
     right: 16.5px;
 }
-/*.fix_popup_menu{
-    cursor: pointer;
-    position: fixed;
-    width: 34px;
-    height: 169px;
-    border-radius: 4px 0px 0px 4px;
-    background: var(--bgBlack);
-    right: 0;
-    top: 25%;
-    color: #fff;
-    overflow: hidden;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: "FuturaDemiC";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px;
-    padding-top: 35px;
-    z-index: 50;
-    letter-spacing: 0.1em;
-  }
-  .fix_popup_menu span{
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    display: block;
-  }
-  .fix_popup_menu i{
-    width: 42px;
-    height: 30px;
-    position: absolute;
-    top: 20px;
-    left: -3px;
-  }*/
 .popup_dummy{
     z-index: 60;
     position: fixed;

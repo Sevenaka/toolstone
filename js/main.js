@@ -303,6 +303,22 @@ if(popupBtn) {
             classToggle(this, 'hide');
         }
     });
+
+    window.onscroll = function() {popupSticky()};
+
+    var sticky = popupBtn.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+        popupBtn.classList.add("sticky");
+    }
+
+    function popupSticky() {
+        if (window.pageYOffset > sticky) {
+            popupBtn.classList.add("sticky");
+        } else {
+            popupBtn.classList.remove("sticky");
+        }
+    }
 }
 
 /* BACK TO TOP */
