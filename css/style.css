@@ -15,7 +15,8 @@
   --gray4: #EEEEEE;
   --gray5: #9299B1;
   --gray6: #455667;
-  --footerCals: #f3f5ff;
+  --footerCals: #f9faff;
+  --footerCals2: #ebedf7;
   --red: #E0121D;
   --titleColor: #010109;
   --borderColor: #E3E3E3;
@@ -948,7 +949,7 @@ ul:last-child:not([class]){
   }
 }
 .fotorama__nav-wrap{
-  margin-top: 20px;
+  margin-top: -10px;
 }
 .fotorama__thumb-border,
 .fotorama__thumb{
@@ -956,6 +957,9 @@ ul:last-child:not([class]){
 }
 .fotorama__thumb-border{
   border-color: var(--red);
+}
+.fotorama__stage__shaft{
+  z-index: 30;
 }
 @media (min-width: 994px) {
   .pd-bt-8a{
@@ -1025,6 +1029,12 @@ ul:last-child:not([class]){
   .pd_tp_4a{
     padding-top: 32px!important;
   }
+  .pd_bt_4a{
+    padding-bottom: 32px!important;
+  }
+  .pd_bt_1a{
+    padding-bottom: 8px!important;
+  }
   h1.page_title{
     font-size: 34px;
     line-height: 39px;
@@ -1049,8 +1059,17 @@ ul:last-child:not([class]){
     padding-top: 32px;
     padding-bottom: 48px;
   }
+  .pd_bt_2a{
+    padding-bottom: 16px!important;
+  }
 }
 @media (max-width: 993px) {
+  .pd_bt_1a{
+    padding-bottom: 8px!important;
+  }
+  .pd_bt_2a{
+    padding-bottom: 16px!important;
+  }
   .front_section.bg_gray{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1060,6 +1079,9 @@ ul:last-child:not([class]){
   }
   .mr_bt_a4{
     margin-top: 20px!important;
+  }
+  .pd_bt_4a{
+    padding-bottom: 20px!important;
   }
   .section_title_btn .btn_group:not(:last-child),
   .section_title_btn .sort_list{
