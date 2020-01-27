@@ -169,12 +169,12 @@ ul[class] li{
 }
 .btn-outline-secondary{
   color: var(--linkBlack);
-  border-color: var(--borderColor3);
+  border-color: #ECE9E9
 }
 .btn-outline-secondary:hover{
   color: var(--linkBlack);
-  background-color: var(--borderColor3);
-  border-color: var(--borderColor3);
+  background-color: #ECE9E9;
+  border-color: #ECE9E9;
 }
 .btn{
   border-radius: 2px;
@@ -947,6 +947,9 @@ ul:last-child:not([class]){
     margin: 0px auto;
     display: block;
   }
+}
+.text_red{
+  color: var(--textRed);
 }
 .fotorama__nav-wrap{
   margin-top: -10px;
