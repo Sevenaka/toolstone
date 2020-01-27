@@ -38,6 +38,9 @@
     <!-- FooterCals -->
     <link href="css/footer_cals2.css" rel="stylesheet">
 
+    <!-- Popper Js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+
     <!-- Fancybox -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
 </head>
@@ -151,10 +154,10 @@
         </div>
 
         <!-- Product info -->
-        <section class="product_section full_product pd-bt-6a">
+        <section class="product_section full_product pd-bt-8a">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-5 col-lg-5 col-xl-3">
+                    <div class="col-12 col-md-5 col-lg-6 col-xl-6">
                         <div class="product_image">
                             <div class="fotorama" 
                                 data-nav="thumbs" 
@@ -177,13 +180,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-7 col-lg-7 col-xl-9">
+                    <div class="col-12 col-md-7 col-lg-6 col-xl-6">
                         <div class="product_info pd_tp_3a">
                             <h2 class="product_title">Оснастка, диски и запчасти для торцовочных пил</h2>
                             <div class="product_desc_text mr_bt_4a">
-                                <p>
-                                    ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.
-                                </p>
                                 <p>
                                     ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.
                                 </p>
@@ -216,7 +216,7 @@
         </section>
 
         <!-- Product params -->
-        <section class="front_section border_top">
+        <section class="front_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
@@ -445,19 +445,19 @@
                             <table class="product_table table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="name" scope="col">Наименование</th>
-                                        <th class="num" scope="col">D, мм</th>
-                                        <th class="num" scope="col">H, мм</th>
-                                        <th class="num" scope="col">L, мм</th>
-                                        <th class="num" scope="col">Z</th>
-                                        <th class="num" scope="col">S, мм</th>
-                                        <th class="th_price" scope="col">Цена</th>
-                                        <th class="th_count" scope="col">Количество</th>
+                                        <th class="name" scope="col">Наименование:</th>
+                                        <th class="num" scope="col">D, мм:</th>
+                                        <th class="num" scope="col">H, мм:</th>
+                                        <th class="num" scope="col">L, мм:</th>
+                                        <th class="num" scope="col">Z:</th>
+                                        <th class="num" scope="col">S, мм:</th>
+                                        <th class="th_price" scope="col">Цена:</th>
+                                        <th class="th_count" scope="col">Количество:</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
+                                        <td data-template="one" class="tippy_table">
                                             <a href="#" class="name">
                                                 Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
                                             </a>
@@ -489,14 +489,14 @@
                                                     <i class="icon-cart"></i>
                                                 </button>
                                             </form>
-                                            <div class="table_label">
-                                                <i class="icon-shield"></i>
+                                            <div class="table_label label_yellow">
+                                                <span>Акция</span>
                                             </div>
                                         </td>
                                     </tr>
                                     
                                     <tr>
-                                        <td>
+                                        <td data-template="two" class="tippy_table">
                                             <a href="#" class="name">
                                                 Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
                                             </a>
@@ -528,14 +528,14 @@
                                                     <i class="icon-cart"></i>
                                                 </button>
                                             </form>
-                                            <div class="table_label">
-                                                <i class="icon-shield"></i>
+                                            <div class="table_label label_red">
+                                                <span>Акция</span>
                                             </div>
                                         </td>
                                     </tr>
     
                                     <tr>
-                                        <td>
+                                        <td data-template="three" class="tippy_table">
                                             <a href="#" class="name">
                                                 Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
                                             </a>
@@ -567,14 +567,14 @@
                                                     <i class="icon-cart"></i>
                                                 </button>
                                             </form>
-                                            <div class="table_label">
-                                                <i class="icon-shield"></i>
+                                            <div class="table_label label_blue">
+                                                <span>Новинка</span>
                                             </div>
                                         </td>
                                     </tr>
     
-                                    <tr>
-                                        <td>
+                                    <tr >
+                                        <td data-template="one" class="tippy_table">
                                             <a href="#" class="name">
                                                 Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
                                             </a>
@@ -606,14 +606,14 @@
                                                     <i class="icon-cart"></i>
                                                 </button>
                                             </form>
-                                            <div class="table_label">
-                                                <i class="icon-shield"></i>
+                                            <div class="table_label label_purple">
+                                                <span>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</span>
                                             </div>
                                         </td>
-                                    </tr>
+                                    </tr >
     
                                     <tr>
-                                        <td>
+                                        <td data-template="three" class="tippy_table">
                                             <a href="#" class="name">
                                                 Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
                                             </a>
@@ -646,13 +646,13 @@
                                                 </button>
                                             </form>
                                             <div class="table_label">
-                                                <i class="icon-shield"></i>
+                                                
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
+                                        <td data-template="three" class="tippy_table">
                                             <a href="#" class="name">
                                                 Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
                                             </a>
@@ -685,12 +685,69 @@
                                                 </button>
                                             </form>
                                             <div class="table_label">
-                                                <i class="icon-shield"></i>
+                                               
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <div class="row row_m_b">
+                                <div class="col-12">
+                                    <button class="btn btn_fluid_loading btn-outline-secondary btn-block">ПОКАЗАТЬ ЕЩЁ ТОВАРЫ</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item back"><a class="page-link" href="#"><i class="icon-ar_back2"></i> Назад</a></li>
+                                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item next"><a class="page-link" href="#">Вперед <i class="icon-ar_next2"></i></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <!-- Tippy Template -->
+                            <div style="display: none;">
+                                <div id="one">
+                                    <div class="product_tippy">
+                                        <div class="label label_green">
+                                            ТЕСТ-ЦЕНТР
+                                        </div>
+                                        <div class="logo">
+                                            <img src="image/tippylogo.png" alt="" />
+                                        </div>
+                                        <img src="image/tippy.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="two">
+                                    <div class="product_tippy">
+                                        <div class="label label_blue">
+                                            ТЕСТ-ЦЕНТР
+                                        </div>
+                                        <div class="logo">
+                                            <img src="image/tippylogo.png" alt="" />
+                                        </div>
+                                        <img src="image/tippy.png" alt="" />
+                                    </div>
+                                </div>
+                                <div id="three">
+                                    <div class="product_tippy">
+                                        <div class="label label_yellow">
+                                            ТЕСТ-ЦЕНТР
+                                        </div>
+                                        <div class="logo">
+                                            <img src="image/tippylogo.png" alt="" />
+                                        </div>
+                                        <img src="image/tippy.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Product list -->
@@ -1824,6 +1881,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="js/lazyload.min.js"></script> <!-- https://github.com/verlok/lazyload -->
+
+    <!-- Popper Js -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
 
     <!-- Range Slider -->
     <script src="js/ion.rangeSlider.min.js"></script>

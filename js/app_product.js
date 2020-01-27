@@ -103,3 +103,13 @@ inputMax.addEventListener('input', function() {
         to: val
     });
 });
+
+tippy('.tippy_table', {
+    placement: 'left',
+    arrow: false,
+    content(reference) {
+        const id = reference.getAttribute('data-template');
+        const template = document.getElementById(id);
+        return template.innerHTML;
+    }
+});

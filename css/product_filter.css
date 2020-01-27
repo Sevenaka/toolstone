@@ -1,22 +1,23 @@
 .product_filter{
-    border-radius: 2px;
     background: var(--mainBg);
     position: relative;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
     color: var(--black);
 }
 .product_filter .filter_header{
-    background: var(--black4);
+    background: #fafafa;
     padding: 17px 23px 13px 23px;
     position: relative;
+    border: 1px solid #dee0e8;
+    border-radius: 2px;
+    margin-bottom: 2px;
 }
 .product_filter .filter_header .label{
     text-transform: uppercase;
-    color: #ffffff;
-    font-family: 'Ubuntu', sans-serif;
+    color: var(--black4);
+    font-family: "FuturaDemiC";
     font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 0.2em;
+    line-height: 16px;
+    letter-spacing: 0.1em;
 }
 .product_filter .filter_header .reload{
     position: absolute;
@@ -29,6 +30,8 @@
 }
 .product_filter .filter_content{
     padding: 0px 23px 25px 23px;
+    border: 0.5px solid #cfcfcf;
+    border-radius: 2px;
 }
 .product_filter .filter_bottom{
     margin-top: 24px;
