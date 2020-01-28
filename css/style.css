@@ -540,7 +540,7 @@ h2.page_title.margin_32{
   height: 37px;
 }
 .play.border_gray .play_ico{
-  border: 2px solid #CFCFCF;
+  border: 2px solid var(--gray2);
 }
 .play.cursor{
   cursor: pointer;
