@@ -226,79 +226,6 @@
     overflow: hidden;
     padding: 20px;
 }
-.product_card_f .product_image .gallery-top .image_wrap{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-bottom: 86%;
-}
-.product_card_f .product_image .gallery-top .image_wrap figure{
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 2px;
-}
-.product_card_f .product_image .gallery-top .image_wrap figure picture{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.product_card_f .product_image .gallery-top .image_wrap figure picture img{
-    object-fit: cover;
-    vertical-align: middle;
-    -o-object-fit: cover;
-}
-.product_card_f .product_image .gallery-thumbs .image_wrap{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-bottom: 100%;
-    background: var(--borderColor3);
-    border-radius: 2px;
-}
-.product_card_f .product_image .gallery-thumbs .image_wrap figure{
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 2px;
-}
-.product_card_f .product_image .gallery-thumbs .image_wrap figure picture{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.product_card_f .product_image .gallery-thumbs .image_wrap figure picture img{
-    object-fit: cover;
-    vertical-align: middle;
-    -o-object-fit: cover;
-}
-.product_card_f .gallery-top{
-    width: 100%;
-}
-.product_card_f .gallery-thumbs{
-    box-sizing: border-box;
-    margin-top: 30px;
-}
-.product_card_f .gallery-thumbs .swiper-slide {
-    width: 51px;
-    height: 51px;
-    opacity: 0.4;
-}
-.product_card_f .gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
-}
 .product_card_f .col-product-text,
 .product_card_f .col-sku,
 .product_card_f .col-image{
@@ -331,25 +258,4 @@
 }
 .product_card_f .col-sku{
     padding-left: 30px;
-}
-.product_card_f .swiper_bottom{
-    position: relative;
-}
-.product_card_f .gallery_arr{
-    position: absolute;
-    z-index: 5;
-    cursor: pointer;
-    font-size: 18px;
-    color: var(--black);
-    top: 50%;
-    margin-top: -13px;
-}
-.product_card_f .gallery_arr.next{
-    right: -20px;
-}
-.product_card_f .gallery_arr.prev{
-    left: -20px;
-}
-.product_card_f .gallery_arr.swiper-button-disabled{
-    opacity: 0;
 }

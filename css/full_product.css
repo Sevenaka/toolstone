@@ -1,10 +1,9 @@
 .full_product .product_title{
     font-size: 40px;
-    line-height: 36px;
+    line-height: 32px;
     font-family: "FuturaDemiC";
     color: var(--black);
     margin-bottom: 32px;
-    padding-right: 100px;
 }
 .full_product .product_desc_text{
     font-size: 13px;
@@ -17,52 +16,9 @@
 .full_product .product_info_bottom .itm:not(:last-child){
     margin-right: 30px;
 }
-
-.product_image .fotorama__stage{
-    border-radius: 2px;
-    border: 1px solid var(--gray2);
-}
-.fotorama__thumb{
-    border: 1px solid var(--gray2);
-}
-.fotorama__nav:before, .fotorama__nav:after{
-    display: none!important;
-}
-.product_image .fotorama__stage .fotorama__img{
-    max-width: 100%!important;
-    height: auto!important;
-    width: auto!important;
-    position: relative!important;
-    top: auto!important;
-    left: auto!important;
-}
-.product_image .fotorama__wrap--slide .fotorama__stage__frame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.full_product .product_image{
-    position: relative;
-}
-.full_product .product_image::before{
-    content: "";
-    background: url('../image/imagebg4.png');
-    background-position: center!important;
-    background-size: contain!important;
-    background-repeat: no-repeat!important;
-    width: 315px;
-    height: 231px;
-    position: absolute;
-    left: -30px;
-    top: -50px;
-}
-.full_product .product_image .fotorama{
-    position: relative;
-    z-index: 10;
-}
 @media (min-width: 994px) {
-    .product_info{
-        padding-left: 55px;
+    .full_product .gallery_wrap {
+        padding-right: 22px;
     }
     .full_product .product_image{
         padding-left: 105px;
@@ -81,9 +37,6 @@
     }
 }
 @media (min-width: 999px) and (max-width: 1380px) {
-    .product_info{
-        padding-left: 0px;
-    }
     .full_product .product_image{
         padding-left: 0px;
     }

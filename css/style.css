@@ -904,7 +904,7 @@ ul:last-child:not([class]){
   display: block!important;
   margin: 0px auto!important;
   background: rgba(239, 239, 239, 0.4);
-  border: 0.5px solid #CFCFCF;
+  border: 0.5px solid var(--gray2);
   padding: 12px 23px;
   border-radius: 2px;
 }
@@ -913,7 +913,7 @@ ul:last-child:not([class]){
   height: 61px!important;
   border-radius: 2px;
   overflow: initial!important;
-  border: 0.5px solid #CFCFCF;
+  border: 0.5px solid var(--gray2);
   margin-right: 12px!important;
   margin-left: 12px!important;
 }
