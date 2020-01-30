@@ -144,7 +144,7 @@
     font-size: 28px;
     position: absolute;
     top: -2px;
-    left: -1.50px;
+    left: -2px;
   }
   .user_buttom:hover span i{
     color: var(--mainGreen);

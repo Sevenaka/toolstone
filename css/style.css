@@ -907,7 +907,7 @@ ul:last-child:not([class]){
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
     min-height: 140px;

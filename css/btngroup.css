@@ -26,3 +26,6 @@
   padding: .41rem 0.3rem .31rem 0.3rem;
   width: 42px;
 }
+.btn_group.sort_group .btn{
+  margin-right: 0px;
+}
