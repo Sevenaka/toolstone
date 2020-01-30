@@ -4,6 +4,7 @@ if(gallerySlider.length) {
   gallerySlider.forEach(function(elem, index){
     var slides = 4;
     var thumbMargin = 27;
+    var unicIdSlider = null;
 
     if(elem.getAttribute("data-thumb-slides")) {
       slides = Number(elem.getAttribute("data-thumb-slides"));
@@ -11,6 +12,10 @@ if(gallerySlider.length) {
 
     if(elem.getAttribute("data-thumb-margin")) {
       thumbMargin = Number(elem.getAttribute("data-thumb-margin"));
+    }
+    
+    if(elem.getAttribute("data-swiper-id")) {
+      unicIdSlider = elem.getAttribute("data-swiper-id");
     }
 
     var top = elem.querySelector('.gallery-top');
@@ -27,8 +32,8 @@ if(gallerySlider.length) {
         spaceBetween: 0,
         lazy: true,
         navigation: {
-          nextEl: '.gallery_arr-next-'+index,
-          prevEl: '.gallery_arr-prev-'+index,
+          nextEl: '.gallery_arr-next-'+unicIdSlider,
+          prevEl: '.gallery_arr-prev-'+unicIdSlider,
         },
         thumbs: {
           swiper: galleryThumbs

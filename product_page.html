@@ -4,14 +4,12 @@
 	<meta charset="utf-8" />
     <title></title>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/swiper.min.css" rel="stylesheet">
-
-    <link href="css/fotorama.css" rel="stylesheet">
     
     <!-- Custom Style -->
     <link href="css/fonts.css" rel="stylesheet">
@@ -36,14 +34,15 @@
     <link href="css/product_filter.css" rel="stylesheet">
     <link href="css/product_table.css" rel="stylesheet">
 
+    <!-- Swiper Gallery -->
+    <link href="css/gallery_swiper.css" rel="stylesheet">
+
     <!-- FooterCals -->
     <link href="css/footer_cals2.css" rel="stylesheet">
 
-    <!-- Popper Js -->
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
-
     <!-- Fancybox -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -156,29 +155,196 @@
 
         <!-- Product info -->
         <section class="product_section full_product pd-bt-8a">
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-6 col-xl-6">
-                        <div class="product_image">
-                            <div class="fotorama" 
-                                data-nav="thumbs" 
-                                data-fit="contain" 
-                                data-allowfullscreen="true"
-                                data-width="100%" 
-                                data-ratio="3/2"
-                                data-thumbmargin="23"
-                                data-thumbwidth="61"
-                                data-thumbheight="61">
-                                <a href="image/fotoramaprod1.png"></a>
-                                <a href="image/fullprod2.jpg"></a>
-                                <a href="image/fullprod3.jpg"></a>
-                                <a href="image/fullprod1.jpg"></a>
-                                <a href="image/fullprod1.jpg"></a>
-                                <a href="image/fullprod1.jpg"></a>
-                                <a href="image/fullprod1.jpg"></a>
-                                <a href="image/fullprod1.jpg"></a>
-                                <a href="image/fullprod1.jpg"></a>
+                        <!--
+                            data-swiper-id - Вставляем уникальный ID Элемента для цикла в js
+                            data-thumb-slides - Количество видимых слайдов thumb
+                            data-thumb-margin - margin между слайдами thumb
+                        -->
+                        <div class="gallery_wrap gallery_slider" data-thumb-slides="6" data-thumb-margin="16" data-swiper-id="big_gallery">
+                            <!-- Image Gallery -->
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/fotoramaprod1.png" data-fancybox="big_gallery" data-thumb="image/fotoramaprod1.png">
+                                                    <img data-src="image/fotoramaprod1.png" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/fullprod2.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod2.jpg">
+                                                    <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/fullprod3.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod3.jpg">
+                                                    <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/front_sloide_big.png" data-fancybox="big_gallery" data-thumb="image/front_sloide_big.png">
+                                                    <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/menuc2.png" data-fancybox="big_gallery" data-thumb="image/menuc2.png">
+                                                    <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/menuc1.png" data-fancybox="big_gallery" data-thumb="image/menuc1.png">
+                                                    <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/fullprod2.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod2.jpg">
+                                                    <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image_wrap">
+                                        <figure>
+                                            <picture>
+                                                <a href="image/menuc1.png" data-fancybox="big_gallery" data-thumb="image/menuc1.png">
+                                                    <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                </a>
+                                            </picture>
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="swiper_bottom">
+
+                            <!-- Add Arrows -->
+                            <div class="gallery_arr next gallery_arr-next-big_gallery">
+                                <i class="icon-ar_next2"></i>
+                            </div>
+                            <div class="gallery_arr prev gallery_arr-prev-big_gallery">
+                                <i class="icon-ar_back2"></i>
+                            </div>
+
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/fotoramaprod1.png" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-7 col-lg-6 col-xl-6">
@@ -186,7 +352,7 @@
                             <h2 class="product_title">Оснастка, диски и запчасти для торцовочных пил</h2>
                             <div class="product_desc_text mr_bt_4a">
                                 <p>
-                                    ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.<br/> ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). 
+                                    ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.<br/> ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.).
                                 </p>
                             </div>
                             <div class="product_info_bottom no_mr_top itm_sm_mr flex">
@@ -1299,9 +1465,6 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
-
-    <!-- Fotorama -->
-    <script src="js/fotorama.js"></script>
     
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -1316,6 +1479,9 @@
     <script src="js/ion.rangeSlider.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <!-- Swiper Gallery -->
+    <script src="js/gallery_swiper.js"></script>
     
     <!-- product -->
     <script src="js/app_product.js"></script>

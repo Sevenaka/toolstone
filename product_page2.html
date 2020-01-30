@@ -10,8 +10,6 @@
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/swiper.min.css" rel="stylesheet">
-
-    <link href="css/fotorama.css" rel="stylesheet">
     
     <!-- Custom Style -->
     <link href="css/fonts.css" rel="stylesheet">
@@ -158,6 +156,11 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-6 col-xl-6">
+                        <!--
+                            data-swiper-id - Вставляем уникальный ID Элемента для цикла в js
+                            data-thumb-slides - Количество видимых слайдов thumb
+                            data-thumb-margin - margin между слайдами thumb
+                        -->
                         <div class="gallery_wrap gallery_slider" data-thumb-slides="6" data-thumb-margin="16" data-swiper-id="big_gallery">
                             <!-- Image Gallery -->
                         <div class="swiper-container gallery-top">
@@ -166,7 +169,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/fotoramaprod1.png" data-fancybox="fullimg" data-thumb="image/fotoramaprod1.png">
+                                                <a href="image/fotoramaprod1.png" data-fancybox="big_gallery" data-thumb="image/fotoramaprod1.png">
                                                     <img data-src="image/fotoramaprod1.png" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -178,7 +181,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/fullprod2.jpg" data-fancybox="fullimg" data-thumb="image/fullprod2.jpg">
+                                                <a href="image/fullprod2.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod2.jpg">
                                                     <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -189,7 +192,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/fullprod3.jpg" data-fancybox="fullimg" data-thumb="image/fullprod3.jpg">
+                                                <a href="image/fullprod3.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod3.jpg">
                                                     <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -200,7 +203,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/front_sloide_big.png" data-fancybox="fullimg" data-thumb="image/front_sloide_big.png">
+                                                <a href="image/front_sloide_big.png" data-fancybox="big_gallery" data-thumb="image/front_sloide_big.png">
                                                     <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -211,7 +214,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/menuc2.png" data-fancybox="fullimg" data-thumb="image/menuc2.png">
+                                                <a href="image/menuc2.png" data-fancybox="big_gallery" data-thumb="image/menuc2.png">
                                                     <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -222,7 +225,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/menuc1.png" data-fancybox="fullimg" data-thumb="image/menuc1.png">
+                                                <a href="image/menuc1.png" data-fancybox="big_gallery" data-thumb="image/menuc1.png">
                                                     <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -233,7 +236,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/fullprod2.jpg" data-fancybox="fullimg" data-thumb="image/fullprod2.jpg">
+                                                <a href="image/fullprod2.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod2.jpg">
                                                     <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -244,7 +247,7 @@
                                     <div class="image_wrap">
                                         <figure>
                                             <picture>
-                                                <a href="image/menuc1.png" data-fancybox="fullimg" data-thumb="image/menuc1.png">
+                                                <a href="image/menuc1.png" data-fancybox="big_gallery" data-thumb="image/menuc1.png">
                                                     <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
                                                 </a>
                                             </picture>
@@ -256,10 +259,10 @@
                         <div class="swiper_bottom">
 
                             <!-- Add Arrows -->
-                            <div class="gallery_arr next gallery_arr-next-0">
+                            <div class="gallery_arr next gallery_arr-next-big_gallery">
                                 <i class="icon-ar_next2"></i>
                             </div>
-                            <div class="gallery_arr prev gallery_arr-prev-0">
+                            <div class="gallery_arr prev gallery_arr-prev-big_gallery">
                                 <i class="icon-ar_back2"></i>
                             </div>
 
@@ -639,6 +642,9 @@
                         </div>
 
                         <div class="product_list mr_bt_4a">
+                            <!--
+                                data-swiper-id - Вставляем уникальный ID Элемента для цикла в js
+                            -->
                             <div class="product_card_f gallery_slider" data-swiper-id="gallery-1">
                                 <div class="row">
                                     <div class="col-image">
@@ -651,7 +657,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/product_f.png" data-fancybox="id-0" data-thumb="image/product_f.png">
+                                                                    <a href="image/product_f.png" data-fancybox="gallery-1" data-thumb="image/product_f.png">
                                                                         <img data-src="image/product_f.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -663,7 +669,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod2.jpg" data-fancybox="id-0" data-thumb="image/fullprod2.jpg">
+                                                                    <a href="image/fullprod2.jpg" data-fancybox="gallery-1" data-thumb="image/fullprod2.jpg">
                                                                         <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -674,7 +680,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod3.jpg" data-fancybox="id-0" data-thumb="image/fullprod3.jpg">
+                                                                    <a href="image/fullprod3.jpg" data-fancybox="gallery-1" data-thumb="image/fullprod3.jpg">
                                                                         <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -685,7 +691,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/front_sloide_big.png" data-fancybox="id-0" data-thumb="image/front_sloide_big.png">
+                                                                    <a href="image/front_sloide_big.png" data-fancybox="gallery-1" data-thumb="image/front_sloide_big.png">
                                                                         <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -696,7 +702,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc2.png" data-fancybox="id-0" data-thumb="image/menuc2.png">
+                                                                    <a href="image/menuc2.png" data-fancybox="gallery-1" data-thumb="image/menuc2.png">
                                                                         <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -707,7 +713,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc1.png" data-fancybox="id-0" data-thumb="image/menuc1.png">
+                                                                    <a href="image/menuc1.png" data-fancybox="gallery-1" data-thumb="image/menuc1.png">
                                                                         <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -719,10 +725,10 @@
                                             <div class="swiper_bottom">
 
                                                 <!-- Add Arrows -->
-                                                <div class="gallery_arr next gallery_arr-next-0">
+                                                <div class="gallery_arr next gallery_arr-next-gallery-1">
                                                     <i class="icon-ar_next2"></i>
                                                 </div>
-                                                <div class="gallery_arr prev gallery_arr-prev-0">
+                                                <div class="gallery_arr prev gallery_arr-prev-gallery-1">
                                                     <i class="icon-ar_back2"></i>
                                                 </div>
 
@@ -903,7 +909,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/product_f.png" data-fancybox="id-1" data-thumb="image/product_f.png">
+                                                                    <a href="image/product_f.png" data-fancybox="gallery-2" data-thumb="image/product_f.png">
                                                                         <img data-src="image/product_f.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -915,7 +921,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod2.jpg" data-fancybox="id-1" data-thumb="image/fullprod2.jpg">
+                                                                    <a href="image/fullprod2.jpg" data-fancybox="gallery-2" data-thumb="image/fullprod2.jpg">
                                                                         <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -926,7 +932,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod3.jpg" data-fancybox="id-1" data-thumb="image/fullprod3.jpg">
+                                                                    <a href="image/fullprod3.jpg" data-fancybox="gallery-2" data-thumb="image/fullprod3.jpg">
                                                                         <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -937,7 +943,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/front_sloide_big.png" data-fancybox="id-1" data-thumb="image/front_sloide_big.png">
+                                                                    <a href="image/front_sloide_big.png" data-fancybox="gallery-2" data-thumb="image/front_sloide_big.png">
                                                                         <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -948,7 +954,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc2.png" data-fancybox="id-1" data-thumb="image/menuc2.png">
+                                                                    <a href="image/menuc2.png" data-fancybox="gallery-2" data-thumb="image/menuc2.png">
                                                                         <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -959,7 +965,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc1.png" data-fancybox="id-1" data-thumb="image/menuc1.png">
+                                                                    <a href="image/menuc1.png" data-fancybox="gallery-2" data-thumb="image/menuc1.png">
                                                                         <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -971,10 +977,10 @@
                                             <div class="swiper_bottom">
 
                                                 <!-- Add Arrows -->
-                                                <div class="gallery_arr next gallery_arr-next-1">
+                                                <div class="gallery_arr next gallery_arr-next-gallery-2">
                                                     <i class="icon-ar_next2"></i>
                                                 </div>
-                                                <div class="gallery_arr prev gallery_arr-prev-1">
+                                                <div class="gallery_arr prev gallery_arr-prev-gallery-2">
                                                     <i class="icon-ar_back2"></i>
                                                 </div>
 
@@ -1155,7 +1161,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/product_f.png" data-fancybox="id-2" data-thumb="image/product_f.png">
+                                                                    <a href="image/product_f.png" data-fancybox="gallery-3" data-thumb="image/product_f.png">
                                                                         <img data-src="image/product_f.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1167,7 +1173,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod2.jpg" data-fancybox="id-2" data-thumb="image/fullprod2.jpg">
+                                                                    <a href="image/fullprod2.jpg" data-fancybox="gallery-3" data-thumb="image/fullprod2.jpg">
                                                                         <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1178,7 +1184,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod3.jpg" data-fancybox="id-2" data-thumb="image/fullprod3.jpg">
+                                                                    <a href="image/fullprod3.jpg" data-fancybox="gallery-3" data-thumb="image/fullprod3.jpg">
                                                                         <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1189,7 +1195,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/front_sloide_big.png" data-fancybox="id-2" data-thumb="image/front_sloide_big.png">
+                                                                    <a href="image/front_sloide_big.png" data-fancybox="gallery-3" data-thumb="image/front_sloide_big.png">
                                                                         <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1200,7 +1206,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc2.png" data-fancybox="id-2" data-thumb="image/menuc2.png">
+                                                                    <a href="image/menuc2.png" data-fancybox="gallery-3" data-thumb="image/menuc2.png">
                                                                         <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1211,7 +1217,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc1.png" data-fancybox="id-2" data-thumb="image/menuc1.png">
+                                                                    <a href="image/menuc1.png" data-fancybox="gallery-3" data-thumb="image/menuc1.png">
                                                                         <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1223,10 +1229,10 @@
                                             <div class="swiper_bottom">
 
                                                 <!-- Add Arrows -->
-                                                <div class="gallery_arr next gallery_arr-next-2">
+                                                <div class="gallery_arr next gallery_arr-next-gallery-3">
                                                     <i class="icon-ar_next2"></i>
                                                 </div>
-                                                <div class="gallery_arr prev gallery_arr-prev-2">
+                                                <div class="gallery_arr prev gallery_arr-prev-gallery-3">
                                                     <i class="icon-ar_back2"></i>
                                                 </div>
 
@@ -1407,7 +1413,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/product_f.png" data-fancybox="id-3" data-thumb="image/product_f.png">
+                                                                    <a href="image/product_f.png" data-fancybox="gallery-4" data-thumb="image/product_f.png">
                                                                         <img data-src="image/product_f.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1419,7 +1425,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod2.jpg" data-fancybox="id-3" data-thumb="image/fullprod2.jpg">
+                                                                    <a href="image/fullprod2.jpg" data-fancybox="gallery-4" data-thumb="image/fullprod2.jpg">
                                                                         <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1430,7 +1436,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/fullprod3.jpg" data-fancybox="id-3" data-thumb="image/fullprod3.jpg">
+                                                                    <a href="image/fullprod3.jpg" data-fancybox="gallery-4" data-thumb="image/fullprod3.jpg">
                                                                         <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1441,7 +1447,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/front_sloide_big.png" data-fancybox="id-3" data-thumb="image/front_sloide_big.png">
+                                                                    <a href="image/front_sloide_big.png" data-fancybox="gallery-4" data-thumb="image/front_sloide_big.png">
                                                                         <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1452,7 +1458,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc2.png" data-fancybox="id-3" data-thumb="image/menuc2.png">
+                                                                    <a href="image/menuc2.png" data-fancybox="gallery-4" data-thumb="image/menuc2.png">
                                                                         <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1463,7 +1469,7 @@
                                                         <div class="image_wrap">
                                                             <figure>
                                                                 <picture>
-                                                                    <a href="image/menuc1.png" data-fancybox="id-3" data-thumb="image/menuc1.png">
+                                                                    <a href="image/menuc1.png" data-fancybox="gallery-4" data-thumb="image/menuc1.png">
                                                                         <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
                                                                     </a>
                                                                 </picture>
@@ -1475,10 +1481,10 @@
                                             <div class="swiper_bottom">
 
                                                 <!-- Add Arrows -->
-                                                <div class="gallery_arr next gallery_arr-next-3">
+                                                <div class="gallery_arr next gallery_arr-next-gallery-4">
                                                     <i class="icon-ar_next2"></i>
                                                 </div>
-                                                <div class="gallery_arr prev gallery_arr-prev-3">
+                                                <div class="gallery_arr prev gallery_arr-prev-gallery-4">
                                                     <i class="icon-ar_back2"></i>
                                                 </div>
 
@@ -1861,9 +1867,6 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
-
-    <!-- Fotorama -->
-    <script src="js/fotorama.js"></script>
     
     <!-- Fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
