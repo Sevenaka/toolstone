@@ -888,6 +888,76 @@ ul:last-child:not([class]){
 .col_banner_slide{
   margin-bottom: 30px;
 }
+.fancybox-container .fancybox-thumbs{
+  display: block!important;
+  top: initial!important;
+  left: 0;
+  right: 0;
+  width: 100%!important;
+  background: transparent!important;
+  bottom: 15px!important;
+}
+.fancybox-show-thumbs .fancybox-inner{
+  right: 0px!important;
+}
+.fancybox-thumbs-x .fancybox-thumbs__list{
+  display: block!important;
+  margin: 0px auto!important;
+  background: rgba(239, 239, 239, 0.4);
+  border: 0.5px solid #CFCFCF;
+  padding: 12px 23px;
+  border-radius: 2px;
+}
+.fancybox-thumbs__list a{
+  width: 61px!important;
+  height: 61px!important;
+  border-radius: 2px;
+  overflow: initial!important;
+  border: 0.5px solid #CFCFCF;
+  margin-right: 12px!important;
+  margin-left: 12px!important;
+}
+.fancybox-thumbs__list a:before{
+  border: 2px solid var(--red)!important;
+  border-radius: 2px;
+  margin: -2px;
+}
+.fancybox-bg{
+  background: var(--mainBg)!important;
+  opacity: 1!important;
+}
+.fancybox-toolbar{
+  background: var(--mainBg)!important;
+}
+.fancybox-toolbar .fancybox-button{
+  background: var(--mainBg)!important;
+}
+.fancybox-toolbar .fancybox-button--thumbs,
+.fancybox-toolbar .fancybox-button.fancybox-button--play,
+.fancybox-toolbar .fancybox-button.fancybox-button--zoom{
+  display: none!important;
+}
+.fancybox-navigation .fancybox-button{
+  background: var(--red)!important;
+  color: #ffffff!important;
+  width: 53px!important;
+  padding: 0px!important;
+  height: 43px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.fancybox-navigation .fancybox-button--arrow_left{
+  left: 38px!important;
+}
+.fancybox-navigation .fancybox-button--arrow_right{
+  right: 38px!important;
+}
+.fancybox-toolbar .fancybox-button.fancybox-button--close{
+  color: #000000!important;
+  opacity: 1!important;
+}
 @media (min-width: 770px) and (max-width: 1000px) {
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
     margin-left: 30px;
