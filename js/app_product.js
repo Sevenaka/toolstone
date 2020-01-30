@@ -12,22 +12,34 @@ if(tippyList.length) {
     });
 }
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 27,
-    slidesPerView: 4,
-    lazy: true,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
-  var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 0,
-    lazy: true,
-    navigation: {
-      nextEl: '.gallery_arr-next-0',
-      prevEl: '.gallery_arr-next-0',
-    },
-    thumbs: {
-      swiper: galleryThumbs
-    }
-  });
+var productFluidCard = document.querySelectorAll('.product_card_f');
+
+if(productFluidCard.length) {
+    productFluidCard.forEach(function(elem, index){
+        var top = elem.querySelector('.gallery-top');
+        var thumb = elem.querySelector('.gallery-thumbs');
+        var galleryThumbs = new Swiper(thumb, {
+            spaceBetween: 27,
+            slidesPerView: 4,
+            lazy: true,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper(top, {
+            spaceBetween: 0,
+            lazy: true,
+            navigation: {
+              nextEl: '.gallery_arr-next-'+index,
+              prevEl: '.gallery_arr-prev-'+index,
+            },
+            thumbs: {
+              swiper: galleryThumbs
+            }
+        });
+    });
+}
+  
+$('[data-fancybox').fancybox({
+    backFocus : false
+ });
