@@ -983,6 +983,79 @@ ul:last-child:not([class]){
   color: #000000!important;
   opacity: 1!important;
 }
+.modal-content{
+  border-radius: 2px;
+  border: 0px;
+  background: #DAD8D8;
+}
+.modal-content .modal-header{
+  border-bottom: 0px;
+  padding: 28px 22px 6px 22px;
+}
+.modal-content .modal-body{
+  padding: 6px 22px 13px 22px;
+}
+.modal-content .modal-header h5{
+  font-size: 24px;
+  line-height: 28px;
+  color: #010210;
+  font-family: "FuturaMediumC";
+}
+.modal-content .modal-header .close{
+  font-size: 14px;
+  color: black;
+  opacity: 1;
+  outline: none!important;
+}
+.user_form .form_lic{
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--gray1);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.user_form .form_buttom_row{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.user_form .form_buttom_row button{
+  height: 40px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+.modal-footer{
+  border-top: 0.5px solid #D2D2D2;
+  justify-content: initial;
+}
+.modal-footer .modal_link{
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "FuturaDemiC";
+  text-align: center;
+  display: block;
+  padding: 6px 0px;
+}
+.modal-footer > .row{
+  margin: 0px;
+  width: 100%;
+  position: relative;
+}
+.modal-footer > .row .item:first-child::after{
+  background: #D2D2D2;
+  content: "";
+  display: block;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 576px) {
+  .modal-dialog{
+    max-width: 316px;
+  }
+}
 @media (min-width: 770px) and (max-width: 1000px) {
   .swiper_wrapper:not(.card_slide) .banner_fluid_slide .slide .item:last-child{
     margin-left: 30px;

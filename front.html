@@ -552,6 +552,56 @@
         </div>
     </div>
 
+    <!-- Login Modal -->
+    <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userModalLabel">Вход в акаунт</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="user_form">
+                        <div class="form-group">
+                            <div class="input_wrapper">
+                                <span class="required" title="Обязательно для заполнения">*</span>
+                                <input type="text" class="form-control" id="userName" placeholder="Имя">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input_wrapper">
+                                <span class="required" title="Обязательно для заполнения">*</span>
+                                <input type="password" class="form-control" id="userPass" placeholder="Пароль">
+                            </div>
+                        </div>
+                        <div class="form-group form_lic">
+                            Согласие на обработку <a href="#">личных данных</a>
+                        </div>
+                        <div class="form-group form_buttom_row">
+                            <button type="submit" class="btn btn btn-success btn_def btn-xl">Войти</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-6 item">
+                            <a href="#" class="modal_link">
+                                Регистрация
+                            </a>
+                        </div>
+                        <div class="col-6 item">
+                            <a href="#" class="modal_link">
+                                Напомнить параль
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- MAIN HEADER -->
     <header class="header fixed">
         <div class="header_top">
@@ -608,11 +658,11 @@
                         <div class="mobile_menu_btn">
                             <i class="ico ico_pattern ico_right_menu_red"></i>
                         </div>
-                        <a href="#" class="user_buttom">
+                        <span class="user_buttom" data-toggle="modal" data-target="#userModal">
                             <span>
                                 <i class="icon-user"></i>
                             </span>
-                        </a>
+                        </span>
                     </div>
                 </div>
             </div>
