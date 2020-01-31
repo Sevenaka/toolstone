@@ -275,6 +275,28 @@ h4.page_title{
 .page_title.margin_md{
   margin-bottom: 40px;
 }
+.dropdown-menu{
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+}
+.dropdown-menu .drop_select{
+  cursor: pointer;
+  font-family: "FuturaMediumC";
+  padding: .375rem .75rem;
+}
+.dropdown-menu .drop_select.active{
+  color: var(--red);
+  background-color: #ffffff;
+}
+.dropdown-menu .drop_select:hover{
+  color: var(--red);
+  background-color: #ffffff!important;
+}
+.dropdown-menu .drop_select:focus{
+  color: var(--red);
+  background-color: #ffffff!important;
+}
 .btn_fluid_loading{
   font-family: "FuturaDemiC";
   color: var(--mainGreen);

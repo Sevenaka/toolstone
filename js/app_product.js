@@ -1,4 +1,5 @@
 var tippyList = document.querySelectorAll('.tippy_table');
+var tippyFac = document.querySelectorAll('.tippy_faq');
 
 if(tippyList.length) {
     tippy('.tippy_table', {
@@ -9,6 +10,12 @@ if(tippyList.length) {
             const template = document.getElementById(id);
             return template.innerHTML;
         }
+    });
+}
+
+if(tippyFac.length) {
+    tippy('.tippy_faq', {
+        placement: 'right'
     });
 }
   
@@ -32,4 +39,23 @@ $('[data-fancybox').fancybox({
       '<i class="icon-ar_next"></i>' +
       "</button>"
     }
- });
+});
+
+var selDropdown = document.querySelectorAll('.select_dropdown');
+
+if(selDropdown.length) {
+    selDropdown.forEach(function(item){
+        var dropLink = item.querySelectorAll('.drop_select');
+        var dropBtn = item.querySelector('.btn .btn_label');
+        dropLink.forEach(function(link){
+            link.addEventListener('click', function(){
+                var selectVal = this.getAttribute('data-val');
+                item.querySelector('.drop_select.active').classList.remove('active');
+                this.classList.add('active');
+                dropBtn.innerHTML = selectVal;
+
+                //Возможно ajax событие клика по выпадающему списку
+            })
+        });
+    });
+}

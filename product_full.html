@@ -341,7 +341,7 @@
                     <div class="col-md-6 col_prod_text col_lf_prod">
                         <div class="row row_fl_prod">
                             <div class="col-md-6 col_lf_prod">
-                                <div class="product_info_wrap">
+                                <div class="product_info_wrap product_bg_wrap">
                                     <div class="product_price">
                                         <div class="item item_price new_price">
                                             <div class="label">Цена:</div>
@@ -378,6 +378,98 @@
                                             Купить в один клик
                                         </span>
                                     </form>
+                                    <div class="product_ware">
+                                        <div class="itm">
+                                            <label>Наличие</label>
+                                            <div class="val">
+                                                Есть на складе 
+                                                <span class="faq tippy_faq" data-tippy-content="Текст подсказки, одного типа для всех видов подсказок.">
+                                                    <i class="icon-faq"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="itm">
+                                            <label>Доставка</label>
+                                            <div class="val">
+                                                Есть
+                                                <span class="faq tippy_faq" data-tippy-content="Текст подсказки, одного типа для всех видов подсказок.">
+                                                    <i class="icon-faq"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="model_list">
+                                        <label>Модель:</label>
+                                        
+                                        <div class="btn-group select_dropdown">
+                                            <button type="button" class="btn btn-outline-secondary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="btn_label">OF 2200 EB - Plus</span>
+                                                <i class="icon-ar_bottom"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <div class="dropdown-item drop_select active" data-val="OF 2200 EB - Plus">OF 2200 EB - Plus</div>
+                                                <div class="dropdown-item drop_select" data-val="OF 2200 EB - Plus 2">OF 2200 EB - Plus 2</div>
+                                                <div class="dropdown-item drop_select" data-val="OF 3200 EB - Plus">OF 3200 EB - Plus</div>
+                                                <div class="dropdown-item drop_select" data-val="OF 5200 EB - Plus">OF 5200 EB - Plus</div>
+                                                <div class="dropdown-item drop_select" data-val="OF 1200 EB - Plus">OF 1200 EB - Plus</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col_lf_prod">
+                                <div class="product_specifications_wrap product_bg_wrap">
+                                    <div class="product_sku">
+                                        <div class="top_action flex">
+                                            <div class="item">
+                                                <span>
+                                                    <i class="icon-bookmark"></i>
+                                                    В избранное
+                                                </span>
+                                            </div>
+                                            <div class="item">
+                                                <span>
+                                                    <i class="icon-bookmark"></i>
+                                                    Сравненить
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_brand">
+                                        <div class="product_brand_img">
+                                            <img src="image/card_fluid_brand2.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">Артикул:</div>
+                                            <div class="val">​KIT1602ARMWH</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">Производитель:</div>
+                                            <div class="val">Mirka</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="name">Страна происхождения:</div>
+                                            <div class="val">Германия</div>
+                                        </div>
+                                    </div>
+                                    <div class="sku_specifications">
+                                        <label>Основные характеристики:</label>
+                                        <div class="item">
+                                            <span>Диаметр пильного диска (мм):</span> <strong>140</strong>
+                                        </div>
+                                        <div class="item">
+                                            <span>Толщина зуба, мм:</span> <strong>270</strong>
+                                        </div>
+                                        <div class="item">
+                                            <span>Форма зуба:</span> <strong>TF</strong>
+                                        </div>
+                                        <div class="item">
+                                            <span>Штук в упаковке:</span> <strong>5</strong>
+                                        </div>
+                                        <div class="item">
+                                            <span>Комплект поставки:</span> <strong>Есть комплект</strong>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -574,8 +666,13 @@
         <i class="icon-ar_up"></i>
     </div>
     
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <!-- Popper Js -->
+    <script src="https://unpkg.com/popper.js@1"></script> <!-- Подключаем выше bootstrap.min.js -->
+    <script src="https://unpkg.com/tippy.js@5"></script>
+
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     
     <!-- Fancybox -->

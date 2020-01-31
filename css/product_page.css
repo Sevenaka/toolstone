@@ -24,7 +24,7 @@
     font-family: "FuturaDemiC";
 }
 .product_full_page .product_price .old_price {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .product_full_page .product_price .old_price .label {
     font-family: "FuturaBookC Regular";
@@ -56,7 +56,10 @@
     flex: 0 0 100%;
     max-width: 100%;
 }
-.product_full_page .product_info_wrap{
+.product_full_page .product_price .fluid i{
+    font-size: 9px;
+}
+.product_full_page .product_bg_wrap{
     border: 0.5px solid var(--gray2);
     border-radius: 2px;
     background: rgba(239, 239, 239, 0.4);
@@ -74,6 +77,7 @@
 }
 .product_full_page .cart_form .form_top .plus_btn{
     margin-left: 1px;
+    font-family: "FuturaMediumC";
 }
 .product_full_page .cart_form .card_count .btn{
     width: 40px;
@@ -112,6 +116,7 @@
     margin-bottom: 8px;
     font-family: "FuturaDemiC";
     height: 40px;
+    font-size: 14px;
 }
 .product_full_page .cart_form .buy_one_click{
     width: 100%;
@@ -119,7 +124,9 @@
     margin-bottom: 8px;
     font-family: "FuturaDemiC";
     height: 40px;
+    font-size: 14px;
     letter-spacing: 0.1em;
+    padding: .55rem .75rem .375rem .75rem;
 }
 .row_fl_prod{
     margin-left: -4px;
@@ -128,4 +135,144 @@
 .row_fl_prod > .col_lf_prod{
     padding-left: 4px;
     padding-right: 4px;
+}
+.product_full_page .product_ware{
+    margin-top: 40px;
+}
+.product_full_page .product_ware .itm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_full_page .product_ware .itm:not(:last-child){
+    margin-bottom: 10px;
+}
+.product_full_page .product_ware .itm label{
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: var(--black4);
+    font-family: "FuturaBookC Regular";
+}
+.product_full_page .product_ware .itm .val{
+    font-size: 14px;
+    font-family: "FuturaMediumC";
+    color: var(--mainGreen);
+    display: flex;
+    align-items: center;
+}
+.product_full_page .product_ware .itm .val .faq{
+    border: 1px solid var(--gray2);
+    color: var(--gray2);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    margin-left: 7px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.product_full_page .product_ware .itm .val .faq:hover{
+    color: #ffffff;
+    background: var(--red);
+    border-color: var(--red);
+}
+.product_full_page .model_list{
+    margin-top: 19px;
+}
+.product_full_page .model_list > label{
+    font-size: 14px;
+    color: var(--titleColor);
+    font-family: "FuturaMediumC";
+    margin-bottom: 13px;
+    display: block;
+}
+.product_full_page .model_list .btn-group{
+    width: 100%;
+}
+.product_full_page .model_list .btn-group .btn{
+    background: #ffffff;
+    border: 0.5px solid var(--borderColor5);
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaMediumC";
+    color: var(--black);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_full_page .model_list .btn-group .btn i{
+    font-size: 12px;
+    transition: transform 0.1s linear;
+}
+.product_full_page .model_list .btn-group .btn[aria-expanded=true] i{
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+}
+.product_full_page .model_list .btn-group .btn::after{
+    display: none;
+}
+.product_full_page .product_specifications_wrap .top_action{
+    margin-bottom: 30px;
+}
+.product_full_page .product_specifications_wrap .top_action .item:not(:last-child) {
+    margin-right: 27px;
+}
+.product_full_page .product_specifications_wrap .top_action .item span {
+    font-family: "FuturaMediumC";
+    font-size: 13px;
+    color: var(--gray5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 15px;
+}
+.product_full_page .product_specifications_wrap .sku_specifications label {
+    font-family: "FuturaMediumC";
+    display: block;
+    font-size: 14px;
+    margin-bottom: 21px;
+    color: var(--titleColor);
+}
+.product_full_page .product_specifications_wrap .sku_specifications .item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.product_full_page .product_specifications_wrap .sku_specifications .item {
+    font-size: 14px;
+}
+.product_full_page .product_brand .product_brand_img {
+    margin-bottom: 22px;
+}
+.product_full_page .product_brand{
+    margin-bottom: 34px;
+}
+.product_full_page .product_brand .item {
+    display: flex;
+    font-size: 14px;
+}
+.product_full_page .product_brand .item:not(:last-child) {
+    margin-bottom: 15px;
+}
+.product_full_page .product_brand .item .name {
+    font-family: "FuturaBookC Regular";
+    color: var(--gray1);
+    margin-right: 2px;
+}
+.product_full_page .product_brand .item .val {
+    font-family: "FuturaMediumC";
+    color: var(--titleColor);
+}
+.product_full_page .sku_specifications .item strong {
+    font-family: "FuturaMediumC";
+    color: var(--titleColor);
+    font-weight: 500;
+}
+.product_full_page .sku_specifications .item span {
+    margin-right: 3px;
+    color: var(--gray1);
+    font-family: "FuturaBookC Regular";
 }
