@@ -1,0 +1,131 @@
+.product_full_page .product_price{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_full_page .product_price .item_price {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.product_full_page .product_price .new_price .label {
+    font-size: 14px;
+    font-family: "FuturaBookC Regular";
+    color: var(--black4);
+}
+.product_full_page .product_price .price {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+}
+.product_full_page .product_price .new_price .price {
+    font-size: 40px;
+    line-height: 36px;
+    color: var(--black);
+    font-family: "FuturaDemiC";
+}
+.product_full_page .product_price .old_price {
+    padding-left: 20px;
+}
+.product_full_page .product_price .old_price .label {
+    font-family: "FuturaBookC Regular";
+    font-size: 10px;
+    color: var(--gray1);
+    margin-top: 5px;
+}
+.product_full_page .product_price .old_price .price {
+    color: var(--gray5);
+    font-family: "FuturaMediumC";
+    font-size: 22px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+}
+.product_full_page .product_price .old_price .price i {
+    font-size: 14px;
+}
+.product_full_page .product_price .new_price .price i {
+    font-size: 26px;
+}
+.product_full_page .product_price .price_ekonom {
+    letter-spacing: 0.01em;
+    font-size: 10px;
+    color: var(--mainGreen);
+    padding-top: 6px;
+}
+.product_full_page .product_price .fluid {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.product_full_page .product_info_wrap{
+    border: 0.5px solid var(--gray2);
+    border-radius: 2px;
+    background: rgba(239, 239, 239, 0.4);
+    height: 100%;
+    padding: 23px 25px;
+}
+.product_full_page .product_price{
+    margin-bottom: 31px;
+}
+.product_full_page .cart_form .card_count{
+    width: 100%;
+}
+.product_full_page .cart_form .form_top{
+    margin-bottom: 8px;
+}
+.product_full_page .cart_form .form_top .plus_btn{
+    margin-left: 1px;
+}
+.product_full_page .cart_form .card_count .btn{
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_full_page .cart_form .card_count .input_dym{
+    width: 80%;
+    text-align: center;
+    border: 0.5px solid var(--borderColor2);
+    border-radius: 2px;
+    font-size: 12px;
+    height: 40px;
+    font-family: "FuturaBookC Regular";
+    background-color: var(--mainBg);
+    padding: 0.3rem;
+    width: 100%;
+    color: var(--gray5);
+    margin: 0px 1px;
+}
+.product_full_page .cart_form .card_count .input_dym strong {
+    font-family: "FuturaDemiC";
+    color: var(--black);
+    font-size: 18px;
+}
+.col_prod_text > .row{
+    height: 100%;
+}
+.product_full_page .cart_form .add_btn{
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: "FuturaDemiC";
+    height: 40px;
+}
+.product_full_page .cart_form .buy_one_click{
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: "FuturaDemiC";
+    height: 40px;
+    letter-spacing: 0.1em;
+}
+.row_fl_prod{
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.row_fl_prod > .col_lf_prod{
+    padding-left: 4px;
+    padding-right: 4px;
+}

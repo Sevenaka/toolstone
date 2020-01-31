@@ -133,7 +133,7 @@
     right: 0;
     bottom: 0;
 }
-.gallery_wrap.gallery_slider::before{
+.gallery_wrap.gallery_slider:not(.product_gallery)::before{
     content: "";
     background: url('../image/imagebg4.png');
     background-position: center!important;

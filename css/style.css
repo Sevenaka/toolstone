@@ -220,10 +220,13 @@ ul[class] li{
   background: url('../image/ico/right_menu.svg');
 }
 .ico.ico_right_menu2{
-  background: url('../image/ico/right_menu2.svg');
+  background: url('../image/ico/right_menu_green.svg');
 }
 .ico_right_menu_red{
   background: url('../image/ico/right_menu_red.svg');
+}
+.white{
+  color: #ffffff;
 }
 .ico.ico_pattern{
   background-position: center;
@@ -1149,6 +1152,9 @@ ul:last-child:not([class]){
   }
   .section_title_btn{
     margin-bottom: 20px;
+  }
+  .section_title_btn > .news_full_title{
+    margin-bottom: 15px;
   }
   .mr_bt_a4{
     margin-top: 20px!important;

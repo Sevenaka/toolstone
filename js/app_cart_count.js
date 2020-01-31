@@ -1,6 +1,21 @@
 var btnPlus = document.querySelectorAll('.card_count .btn-plus');
 var btnMinus = document.querySelectorAll('.card_count .btn-minus');
 var countInput = document.querySelectorAll('.count_input');
+var plusMoreBtn = document.querySelectorAll('.plus_btn');
+
+if(plusMoreBtn.length) {
+    plusMoreBtn.forEach(function(item) {
+        item.addEventListener('click', function() {
+
+            var input = this.parentNode.querySelector('.count_input');
+            var inputDym = this.parentNode.querySelector('.input_dym strong');
+            if(input.value < 1000) {
+                input.value = Number(input.value) + 5;
+                inputDym.innerHTML = input.value
+            }
+        });
+    });
+}
 
 if(btnPlus.length) {
     btnPlus.forEach(function(item) {

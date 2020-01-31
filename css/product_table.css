@@ -76,7 +76,7 @@
     border-color: #CFCFCF;
 }
 .table.product_table th{
-    padding: 10px;
+    padding: 8px 10px;
     background: #fafafa;
 }
 .table.product_table thead th{
