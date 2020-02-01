@@ -393,6 +393,20 @@ h1.page_title{
     color: var(--black4);
     padding: 22px 71px 14px 71px;
     cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;    
+}
+.header_tabs .tabs_list .item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #9299B1;
+    top: 50%;
+    margin-top: -6px;
+    right: 1px;
 }
 .header_tabs .tabs_list .item span{
     display: block;
@@ -427,6 +441,13 @@ h1.page_title{
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 22px;
+}
+.tabs_wrapper .tabs_container .tab_detail .tabs_title_flex .tabs_title{
+    margin-bottom: 0px;
+}
+.tabs_wrapper .tabs_container .tab_detail .tabs_title_flex{
+    margin-bottom: 22px;
+    justify-content: space-between;
 }
 .tabs_wrapper .tabs_container .tab_detail .product_card .product_price .price{
     font-size: 20px;
@@ -486,17 +507,17 @@ h1.page_title{
 .tab_detail_video .news_card.news_default{
     margin-bottom: 48px;
 }
-.more_block{
+.more_block.toggle_on{
     overflow: hidden;
     position: relative;
 }
 .more_block.show{
     max-height: auto;
 }
-.more_block:not(.show){
-    max-height: 560px;
+.more_block.toggle_on:not(.show){
+    max-height: 620px;
 }
-.more_block:not(.show)::after{
+.more_block.toggle_on:not(.show)::after{
     content: "";
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+90 */
     background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
@@ -529,7 +550,7 @@ h1.page_title{
     line-height: 22px;
     margin-bottom: 16px;
 }
-.tabs_wrapper .tabs_container .tab_detail .body_text h4{
+.tabs_wrapper .tabs_container .tab_detail .body_text h2{
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 18px;
@@ -557,4 +578,7 @@ h1.page_title{
 }
 .tabs_wrapper .tabs_container .tab_detail .body_text ul li:not(:last-child){
     margin-bottom: 16px;
+}
+.tab_video_carousel .swiper_button{
+    top: 37%;
 }

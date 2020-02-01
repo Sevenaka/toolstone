@@ -279,6 +279,14 @@ new Swiper('.news_carousel_4', {
     }
 });
 
+new Swiper('.tab_video_carousel', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.next-body',
+      prevEl: '.prev-body',
+    }
+});
+
 //RIGHT POPUP MENU
 var popupBtn = document.querySelector('.fix_popup_menu');
 

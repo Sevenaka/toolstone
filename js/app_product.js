@@ -66,10 +66,17 @@ if(selDropdown.length) {
 var tabsHeader = document.querySelectorAll('.header_tabs .tabs_list .item');
 
 if(tabsHeader.length) {
+    var parentTabList = document.querySelector('.header_tabs .tabs_list');
     var tabsContainer = document.querySelectorAll('.tabs_container .tab_detail');
 
     tabsHeader.forEach(function(item){
         item.addEventListener('click', function(){
+
+            parentTabList.scrollTo({
+                left: this.offsetLeft - item.clientWidth,
+                behavior: "smooth"
+            });
+
             var selectId = this.getAttribute('data-tab');
             document.querySelector('.header_tabs .tabs_list .item span.active').classList.remove('active');
             item.querySelector('span').classList.add('active');
@@ -78,7 +85,34 @@ if(tabsHeader.length) {
             });
             var activeTab = document.querySelector('.tabs_container .tab_detail.tab_'+selectId);
             if(activeTab) activeTab.classList.add('active');
+
+            var moreBlock = activeTab.querySelector('.more_block[data-toggle]');
+
+            if(moreBlock) {
+                var id = moreBlock.getAttribute('data-toggle');
+
+                if(!moreBlock.classList.contains('toggle_on')){
+                    if(moreBlock.clientHeight > 620) moreBlock.classList.add('toggle_on');
+                    else {
+                        document.querySelector('button[data-more-toggle="'+id+'"]').parentNode.parentNode.remove();
+                    }
+                }
+            }
         });
+    });
+}
+
+//Toggle collapse text
+var moreBody = document.querySelectorAll('.more_block[data-toggle]');
+
+if(moreBody.length) {
+    moreBody.forEach(function(item){
+
+        var id = item.getAttribute('data-toggle');
+
+        if(item.clientHeight > 620) {
+            item.classList.add('toggle_on');
+        }
     });
 }
 
@@ -90,6 +124,7 @@ if(moreToggle.length){
         item.innerHTML = item.getAttribute('data-hide-title');
 
         item.addEventListener('click', function(){
+
             var curToggle = item.getAttribute('data-more-toggle');
             var toggleContainer = document.querySelector('[data-toggle="'+curToggle+'"]');
             if(toggleContainer) {
