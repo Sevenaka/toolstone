@@ -24,6 +24,11 @@ var formInput = document.querySelectorAll('.input_wrapper.input_label .form-cont
 
 if(formInput.length) {
     formInput.forEach(function(input){
+
+        if(input.value) {
+            input.parentNode.classList.add('focus');
+        }
+
         input.addEventListener('focus', function(){
             if(!this.parentNode.classList.contains('focus')){
                 this.parentNode.classList.add('focus');
@@ -468,3 +473,14 @@ if(liExpand.length) {
         }
     });
 }
+
+
+//Login modal event
+$('#userModal').on('show.bs.modal', function () {
+    var focusInpt = document.querySelector('.login_modal .name_f');
+    if(focusInpt) {
+        setTimeout(function(){
+            if(!focusInpt.value.length) focusInpt.focus();
+        }, 500);
+    }
+});

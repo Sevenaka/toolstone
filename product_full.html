@@ -1483,7 +1483,7 @@
                                                 <div class="input_wrapper input_label is-valid">
                                                     <span class="required" title="Обязательно для заполнения">*</span>
                                                     <label for="rewName">Ваше имя:</label>
-                                                    <input type="text" class="form-control" id="rewName">
+                                                    <input type="text" class="form-control name_f" id="rewName">
                                                 </div>
                                             </div>
                                             <div class="form-group col-lg-4">
@@ -1522,9 +1522,52 @@
                                 <div class="tab_detail tab_detail-sm tab_8">
                                     <div class="tabs_title_flex flex align_center">
                                         <h4 class="tabs_title">Отзывы покупателей и партнеров</h4>
-                                        <button class="btn btn btn-success btn_def btn-xl">Оставить отзыв</button>
+                                        <button class="btn btn btn-success btn_def btn-xl rew_add_btn">Оставить отзыв</button>
                                     </div>
                                     
+                                    <form class="rew_form hidden">
+                                        <p>Отзывов пока нет, оставьте первым отзыв о товаре.</p>
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-4">
+                                                <div class="input_wrapper input_label">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewName">Ваше имя:</label>
+                                                    <input type="text" class="form-control name_f" id="rewName">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <div class="input_wrapper input_label">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewCity">Ваш город:</label>
+                                                    <input type="text" class="form-control" id="rewCity">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <div class="input_wrapper input_label">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewEmail">Ваш e-mail:</label>
+                                                    <input type="text" class="form-control" id="rewEmail">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <div class="input_wrapper input_label">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewText">Сопроводительный текст</label>
+                                                    <textarea rows="6" class="form-control" id="rewText"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <div class="flex jus_center">
+                                                    <button type="submit" class="btn btn btn-success btn_def btn-xl">оставить отзыв</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
                                     <div class="more_block" data-toggle="more_rew">
                                         <div class="rew_list">
                                             <div class="rew_card_text rew_card_big">

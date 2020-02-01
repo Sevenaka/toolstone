@@ -387,7 +387,7 @@ label{
 }
 .input_wrapper.focus label{
   font-size: 8px;
-  top: 4px;
+  top: 6px;
 }
 .input_wrapper.is-invalid .form-control{
   border-color: var(--red);

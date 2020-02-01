@@ -144,3 +144,16 @@ if(moreToggle.length){
         });
     });
 }
+
+//Rew add btn
+var rewBtn = document.querySelector('.rew_add_btn');
+
+if(rewBtn) {
+    var rewForm = document.querySelector('.rew_form.hidden');
+
+    rewBtn.addEventListener('click', function(){
+        this.remove();
+        rewForm.classList.remove('hidden');
+        rewForm.querySelector('.name_f').focus();
+    });
+}
