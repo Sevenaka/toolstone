@@ -264,6 +264,16 @@
 
                             <!-- Image Gallery -->
                             <div class="swiper-container gallery-top">
+
+                                <div class="product_label">
+                                    <div class="item">
+                                        <div class="a_label">СОБСТВЕННОЕ ПРОИЗВОДСТВО</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="label_flag" style="background: url('image/country/germany.png');"></div> <div class="a_label">СДЕЛАНО В ГЕРМАНИИ</div>
+                                    </div>
+                                </div>
+
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="image_wrap">
@@ -1470,9 +1480,40 @@
                                         <p>Отзывов пока нет, оставьте первым отзыв о товаре.</p>
                                         <div class="form-row">
                                             <div class="form-group col-lg-4">
-                                                <div class="input_wrapper">
+                                                <div class="input_wrapper input_label is-valid">
                                                     <span class="required" title="Обязательно для заполнения">*</span>
-                                                    <input type="text" class="form-control" id="userName" placeholder="Имя">
+                                                    <label for="rewName">Ваше имя:</label>
+                                                    <input type="text" class="form-control" id="rewName">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <div class="input_wrapper input_label">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewCity">Ваш город:</label>
+                                                    <input type="text" class="form-control" id="rewCity">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <div class="input_wrapper input_label is-invalid">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewEmail">Ваш e-mail:</label>
+                                                    <input type="text" class="form-control" id="rewEmail">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <div class="input_wrapper input_label">
+                                                    <span class="required" title="Обязательно для заполнения">*</span>
+                                                    <label for="rewText">Сопроводительный текст</label>
+                                                    <textarea rows="6" class="form-control" id="rewText"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <div class="flex jus_center">
+                                                    <button type="submit" class="btn btn btn-success btn_def btn-xl">оставить отзыв</button>
                                                 </div>
                                             </div>
                                         </div>

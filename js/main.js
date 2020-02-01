@@ -20,6 +20,21 @@ if(requiredMark && requiredMark.length) {
     });
 }
 
+var formInput = document.querySelectorAll('.input_wrapper.input_label .form-control');
+
+if(formInput.length) {
+    formInput.forEach(function(input){
+        input.addEventListener('focus', function(){
+            if(!this.parentNode.classList.contains('focus')){
+                this.parentNode.classList.add('focus');
+            }
+        });
+        input.addEventListener('blur', function(){
+            if(!this.value.length) this.parentNode.classList.remove('focus');
+        });
+    });
+}
+
 //SWIPER 
 new Swiper('.big_news_swiper', {
     navigation: {

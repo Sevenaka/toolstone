@@ -582,3 +582,49 @@ h1.page_title{
 .tab_video_carousel .swiper_button{
     top: 37%;
 }
+.product_label{
+    position: absolute;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 10;
+    top: 64px;
+    left: -60px;
+}
+.product_label .item{
+    display: flex;
+}
+.product_label .item:not(:last-child){
+    margin-bottom: 2px;
+}
+.product_label .item:last-child{
+    float: right;
+}
+.product_label .item .a_label{
+    background: var(--black4);
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 100%;
+    font-family: "FuturaMediumC";
+    color: #ffffff;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+}
+.product_label .item .label_flag{
+    width: 17px;
+    height: 17px;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    margin-right: 1px;
+}
+.rew_form > p{
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+}
