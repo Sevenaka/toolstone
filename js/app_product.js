@@ -15,7 +15,9 @@ if(tippyList.length) {
 
 if(tippyFac.length) {
     tippy('.tippy_faq', {
-        placement: 'right'
+        maxWidth: 251,
+        placement: 'right',
+        theme: 'toolstone'
     });
 }
   
@@ -56,6 +58,26 @@ if(selDropdown.length) {
 
                 //Возможно ajax событие клика по выпадающему списку
             })
+        });
+    });
+}
+
+//Product tabs
+var tabsHeader = document.querySelectorAll('.header_tabs .tabs_list .item');
+
+if(tabsHeader.length) {
+    var tabsContainer = document.querySelectorAll('.tabs_container .tab_detail');
+
+    tabsHeader.forEach(function(item){
+        item.addEventListener('click', function(){
+            var selectId = this.getAttribute('data-tab');
+            document.querySelector('.header_tabs .tabs_list .item span.active').classList.remove('active');
+            item.querySelector('span').classList.add('active');
+            tabsContainer.forEach(function(tab){
+                tab.classList.remove('active');
+            });
+            var activeTab = document.querySelector('.tabs_container .tab_detail.tab_'+selectId);
+            if(activeTab) activeTab.classList.add('active');
         });
     });
 }

@@ -313,6 +313,169 @@ h1.page_title{
     background: rgba(239, 239, 239, 0.4);
     padding: 24px 25px;
 }
+.product_full_page .product_icons .item_list .item{
+    position: relative;
+}
+.product_full_page .product_icons .item_list .item::after{
+    content: "";
+    position: absolute;
+    border: 1px solid var(--red);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.product_full_page .product_icons .item_list .item:hover::after{
+    opacity: 1;
+}
 .product_full_page .product_icons .item_list .item:not(:last-child){
     margin-bottom: 16px;
+}
+.col_prod_images,
+.col_prod_sku_info{
+    padding-left: 4px;
+    padding-right: 4px;
+    position: relative;
+    width: 100%;
+}
+.col_prod_images{
+    -ms-flex: 0 0 47%;
+    flex: 0 0 47%;
+    max-width: 47%;
+}
+.col_prod_sku_info{
+    -ms-flex: 0 0 53%;
+    flex: 0 0 53%;
+    max-width: 53%;
+}
+.tippy-tooltip.toolstone-theme{
+    background: #1b1f28!important;
+    border-radius: 4px!important;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    padding: 13px 15px!important;
+}
+.tippy-tooltip.toolstone-theme[data-placement^='top'] .tippy-arrow {
+    border-top-color: #1b1f28;
+  }
+  .tippy-tooltip.toolstone-theme[data-placement^='bottom'] .tippy-arrow {
+    border-bottom-color: #1b1f28;
+  }
+  .tippy-tooltip.toolstone-theme[data-placement^='left'] .tippy-arrow {
+    border-left-color: #1b1f28;
+  }
+  .tippy-tooltip.toolstone-theme[data-placement^='right'] .tippy-arrow {
+    border-right-color: #1b1f28;
+  }
+.header_tabs{
+    background: #fafafa;
+    border: 1px solid var(--gray5);
+    border-radius: 2px 2px 0px 0px;
+}
+.header_tabs .tabs_list{
+    overflow-x: scroll;
+    display: -webkit-box;
+    width: 100%;
+    margin-bottom: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.header_tabs .tabs_list .item{
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    font-family: "FuturaDemiC";
+    color: var(--black4);
+    padding: 22px 71px 14px 71px;
+    cursor: pointer;
+}
+.header_tabs .tabs_list .item span{
+    display: block;
+}
+.header_tabs .tabs_list .item:hover span{
+    color: var(--red);
+}
+.header_tabs .tabs_list .item span.active{
+    color: var(--red);
+    border-bottom: 1px solid var(--red);
+    border-radius: 0.5px;
+}
+.tabs_wrapper .tabs_container{
+    padding-top: 48px;
+    padding-bottom: 65px;
+    border: 0.5px solid var(--gray2);
+    border-radius: 2px;
+}
+.tabs_wrapper .tabs_container .tab_detail.tab_detail-sm{
+    max-width: 896px;
+    margin: 0px auto;
+}
+.tabs_wrapper .tabs_container .tab_detail.tab_detail-lg{
+    max-width: 1128px;
+    margin: 0px auto;
+}
+.tabs_wrapper .tabs_container .tab_detail:not(.active){
+    display: none;
+}
+.tabs_wrapper .tabs_container .tab_detail .tabs_title{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 22px;
+}
+.tabs_wrapper .tabs_container .tab_detail .product_card .product_price .price{
+    font-size: 20px;
+}
+.tabs_wrapper .tabs_container .tab_detail .product_card .product_price .price_old{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.tabs_wrapper .tabs_container .tab_detail .btn_group .btn:not(:last-child){
+    margin-right: 0px;
+}
+.tabs_wrapper .tabs_container .tab_detail .btn_group .btn{
+    font-size: 14px;
+    padding: .31rem 1.1rem .18rem 1.1rem;
+}
+.spec_block:not(:last-child){
+    margin-bottom: 28px;
+}
+.spec_block .spec_label{
+    font-size: 20px;
+    line-height: 22px;
+    display: block;
+    font-family: "FuturaMediumC";
+    color: var(--black);
+    margin-bottom: 17px;
+}
+.spec_block .spec_lisct li{
+    display: flex;
+    justify-content: space-between;
+}
+.spec_block .spec_lisct li:not(:last-child){
+    margin-bottom: 19px;
+}
+.spec_block .spec_lisct li .name{
+    font-size: 14px;
+    color: var(--black4);
+    font-family: "FuturaBookC Regular";
+}
+.spec_block .spec_lisct li .val{
+    font-size: 14px;
+    color: var(--black4);
+    font-family: "FuturaMediumC";
+    font-weight: 500;
+}
+.spec_row{
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.spec_row .spec_col{
+    padding-left: 30px;
+    padding-right: 30px;
 }

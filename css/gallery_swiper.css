@@ -177,3 +177,6 @@
 .product_gallery .gallery-thumbs .swiper-wrapper{
     padding: 2px;
 }
+.gallery_wrap.product_gallery .gallery-top .image_wrap{
+    padding-bottom: 93%;
+}
