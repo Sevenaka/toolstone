@@ -410,6 +410,7 @@ h1.page_title{
     padding-bottom: 65px;
     border: 0.5px solid var(--gray2);
     border-radius: 2px;
+    overflow: hidden;
 }
 .tabs_wrapper .tabs_container .tab_detail.tab_detail-sm{
     max-width: 896px;
@@ -478,4 +479,82 @@ h1.page_title{
 .spec_row .spec_col{
     padding-left: 30px;
     padding-right: 30px;
+}
+.tab_detail_video .news_card.news_video .news_header{
+    padding-bottom: 55%;
+}
+.tab_detail_video .news_card.news_default{
+    margin-bottom: 48px;
+}
+.more_block{
+    overflow: hidden;
+    position: relative;
+}
+.more_block.show{
+    max-height: auto;
+}
+.more_block:not(.show){
+    max-height: 560px;
+}
+.more_block:not(.show)::after{
+    content: "";
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+90 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+}
+.col_more_btn{
+    padding-top: 24px;
+}
+.fluid_container_lg{
+    max-width: 1128px;
+    margin: 0px auto;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text p{
+    font-size: 13px;
+    line-height: 28px;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text p:not(:last-child){
+    margin-bottom: 16px;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text h5{
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text h4{
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text ul{
+    padding-left: 26px;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text ul:not(:last-child){
+    margin-bottom: 35px;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text ul li{
+    list-style: none;
+    position: relative;
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text ul li::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    left: -26px;
+    top: 11px;
+    display: block;
+    background: var(--red);
+}
+.tabs_wrapper .tabs_container .tab_detail .body_text ul li:not(:last-child){
+    margin-bottom: 16px;
 }

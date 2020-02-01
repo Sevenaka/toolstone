@@ -81,3 +81,31 @@ if(tabsHeader.length) {
         });
     });
 }
+
+var moreToggle = document.querySelectorAll('[data-more-toggle]');
+
+if(moreToggle.length){
+    moreToggle.forEach(function(item){
+
+        item.innerHTML = item.getAttribute('data-hide-title');
+
+        item.addEventListener('click', function(){
+            var curToggle = item.getAttribute('data-more-toggle');
+            var toggleContainer = document.querySelector('[data-toggle="'+curToggle+'"]');
+            if(toggleContainer) {
+                if(toggleContainer.classList.contains('show')){
+                    toggleContainer.classList.remove('show');
+                    toggleContainer.scrollIntoView({behavior: "smooth"});
+                    item.innerHTML = item.getAttribute('data-hide-title');
+                    item.classList.remove('btn_active');
+                } else {
+                    toggleContainer.classList.add('show');
+                    item.classList.add('btn_active');
+                    item.innerHTML = item.getAttribute('data-show-title');
+                }
+            } else {
+                console.log('Block not found')
+            }
+        });
+    });
+}

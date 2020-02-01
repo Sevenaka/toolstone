@@ -307,6 +307,9 @@ h4.page_title{
   font-size: 14px;
   background: #ffffff;
 }
+.btn_fluid_loading.btn_active{
+  color: var(--red);
+}
 .btn_fluid_loading:hover {
   color: var(--black);
   background-color: var(--borderColor4);

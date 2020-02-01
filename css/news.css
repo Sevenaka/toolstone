@@ -16,6 +16,9 @@
     line-height: 25px;
     margin: 0px;
 }
+.news_card.news_default .news_title:first-child{
+    margin-top: 15px;
+}
 .news_card .news_date{
     font-size: 12px;
     line-height: 20px;
