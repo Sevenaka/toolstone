@@ -5,6 +5,7 @@ if(gallerySlider.length) {
     var slides = 4;
     var thumbMargin = 27;
     var unicIdSlider = null;
+    var direction = 'horizontal';
 
     if(elem.getAttribute("data-thumb-slides")) {
       slides = Number(elem.getAttribute("data-thumb-slides"));
@@ -17,12 +18,16 @@ if(gallerySlider.length) {
     if(elem.getAttribute("data-swiper-id")) {
       unicIdSlider = elem.getAttribute("data-swiper-id");
     }
+    if(elem.getAttribute("data-thumb-direction")) {
+      direction = elem.getAttribute("data-thumb-direction");
+    }
 
     var top = elem.querySelector('.gallery-top');
     var thumb = elem.querySelector('.gallery-thumbs');
     var galleryThumbs = new Swiper(thumb, {
         spaceBetween: thumbMargin,
         slidesPerView: slides,
+        direction: direction,
         lazy: true,
         freeMode: true,
         watchSlidesVisibility: true,
