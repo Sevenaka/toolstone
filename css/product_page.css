@@ -312,9 +312,27 @@ h1.page_title{
     border-radius: 2px;
     background: rgba(239, 239, 239, 0.4);
     padding: 24px 25px;
+    position: relative;
+}
+.product_icons.many_item{
+    padding: 36px 25px;
+}
+.product_icons:not(.many_item) .gallery_arr{
+    display: none!important;
+}
+.product_full_page .product_icons .swiper-slide{
+    width: 35px!important;
+    height: 35px!important;
+}
+.product_full_page .product_icons .product_ico_slider{
+    max-height: 385px;
 }
 .product_full_page .product_icons .item_list .item{
     position: relative;
+}
+.product_full_page .product_icons .item_list .item img{
+    max-width: 35px;
+    height: auto;
 }
 .product_full_page .product_icons .item_list .item::after{
     content: "";

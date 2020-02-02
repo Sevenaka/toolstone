@@ -424,24 +424,86 @@
 
                             <!-- Product Ico -->
                             <div class="product_icons">
-                                <div class="item_list">
-                                    <div class="item tippy_faq" data-tippy-content="Подсказка">
-                                        <img src="image/product/1.jpg" alt="" />
-                                    </div>
-                                    <div class="item tippy_faq" data-tippy-content="Подсказка">
-                                        <img src="image/product/2.jpg" alt="" />
-                                    </div>
-                                    <div class="item tippy_faq" data-tippy-content="Подсказка">
-                                        <img src="image/product/3.jpg" alt="" />
-                                    </div>
-                                    <div class="item tippy_faq" data-tippy-content="Подсказка">
-                                        <img src="image/product/4.jpg" alt="" />
-                                    </div>
-                                    <div class="item tippy_faq" data-tippy-content="Подсказка">
-                                        <img src="image/product/5.jpg" alt="" />
-                                    </div>
-                                    <div class="item tippy_faq" data-tippy-content="Подсказка">
-                                        <img src="image/product/6.jpg" alt="" />
+                                 <!-- Add Arrows -->
+                                 <div class="gallery_arr next product_ico_next">
+                                    <i class="icon-ar_bottom"></i>
+                                </div>
+                                <div class="gallery_arr prev product_ico_prev">
+                                    <i class="icon-ar_up"></i>
+                                </div>
+                                <div class="swiper-container product_ico_slider">
+                                    <div class="item_list swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/3.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/4.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/5.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/6.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                <img src="image/product/7.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Работает как сладйер -->
+                                        <!--
+
+                                            <div class="swiper-slide">
+                                                <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                    <img src="image/product/8.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                    <img src="image/product/9.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                    <img src="image/product/10.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                    <img src="image/product/11.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                    <img src="image/product/12.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item tippy_faq" data-tippy-content="Подсказка">
+                                                    <img src="image/product/13.jpg" alt="" />
+                                                </div>
+                                            </div>
+
+                                        -->
                                     </div>
                                 </div>
                             </div>
@@ -1505,7 +1567,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab_detail tab_detail-sm tab_6">
+                                <!-- Если нет отзывов добавляем класс rew_empty -->
+                                <div class="tab_detail rew_empty tab_detail-sm tab_6">
                                     <h4 class="tabs_title">Отзывы покупателей и партнеров</h4>
                                     <form class="rew_form">
                                         <p>Отзывов пока нет, оставьте первым отзыв о товаре.</p>
@@ -1684,6 +1747,958 @@
                 </div>
             </div>
         </section>
+
+        <!-- Product1 -->
+        <section class="front_section bg_gray pd_bt_2a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="page_title">Рекомендуемые товары: </h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper_wrapper">
+                            <div class="swiper-container front_new_product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product1.jpg" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product2.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product3.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product4.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product1.jpg" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next new-next swiper_button"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev new-prev swiper_button"><i class="icon-ar_back"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product2 -->
+        <section class="front_section pd_bt_2a pd_tp_4a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="page_title">Рекомендуемые аксессуары: </h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper_wrapper">
+                            <div class="swiper-container front_new_product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product1.jpg" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product2.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product3.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product4.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product1.jpg" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next new-next swiper_button"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev new-prev swiper_button"><i class="icon-ar_back"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product3 -->
+        <section class="front_section bg_gray pd_bt_2a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="page_title">Рекомендуемая оснастка: </h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper_wrapper">
+                            <div class="swiper-container front_new_product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product1.jpg" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product2.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product3.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product4.png" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product_card">
+                                            <div class="product_bookmark">
+                                                <i class="icon-bookmark"></i>
+                                            </div>
+                                            <div class="product_image">
+                                                <a href="#">
+                                                    <div class="color_label text_sm label_blue">СПЕЦПЕДЛОЖЕНИЕ</div>
+                                                    <figure>
+                                                        <picture class="img-fluid">
+                                                            <img src="image/product1.jpg" alt="Title" class="img-fluid" />
+                                                        </picture>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="product_body">
+                                                <h2 class="product_title">
+                                                    <a href="#">
+                                                        Галтельная фреза Dimar (Израиль) с верхним металлическим подшипником.
+                                                    </a>
+                                                </h2>
+                                                <div class="product_starline flex align_center">
+                                                    <div class="flex star_list">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star_stroke"></i>
+                                                    </div>
+                                                    <div class="star_count">
+                                                        4,0
+                                                    </div>
+                                                </div>
+                                                <div class="product_sku">
+                                                    <div class="row align_center">
+                                                        <div class="col-9">
+                                                            <div class="product_price flex">
+                                                                <div class="price">
+                                                                    129 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                                <div class="price_old">
+                                                                    144 300 <i class="icon-ruble"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text_right">
+                                                            <button class="btn btn-success add_card">
+                                                                <i class="icon-cart"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next new-next swiper_button"><i class="icon-ar_next"></i></div>
+                                <div class="swiper-button-prev new-prev swiper_button"><i class="icon-ar_back"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Slide -->
+        <section class="section_slide_banner pd-bt-6a pd-tp-6a">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper_wrapper">
+                            <div class="swiper-container banner_fluid_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div style="background: #f3f5ff;" class="slide">
+                                            <div class="color_label label_blue">НОВИНКИ</div>
+                                            <div class="item item_info">
+                                                <div class="label">Новинки года:</div>
+                                                <h3>Dimar 2019</h3>
+                                            </div>
+                                            <div class="item image_list flex">
+                                                <div class="img">
+                                                    <img src="image/slide_banner1.png" alt="" />
+                                                </div>
+                                                <div class="img brand_logo">
+                                                    <img src="image/slide_banner2.png" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div style="background: #efefef;" class="slide">
+                                            <div class="color_label label_blue">НОВИНКИ</div>
+                                            <div class="item item_info">
+                                                <div class="label">Новинки года:</div>
+                                                <h3>Dimar 2019</h3>
+                                            </div>
+                                            <div class="item image_list flex">
+                                                <div class="img">
+                                                    <img src="image/slide_banner1.png" alt="" />
+                                                </div>
+                                                <div class="img brand_logo">
+                                                    <img src="image/slide_banner2.png" alt="" />
+                                                </div>
+                                                <div class="item">
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+            
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination banner_slide-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FooterCals -->
@@ -1700,23 +2715,26 @@
                         <form class="cals_big_form">
                             <div class="form-row row_max_w">
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="name" placeholder="Ваше имя" />
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" />
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="phone" placeholder="Ваш телефон" />
+                                        <label for="phone">Ваш телефон</label>
+                                        <input type="text" class="form-control" id="phone" />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <textarea rows="5" class="form-control" placeholder="Текст Вашего сообщения" id="text"></textarea>
+                                        <label for="text">Текст Вашего сообщения</label>
+                                        <textarea rows="5" class="form-control" id="text"></textarea>
                                     </div>
                                 </div>
                             </div>

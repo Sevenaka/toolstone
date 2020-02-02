@@ -94,6 +94,9 @@
     border: 1px solid var(--gray2);
     border-radius: 2px;
 }
+.gallery_wrap .gallery-top .swiper-slide{
+    width: 100%!important;
+}
 .gallery_wrap.gallery_slider .gallery-top .image_wrap{
     padding-bottom: 74%;
 }
