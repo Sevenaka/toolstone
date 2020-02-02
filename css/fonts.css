@@ -127,27 +127,33 @@
   .icon-play:before {
     content: "\e918";
   }
-  .icon-ruble:before {
+  .icon-plus:before {
     content: "\e919";
   }
-  .icon-search_white:before {
+  .icon-right-arrow3:before {
     content: "\e91a";
   }
-  .icon-shield:before {
+  .icon-ruble:before {
     content: "\e91b";
   }
-  .icon-star_stroke:before {
+  .icon-search_white:before {
     content: "\e91c";
   }
-  .icon-star:before {
+  .icon-shield:before {
     content: "\e91d";
   }
-  .icon-user:before {
+  .icon-star:before {
     content: "\e91e";
   }
-  .icon-vk:before {
+  .icon-star_stroke:before {
     content: "\e91f";
   }
-  .icon-youtube:before {
+  .icon-user:before {
     content: "\e920";
+  }
+  .icon-vk:before {
+    content: "\e921";
+  }
+  .icon-youtube:before {
+    content: "\e922";
   }

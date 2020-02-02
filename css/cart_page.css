@@ -1,0 +1,106 @@
+.cart_block{
+    border-radius: 2px;
+    border: 0.5px solid var(--gray2);
+    padding: 30px;
+}
+.cart_block .cart_block_container{
+    max-width: 1128px;
+    margin: 0px auto;
+}
+.cart_block .cart_block_label{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 17px;
+}
+.cart_block:not(:last-child){
+    margin-bottom: 16px;
+}
+.summary_price{
+    margin-bottom: 26px;
+}
+.summary_price > label{
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    font-family: "FuturaMediumC";
+    margin-bottom: 6px;
+}
+.summary_price .item{
+    display: flex;
+    align-items: baseline;
+}
+.summary_price .item:not(:last-child){
+    margin-bottom: 11px;
+}
+.summary_price .item span{
+    color: var(--gray1);
+    margin-right: 6px;
+    font-family: "FuturaBookC Regular";
+}
+.summary_price .item .price{
+    font-family: "FuturaDemiC";
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--black);
+}
+.summary_price .item .price i{
+    font-size: 16px;
+}
+.summary_price .item .custom-control{
+    font-size: 11px;
+    margin-top: 8px;
+}
+.summary_price .custom-control-label::before{
+    top: .01rem;
+}
+.summary_price .custom-control-label::after{
+    top: 5px!important;
+}
+.cart_block .cart_buy{
+    padding: .95rem 1.6rem .92rem 1.6rem;
+}
+.cart_end{
+    padding-left: 20px;
+}
+.delivery_wrapper{
+    border-left: 0.5px solid #CFCFCF;
+    border-right: 0.5px solid #CFCFCF;
+    border-bottom: 0.5px solid #CFCFCF;
+    border-radius: 0px 0px 2px 2px;
+    padding: 5px 24px 20px 24px;
+}
+.radio_delivery .delivery_wrapper{
+    display: none;
+}
+.radio_delivery .custom-control-input:checked~.custom-control-label~.delivery_wrapper{
+    display: block;
+}
+.radio_delivery .custom-control-input:checked~.custom-control-label{
+    border-bottom: transparent;
+    border-radius: 2px 2px 0px 0px;
+}
+.delivery_wrapper .inp_name{
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--black);
+    font-family: "FuturaMediumC";
+    margin-bottom: 12px;
+}
+.delivery_wrapper .name_dym{
+    margin-bottom: 12px;
+    min-height: 16px;
+}
+.delivery_wrapper .wrapper_padding{
+    padding-left: 1.6rem;
+}
+.delivery_wrapper .form-row:not(:last-child){
+    margin-bottom: 16px;
+}
+.del_row{
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+}
+.del_col{
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
