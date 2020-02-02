@@ -377,6 +377,9 @@ label{
   top: 0.8rem;
   position: absolute;
   transition: font-size .2s ease, top .2s ease;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;   
 }
 .input_wrapper textarea{
   resize: none;
