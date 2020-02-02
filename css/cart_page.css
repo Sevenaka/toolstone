@@ -1,16 +1,10 @@
 .cart_block{
     border-radius: 2px;
     border: 0.5px solid var(--gray2);
-    padding: 30px;
 }
 .cart_block .cart_block_container{
     max-width: 1128px;
     margin: 0px auto;
-}
-.cart_block .cart_block_label{
-    font-size: 24px;
-    line-height: 26px;
-    margin-bottom: 17px;
 }
 .cart_block:not(:last-child){
     margin-bottom: 16px;
@@ -79,7 +73,7 @@
     border-bottom: transparent;
     border-radius: 2px 2px 0px 0px;
 }
-.delivery_wrapper .inp_name{
+.inp_name{
     font-size: 14px;
     line-height: 16px;
     color: var(--black);
@@ -90,17 +84,99 @@
     margin-bottom: 12px;
     min-height: 16px;
 }
-.delivery_wrapper .wrapper_padding{
-    padding-left: 1.6rem;
+.table_footer{
+    border: 1px solid #dfe1e8;
+    background: #fafafa;
 }
-.delivery_wrapper .form-row:not(:last-child){
-    margin-bottom: 16px;
+.table_footer .cart_block_container{
+    justify-content: space-between;
 }
-.del_row{
-    margin-right: -15px!important;
-    margin-left: -15px!important;
+.table_footer .footer_price .it_label{
+    font-size: 12px;
+    font-family: "FuturaBookC Regular";
+    margin-bottom: 4px;
+    width: 100%;
 }
-.del_col{
-    padding-left: 15px!important;
-    padding-right: 15px!important;
+.table_footer .footer_price .price_ekonom{
+    letter-spacing: 0.01em;
+    font-size: 10px;
+    color: var(--mainGreen);
+    padding-top: 6px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.table_footer .footer_price .price_wrap{
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.table_footer .footer_price .price_current{
+    font-family: "FuturaDemiC";
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--black);
+}
+.table_footer .footer_price .price_current i{
+    font-size: 15px;
+}
+.table_footer .footer_price .price_old{
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 9px;
+    font-family: "FuturaBookC Regular";
+    color: var(--gray5);
+}
+.table_footer .footer_price .price_old span{
+    text-decoration-line: line-through;
+}
+.table_footer .footer_price .price_old i{
+    font-size: 10px;
+}
+.table_footer .footer_price{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 994px) {
+    .cart_block{
+        padding: 30px;
+    }
+    .cart_block .cart_block_label{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 17px;
+    }
+    .delivery_wrapper .wrapper_padding{
+        padding-left: 1.6rem;
+    }
+    .delivery_wrapper .form-row:not(:last-child){
+        margin-bottom: 16px;
+    }
+    .del_row{
+        margin-right: -15px!important;
+        margin-left: -15px!important;
+    }
+    .del_col{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+}
+@media (max-width: 993px) {
+    .cart_block{
+        padding: 15px;
+    }
+    .cart_block .cart_block_label{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .table_footer .cart_block_container{
+        display: block;
+    }
+    .table_footer .footer_price{
+        margin-top: 15px;
+        justify-content: flex-end;
+    }
+    .cart_block .custom-radio .custom-control-label{
+        padding: 15px 14px;
+    }
 }

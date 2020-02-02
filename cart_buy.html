@@ -20,6 +20,7 @@
 
     <!-- Catalog -->
     <link href="css/product_card.css" rel="stylesheet">
+    <link href="css/product_table.css" rel="stylesheet">
 
     <!-- Cart Page -->
     <link href="css/cart_page.css" rel="stylesheet">
@@ -148,12 +149,143 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
+                            <div class="section_cart_table">
+                                <table class="product_table cart_table table table_noborder">
+                                    <thead>
+                                        <tr>
+                                            <th class="image" scope="col">Фото:</th>
+                                            <th class="cart_name" scope="col">Наименование товара:</th>
+                                            <th class="th_md" scope="col">Цена:</th>
+                                            <th class="th_md" scope="col">Количество:</th>
+                                            <th class="th_md" scope="col">Итог:</th>
+                                            <th class="th_sm"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table_line">
+                                                <div class="table_image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img class="img-fluid lazy" data-src="image/table_image.jpg" alt="" />
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 450</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">992 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table_sum_price">
+                                                    1 292 450 <i class="icon-ruble"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table_remove">
+                                                    <i class="icon-close"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table_line">
+                                                <div class="table_image">
+                                                    <figure>
+                                                        <picture>
+                                                            <img class="img-fluid lazy" data-src="image/table_image.jpg" alt="" />
+                                                        </picture>
+                                                    </figure>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 450</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">992 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="card_count flex">
+                                                    <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                    <div class="btn btn-success btn-plus">+</div>
+                                                    <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                    <div class="btn btn-success btn-minus">-</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table_sum_price">
+                                                    1 292 450 <i class="icon-ruble"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table_remove">
+                                                    <i class="icon-close"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table_footer cart_block">
+                                <div class="cart_block_container flex align_center">
+                                    <div>
+                                        <div class="inp_name">Промо код</div>
+                                        <div class="input_wrapper input_label">
+                                            <label for="cartPromo">Ваш промокод:</label>
+                                            <input type="text" class="form-control name_f" id="cartPromo">
+                                        </div>
+                                    </div>
+                                    <div class="footer_price">
+                                        <div>
+                                            <div class="it_label">Итого:</div>
+                                            <div class="flex price_wrap">
+                                                <div class="price_current">
+                                                    424 500 <i class="icon-ruble"></i>
+                                                </div>
+                                                <div class="price_old">
+                                                    <span>924 500</span> <i class="icon-ruble"></i>
+                                                </div>
+                                            </div>
+                                            <div class="item fluid price_ekonom">
+                                                Экономия в цене - 5 100 <i class="icon-ruble"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="cart_block">
                                 <div class="cart_block_container">
                                     <h3 class="cart_block_label">Контактная информация</h3>
                                     <div class="row">
                                         <div class="form-group col-md-4 col-lg-4">
-                                            <div class="input_wrapper input_label">
+                                            <div class="input_wrapper is-valid input_label">
                                                 <span class="required" title="Обязательно для заполнения">*</span>
                                                 <label for="cartName">Ваше имя:</label>
                                                 <input type="text" class="form-control name_f" id="cartName">

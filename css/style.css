@@ -395,9 +395,11 @@ label{
 .input_wrapper.is-invalid .required{
   color: var(--red);
 }
+/*
 .input_wrapper.is-valid .form-control{
   border-color: var(--mainGreen);
 }
+*/
 .input_wrapper.is-valid .required{
   color: var(--mainGreen);
 }
