@@ -80,10 +80,6 @@
     font-family: "FuturaMediumC";
     margin-bottom: 12px;
 }
-.delivery_wrapper .name_dym{
-    margin-bottom: 12px;
-    min-height: 16px;
-}
 .table_footer{
     border: 1px solid #dfe1e8;
     background: #fafafa;
@@ -137,6 +133,10 @@
     flex-wrap: wrap;
 }
 @media (min-width: 994px) {
+    .delivery_wrapper .name_dym{
+        margin-bottom: 12px;
+        min-height: 16px;
+    }
     .cart_block{
         padding: 30px;
     }

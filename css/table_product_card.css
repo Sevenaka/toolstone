@@ -224,6 +224,12 @@
     .product_table.cart_table .sku_specifications{
         margin-top: 20px;
     }
+    .table_product_card .product_image{
+        padding: 18px;
+    }
+    .gallery_slider .gallery-top .image_wrap{
+        padding-bottom: 56%!important;
+    }
 }
 @media (min-width: 994px) {
     .table_product_card .col-image {
