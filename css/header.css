@@ -265,6 +265,9 @@
 .service_menu > li:not(.li_left) .expand_menu{
   right: 0;
 }
+.service_menu > li:not(.li_left) .expand_menu .expand_menu_block > .row{
+  flex-direction: row-reverse;
+}
 .service_menu > li:hover .expand_menu{
   display: block;
 }

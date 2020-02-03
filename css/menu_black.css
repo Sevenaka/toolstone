@@ -1,0 +1,56 @@
+.service_menu > li .expand_menu{
+    background: var(--black4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+}
+.service_menu > li .expand_menu li a{
+    color: #FFFFFF;
+}
+.service_menu > li .expand_menu li:not(:last-child) {
+    border-bottom: 1px solid #0d111c;
+}
+.service_menu > li .expand_menu > li:hover > a {
+    background: rgba(22, 25, 32, 0.99);
+    color: var(--red);
+}
+.service_menu > li .expand_menu > li .expand_menu_block {
+    background: var(--black4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+}
+.category_menu{
+    background: var(--black4);
+}
+.category_bgilist_scroll .category_btd,
+.category_menu .category_filter .cat_bt,
+.category_menu .category_filter .item{
+    color: #FFFFFF;
+}
+.category_menu .brand_link{
+    color: #FFFFFF;
+}
+.category_menu .brand_link:hover .brand_link_content {
+    background: rgba(22, 25, 32, 0.99);
+}
+.category_bgilist_scroll .category_btd .itm:not(:last-child)::after{
+    background: #FFFFFF;
+}
+.category_big_list .menu_card{
+    color: #FFFFFF;
+}
+.category_bgilist_scroll::after{
+    background: -moz-linear-gradient(top, rgba(2, 6, 17, 0) 0%, rgba(2, 6, 17, 1) 90%, rgba(2, 6, 17, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(2, 6, 17, 0) 0%, rgba(2, 6, 17, 1) 90%, rgba(2, 6, 17, 1) 100%);
+    background: linear-gradient(to bottom, rgba(2, 6, 17, 0) 0%, rgba(2, 6, 17, 1) 90%, rgba(2, 6, 17, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.category_bgilist_scroll,
+.category_menu .category_brand_list,
+.category_menu .category_filter::after{
+    border-color: #2f323b;
+}
+.custom_scrollbar.tabs_list::-webkit-scrollbar-track{
+    border-top: 0.5px solid #2f323b;
+  }
+  .custom_scrollbar:not(.tabs_list)::-webkit-scrollbar-track {
+    border-left: 0.5px solid #2f323b;
+    border-right: 0.5px solid #2f323b;
+  }
