@@ -251,8 +251,6 @@
 .product_table .table_image{
     position: relative;
     overflow: hidden;
-    width: 120px;
-    height: 120px;
 }
 .product_table .table_image figure{
     margin: 0;
@@ -279,9 +277,6 @@
 }
 .product_table th.image{
     width: 10%;
-}
-.product_table th.cart_name{
-
 }
 .product_table th.th_md{
     width: 13%;
@@ -324,9 +319,6 @@
     max-width: 440px;
     display: inline-block;
 }
-.product_table.cart_table .table_line{
-    position: relative;
-}
 .product_table.cart_table .table_line::before{
     content: "";
     background: #eeeeee;
@@ -342,4 +334,76 @@
 }
 .product_table.cart_table{
     margin-bottom: 0px;
+    table-layout:fixed; 
+}
+.product_table.cart_table .table_hide{
+    color: var(--red);
+    position: absolute;
+    font-size: 36px;
+    top: -10px;
+    right: 10px;
+}
+@media (min-width: 1201px){
+    .product_table .table_image{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (min-width: 994px) and (max-width: 1200px) {
+    .product_table .table_image{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (min-width: 994px) {
+    .product_table.cart_table .table_line{
+        position: relative;
+    }
+}
+@media (max-width: 993px) {
+    .product_table.cart_table thead,
+    .product_table.cart_table tbody,
+    .product_table.cart_table th,
+    .product_table.cart_table td,
+    .product_table.cart_table tr,
+    .product_table.cart_table{
+        display: block;
+    }
+    .product_table.cart_table thead{
+        display: none;
+    }
+    .product_table .table_image{
+        max-width: 160px;
+        margin: 0px auto;
+        padding-bottom: 40%;
+    }
+    .product_table.cart_table td{
+        border-bottom: 0px;
+        border-top: 0px;
+        text-align: center;
+    }
+    .product_table.cart_table tr{
+        border: 0.5px solid #CFCFCF;
+        position: relative;
+    }
+    .product_table.cart_table tr:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .product_table.cart_table tr td:not(:last-child){
+        padding-bottom: 6px;
+    }
+    .product_table.cart_table tr td:last-child{
+        padding-top: 0px;
+    }
+    .product_table.cart_table tr td{
+        position: initial;
+    }
+    .product_table .table_remove{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .product_table.cart_table .card_count{
+        justify-content: center;
+    }
 }
