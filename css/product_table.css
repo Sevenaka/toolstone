@@ -60,6 +60,7 @@
 }
 .table.product_table a.name{
     font-family: "FuturaMediumC";
+    margin-bottom: 5px;
 }
 .product_table .add_btn,
 .product_table .card_count .btn{
@@ -335,6 +336,9 @@
     top: 1px;
     bottom: 1px;
     left: 1px;
+}
+.product_table.cart_table .table_line.table_line_green::before{
+    background: var(--mainGreen);
 }
 .product_table.cart_table{
     margin-bottom: 0px;
