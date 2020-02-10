@@ -61,25 +61,6 @@ body.scroll_hide{
     max-width: 924px;
   }
 }
-@media (min-width: 992px) {
-  .container, .container-sm, .container-xl {
-    max-width: 1190px;
-  }
-}
-@media (min-width: 1200px) {
-  .container, .container-sm, .container-xl {
-     max-width: 1390px;
-  }
-  .container-lg{
-    max-width: 1128px;
-  }
-  .container-md{
-    max-width: 897px;
-  }
-  .container-lgs{
-    max-width: 1198px;
-  }
-}
 .container-lgs{
   width: 100%;
   padding-right: 15px;
@@ -1513,5 +1494,24 @@ a[data-fancybox]:hover .lightbox_ico{
   .container-lgs,
   .container-md{
     max-width: 924px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-sm, .container-xl {
+    max-width: 1190px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-xl, .container-lgs {
+     max-width: 1390px;
+  }
+  .container-lg{
+    max-width: 1128px;
+  }
+  .container-md{
+    max-width: 897px;
+  }
+  .container-lgs{
+    max-width: 1228px;
   }
 }

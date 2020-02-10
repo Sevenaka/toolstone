@@ -1,0 +1,73 @@
+.about_main_img img{
+    border-radius: 2px;
+}
+.about_img_text{
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+}
+.about_img_text span{
+    color: var(--black);
+}
+.page_about_text .strong_title{
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--black);
+    font-family: "FuturaMediumC";
+    margin-bottom: 15px;
+    display: block;
+    font-weight: normal;
+}
+.page_about_text .tr_image_rght{
+    padding-top: 40px;
+}
+.about_section_bg{
+    background: #f9faff;
+}
+.section_about_bottom_text{
+    max-width: 924px;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 38px;
+}
+.section_about_bottom_text p{
+    margin: 0px;
+}
+.text_height{
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.text_height .about_bottom{
+    margin-top: 10px!important;
+}
+@media (min-width: 994px) {
+    .img_ab_pd.training{
+        padding-left: 30px;
+    }
+    .about.img_ab_pd{
+        padding-right: 30px;
+    }
+    .about_img_text{
+        max-width: 924px;
+        margin: 0px auto;
+        padding-top: 38px;
+        padding-bottom: 78px;
+    }
+    .hide_pc{
+        display: none;
+    }
+}
+@media (max-width: 993px) {
+    .about_img_text{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .hide_mobile{
+        display: none;
+    }
+}
