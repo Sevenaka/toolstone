@@ -2,6 +2,37 @@
     display: block;
     position: relative;
     margin-bottom: 30px;
+    padding: 30px 25px;
+    border: 1px solid var(--gray3);
+    border-top: 5px solid var(--gray3);
+    border-radius: 2px;
+}
+.complect_card h5{
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--black4);
+    margin-bottom: 26px;
+}
+.complect_card .complect_label{
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    z-index: 10;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+}
+.complect_card .complect_label span{
+    font-size: 16px;
+    line-height: 19px;
+    background: var(--black4);
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: "FuturaDemiC";
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 15px;
 }
 .complect_card .image{
     position: relative;
@@ -9,7 +40,7 @@
     width: 100%;
     padding-bottom: 100%;
     border-radius: 2px;
-    background: #C4C4C4;
+    border: 0.5px solid var(--gray2);
 }
 .complect_card .image .image_wrp{
     margin: 0;
@@ -29,4 +60,84 @@
     vertical-align: middle;
     -o-object-fit: cover;
     border-radius: 2px;
+}
+.start_complect h3.page_title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+.start_complect .product_starline{
+    margin-bottom: 14px;
+}
+.start_complect .product_starline .star_list {
+    color: var(--yellow);
+    font-size: 18px;
+}
+.start_complect .product_starline .star_list i:not(:last-child) {
+    margin-right: 7px;
+}
+.start_complect .product_starline .star_count {
+    color: var(--gray5);
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaBookC Regular";
+    margin-bottom: -5px;
+}
+.start_complect h4{
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--black4);
+    margin-bottom: 9px;
+    margin-top: 29px;
+}
+.start_complect .complect_text{
+    font-size: 13px;
+    line-height: 28px;
+    color: var(--black4);
+    overflow: hidden;
+    position: relative;
+    max-height: 350px;
+}
+.start_complect .complect_text::after{
+    content: "";
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+.start_complect .complect_text p{
+    margin-bottom: 24px;
+}
+.start_complect .complect_text label{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "FuturaMediumC";
+    color: var(--black);
+}
+.start_complect .complect_text ul{
+    padding-left: 26px;
+    margin: 0px;
+}
+.start_complect .complect_text ul li{
+    list-style: none;
+    position: relative;
+}
+.start_complect .complect_text ul li::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    left: -26px;
+    top: 11px;
+    display: block;
+    background: var(--red);
 }

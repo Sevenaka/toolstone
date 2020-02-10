@@ -107,53 +107,6 @@ if(tabsHeader.length) {
     });
 }
 
-//Toggle collapse text
-var moreBody = document.querySelectorAll('.more_block[data-toggle]');
-
-if(moreBody.length) {
-    moreBody.forEach(function(item){
-
-        var id = item.getAttribute('data-toggle');
-
-        if(item.clientHeight > 620) {
-            item.classList.add('toggle_on');
-        }
-    });
-}
-
-var moreToggle = document.querySelectorAll('[data-more-toggle]');
-
-if(moreToggle.length){
-    moreToggle.forEach(function(item){
-
-        item.innerHTML = item.getAttribute('data-hide-title');
-
-        item.addEventListener('click', function(){
-
-            var curToggle = item.getAttribute('data-more-toggle');
-            var toggleContainer = document.querySelector('[data-toggle="'+curToggle+'"]');
-            if(toggleContainer) {
-                if(toggleContainer.classList.contains('show')){
-                    toggleContainer.classList.remove('show');
-                    toggleContainer.scrollIntoView({
-                        behavior: "smooth",
-                        block: 'center',
-                        inline: 'center'
-                    });
-                    item.innerHTML = item.getAttribute('data-hide-title');
-                    item.classList.remove('btn_active');
-                } else {
-                    toggleContainer.classList.add('show');
-                    item.classList.add('btn_active');
-                    item.innerHTML = item.getAttribute('data-show-title');
-                }
-            } else {
-                console.log('Block not found')
-            }
-        });
-    });
-}
-
 //Rew add btn
 var rewBtn = document.querySelector('.rew_add_btn');
 

@@ -76,6 +76,16 @@ body.scroll_hide{
   .container-md{
     max-width: 897px;
   }
+  .container-lgs{
+    max-width: 1198px;
+  }
+}
+.container-lgs{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .image_border_r{
   border-radius: 3px;
@@ -1396,6 +1406,10 @@ a[data-fancybox]:hover .lightbox_ico{
   }
 }
 @media (max-width: 993px) {
+  .container-lgs,
+  .container-md{
+    max-width: 540px;
+  }
   .pd_bt_1a{
     padding-bottom: 8px!important;
   }
@@ -1493,5 +1507,11 @@ a[data-fancybox]:hover .lightbox_ico{
   }
   .swiper_wrapper .swiper-pagination{
     bottom: -36px;
+  }
+}
+@media (min-width: 768px) {
+  .container-lgs,
+  .container-md{
+    max-width: 924px;
   }
 }
