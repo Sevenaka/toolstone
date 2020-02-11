@@ -17,6 +17,28 @@
     padding: 43px 67px;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+.deliv_alert .alert_wrap::after{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 47px;
+    background: url('../image/ico/cals_ico2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 4px;
+    right: 10px;
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.deliv_alert .alert_wrap .item{
+    position: relative;
+    z-index: 5;
 }
 .deliv_alert .alert_wrap .alert_ico{
     width: 84px;
@@ -35,4 +57,214 @@
     line-height: 16px;
     font-size: 14px;
     letter-spacing: 0.2em;
+}
+.def_section{
+    position: relative;
+}
+.def_section.def_bottom_pd{
+    padding-bottom: 148px;
+}
+.def_section.def_section_bg{
+    background: #f9faff;
+}
+.def_section.def_top_pd{
+    padding-top: 128px;
+}
+.section_ico{
+    position: absolute;
+    top: 0;
+    margin-top: -99px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section_ico .ico_bg{
+    background: var(--mainGreen);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.section_ico.ico_red .ico_bg{
+    background: var(--red);
+}
+.section_ico .ico_bg .def_ico{
+    width: 51px;
+    height: 52px;
+}
+.section_ico .ico_bg .def_ico.ico_pattern{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.section_ico .section_ico_wrap{
+    border: 1px solid #E7EAFF;
+    width: 198px;
+    height: 198px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.ico_money{
+    background: url('../image/ico/def_money.svg');
+}
+.ico_money_type{
+    background: url('../image/ico/def_money_type.svg');
+}
+.ico_location{
+    background: url('../image/ico/def_location.svg');
+}
+.ico_sam{
+    background: url('../image/ico/def_sam.svg');
+}
+.ico_gar{
+    background: url('../image/ico/def_gar.svg');
+}
+.ico_prod{
+    background: url('../image/ico/def_prod.svg');
+}
+.def_section .title_wrap h3{
+    font-size: 30px;
+    line-height: 28px;
+    text-align: center;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+}
+.mini_alert{
+    margin-top: 40px;
+    background: #F3F5FF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 19px 25px;
+}
+.mini_alert p{
+    margin-bottom: 0px;
+    margin-left: 24px;
+    font-size: 13px;
+    line-height: 28px;
+    padding-right: 70px;
+}
+.mini_alert i{
+    font-size: 35px;
+}
+.mini_alert i.icon-circle_check{
+    color: var(--red);
+}
+.money_type_list i{
+    font-size: 40px;
+    color: var(--black);
+    position: absolute;
+    top: -11px;
+    left: 0;
+}
+.money_type_list .item{
+    position: relative;
+    padding-left: 64px;
+}
+.money_type_list .item:not(:last-child){
+    margin-bottom: 49px;
+}
+.money_type_list .text .name{
+    font-size: 20px;
+    line-height: 22px;
+    font-family: "FuturaMediumC";
+    margin-bottom: 8px;
+}
+.money_type_list .bank_card .elem:not(:last-child){
+    margin-right: 24px;
+}
+.ul_style{
+    padding-left: 26px;
+    margin: 0px;
+    font-size: 13px;
+    line-height: 28px;
+}
+.ul_style li{
+    list-style: none;
+    position: relative;
+}
+.ul_style li:not(:last-child){
+    margin-bottom: 16px;
+}
+.ul_style li::before{
+    content: "";
+    width: 10px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    left: -26px;
+    top: 13px;
+    display: block;
+    background: var(--red);
+}
+.ul_style.mrg_big li:not(:last-child){
+    margin-bottom: 50px;
+}
+.price_list{
+    padding-top: 15px;
+}
+.price_list .item{
+    border-bottom: 0.5px solid #E7EAFF;
+    padding: 23px 0px;
+}
+.price_list .item:first-child{
+    border-top: 0.5px solid #E7EAFF;
+}
+.price_list .item .name{
+    position: relative;
+    font-size: 13px;
+    line-height: 28px;
+    padding-left: 24px;
+}
+.price_list .item .name::before{
+    content: "";
+    width: 10px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    display: block;
+    background: var(--red);
+}
+.price_list .item strong{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaDemiC";
+    color: var(--black);
+}
+.price_list .item i.icon-ruble{
+    font-size: 10px;
+}
+.price_list .item .black{
+    color: var(--black);
+}
+.price_list .item .row{
+    align-items: center;
+}
+.price_list .item .green{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaDemiC";
+}
+.price_list .item .price{
+    text-align: right;
+}
+.price_list .item .price strong{
+    font-size: 16px;
+    line-height: 19px;
+}
+.price_list .item .desc{
+    padding-left: 24px;
+    font-size: 13px;
+    line-height: 28px;
+    color: #676767;
 }
