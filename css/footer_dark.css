@@ -142,6 +142,12 @@
     }
 }
 @media (max-width: 993px) {
+    .footer_bottom .flex{
+        display: block;
+    }
+    .footer_bottom .footer_in_txt{
+        margin-top: 10px;
+    }
     .footer .col{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;

@@ -1,0 +1,140 @@
+.brand_main_text h2{
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.brand_main_text p{
+    font-size: 13px;
+    line-height: 28px;
+}
+.history_img{
+    text-align: center;
+}
+.history_info .more_block.toggle_on:not(.show){
+    max-height: 400px;
+}
+.ceo_wrap{
+    background: #F3F5FF;
+    border-radius: 4px;
+}
+.ceo_wrap img{
+    border-radius: 50%;
+}
+.ceo_wrap .row{
+    align-items: center;
+}
+.ceo_wrap p{
+    padding-right: 40px;
+}
+.brand_ab_section_bg{
+    background: #f9faff;
+}
+.brand_ab_section_gr{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f9faff+0,ffffff+100 */
+    background: rgb(249,250,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(249,250,255,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(249,250,255,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(249,250,255,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9faff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.container_br_service{
+    padding-top: 40px;
+}
+.card_br_service{
+    text-align: center;
+}
+.card_br_service .ico_wrapper{
+    background: #FFFFFF;
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.card_br_service .ico_wrapper .ico_bg{
+    background: var(--mainGreen);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_br_service .ico_wrapper .ico_bg img{
+    max-width: 78px;
+}
+.card_br_service p{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    max-width: 280px;
+    margin: 0px auto;
+}
+.brand_alert{
+    background: var(--mainGreen);
+    color: #FFFFFF;
+    font-family: "FuturaMediumC";
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+}
+.brand_alert p{
+    margin: 0px auto;
+    max-width: 465px;
+
+}
+@media (min-width: 994px) {
+    .br_title{
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+    .history_info h4{
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .history_img{
+        text-align: center;
+    }
+    .brand_alert{
+        margin-bottom: 37px;
+        padding: 30px 50px;
+    }
+    .ceo_wrap{
+        padding: 40px 39px;
+    }
+}
+@media (max-width: 993px) {
+    .ceo_wrap{
+        padding: 15px;
+    }
+    .ceo_image{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .history_img{
+        display: none;
+    }
+    .brand_ab_section .brand_image{
+        margin-bottom: 30px;
+    }
+    .history_info h4,
+    .br_title{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .brand_alert{
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .brand_section_prod .product_card{
+        margin-bottom: 0px;
+    }
+    .col-lg-4:not(:last-child) .card_br_service{
+        margin-bottom: 30px;
+    }
+}

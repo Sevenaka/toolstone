@@ -31,6 +31,9 @@
   --purple: #B85FE2;
   --footerDarkLine: #1a1f2b;
 }
+.text_color_gray{
+  color: var(--gray1);
+}
 body {
   margin: 0;
   font-family: 'Montserrat',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -1284,7 +1287,24 @@ a[data-fancybox]:hover .lightbox_ico{
 .fotorama__stage__shaft{
   z-index: 30;
 }
+.image_border{
+  border-radius: 2px;
+}
+.text_style{
+  font-size: 13px;
+  line-height: 28px;
+}
+.more_block.toggle_on:not(.show) + .mrg_top_more{
+  margin-top: -20px;
+}
 @media (min-width: 994px) {
+  .text_height{
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
   .pd-bt-8a{
     padding-bottom: 64px!important;
   }
