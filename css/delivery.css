@@ -1,0 +1,38 @@
+.page_title_max{
+    max-width: 900px!important; 
+}
+.deliv_ico{
+    background: url('../image/ico/deliv_ico.svg');
+}
+.deliv_alert{
+    padding: 5px;
+    border: 1px solid #b3dfbf;
+    border-radius: 4px;
+    margin-bottom: 39px;
+}
+.deliv_alert .alert_wrap{
+    background: #F3F5FF;
+    border-radius: 4px;
+    display: flex;
+    padding: 43px 67px;
+    align-items: center;
+    justify-content: space-between;
+}
+.deliv_alert .alert_wrap .alert_ico{
+    width: 84px;
+    height: 53px;
+}
+.deliv_alert .alert_wrap label{
+    margin: 0px;
+    margin-right: 22px;
+    font-family: "FuturaMediumC";
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+}
+.deliv_alert .alert_wrap .btn{
+    padding: .95rem 1.5rem .72rem 1.5rem;
+    line-height: 16px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
