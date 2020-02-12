@@ -236,7 +236,6 @@ ul[class] li{
 .main{
   padding-top: 16px;
   padding-bottom: 64px;
-  min-height: 400px;
 }
 h1, h2, h3, h4, h5{
   font-family: "FuturaMediumC";
@@ -1299,6 +1298,9 @@ a[data-fancybox]:hover .lightbox_ico{
   margin-top: -20px;
 }
 @media (min-width: 994px) {
+  .main{
+    min-height: 400px;
+  }
   .text_height{
     height: 100%;
     flex-wrap: wrap;
