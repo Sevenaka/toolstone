@@ -19,13 +19,10 @@
     padding: 0px;
 }
 .contact_menu{
-    background: var(--gray7);
+    background: #0f131c;
     height: 100%;
     padding: 32px 26px;
-}
-.col_cnt_info{
-    position: relative;
-    z-index: 40;
+    color: #ffffff;
 }
 .contact_map{
     width: 100%;
@@ -33,11 +30,14 @@
     position: relative;
     z-index: 5!important;
 }
+.col_cnt_info{
+    position: relative;
+    z-index: 40;
+}
 .contact_menu .row_address{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: var(--red);
     font-family: "FuturaDemiC";
     margin-bottom: 17px;
     display: flex;
@@ -46,6 +46,7 @@
 .contact_menu .row_address i{
     margin-right: 10px;
     font-size: 17px;
+    color: var(--red);
 }
 .contact_menu .row_desc{
     font-size: 12px;
@@ -56,6 +57,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    color: var(--gray2);
 }
 .contact_menu .row_info li{
     padding: 22px 0px;
@@ -64,11 +66,11 @@
     cursor: pointer;
 }
 .contact_menu .row_info li:not(:last-child){
-    border-bottom: 0.5px solid #c7c8cc;
+    border-bottom: 0.5px solid #252831;
 }
 .contact_menu .row_info li i{
     margin-right: 10px;
-    color: var(--gray2);
+    color: var(--mainGreen);
     font-size: 17px;
 }
 .dil_wrap .btn{
@@ -81,6 +83,55 @@
 }
 .leaflet-popup-content{
     margin: 13px 10px;
+}
+.dil_wrap label{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "FuturaDemiC";
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    color: var(--gray2);
+}
+.dil_wrap .city_list{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 14px;
+    font-family: "FuturaBookC Regular";
+    color: #ffffff;
+}
+.dil_wrap .city_list:not(:last-child){
+    margin-bottom: 19px;
+}
+.dil_wrap .city_list li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.dil_wrap .city_list li span{
+    border-bottom: 1px solid transparent;
+}
+.dil_wrap .city_list li:hover,
+.dil_wrap .city_list li.active{
+    color: var(--red);
+}
+.dil_wrap .city_list li.active span{
+    border-color: var(--red);
+}
+.dil_wrap .city_list li span{
+    cursor: pointer;
+}
+.dil_wrap .city_list li:not(:last-child)::after{
+    content: "";
+    background: #53545A;
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 @media (min-width: 1401px) {
     .col_cnt_map{
@@ -138,7 +189,7 @@
         height: 700px;
     }
     .dil_wrap{
-        padding-top: 30px;
+        padding-top: 10px;
     }
     .contact_menu .row_desc{
         margin-bottom: 15px;
