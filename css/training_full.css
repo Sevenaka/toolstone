@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 .media_title_wrapper{
-    z-index: 20;
+    z-index: 5;
     position: absolute;
     top: 0;
     left: 0;

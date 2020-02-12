@@ -121,39 +121,42 @@
   .icon-money:before {
     content: "\e916";
   }
-  .icon-operator:before {
+  .icon-new_time:before {
     content: "\e917";
   }
-  .icon-play:before {
+  .icon-operator:before {
     content: "\e918";
   }
-  .icon-plus:before {
+  .icon-play:before {
     content: "\e919";
   }
-  .icon-right-arrow3:before {
+  .icon-plus:before {
     content: "\e91a";
   }
-  .icon-ruble:before {
+  .icon-right-arrow3:before {
     content: "\e91b";
   }
-  .icon-search_white:before {
+  .icon-ruble:before {
     content: "\e91c";
   }
-  .icon-shield:before {
+  .icon-search_white:before {
     content: "\e91d";
   }
-  .icon-star:before {
+  .icon-shield:before {
     content: "\e91e";
   }
   .icon-star_stroke:before {
     content: "\e91f";
   }
-  .icon-user:before {
+  .icon-star:before {
     content: "\e920";
   }
-  .icon-vk:before {
+  .icon-user:before {
     content: "\e921";
   }
-  .icon-youtube:before {
+  .icon-vk:before {
     content: "\e922";
+  }
+  .icon-youtube:before {
+    content: "\e923";
   }
