@@ -2,6 +2,18 @@ var rangeConst;
 var rangeInput = document.querySelectorAll('.range_input');
 var inputMin = document.querySelector('.range_input .range_min');
 var inputMax = document.querySelector('.range_input .range_max');
+var productFilterBtn = document.querySelector('.filter_opn_btn');
+var productFulter = document.querySelector('.product_filter');
+
+if(productFilterBtn) {
+    productFilterBtn.addEventListener('click', function() {
+        if(productFulter.classList.contains('show')){
+            productFulter.classList.remove('show');
+        } else {
+            productFulter.classList.add('show');
+        }
+    });
+}
 
 var rangeMin = 50000;
 var rangeMax = 2900000;

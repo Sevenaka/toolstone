@@ -17,21 +17,40 @@ if(gallerySlider.length) {
     
     if(elem.getAttribute("data-swiper-id")) {
       unicIdSlider = elem.getAttribute("data-swiper-id");
-    }
+    } 
     if(elem.getAttribute("data-thumb-direction")) {
       direction = elem.getAttribute("data-thumb-direction");
     }
-
     var top = elem.querySelector('.gallery-top');
     var thumb = elem.querySelector('.gallery-thumbs');
     var galleryThumbs = new Swiper(thumb, {
-        spaceBetween: thumbMargin,
-        slidesPerView: slides,
-        direction: direction,
         lazy: true,
+        direction: 'horizontal',
+        spaceBetween: 5,
+        slidesPerView: 4,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 5,
+          },
+          1000: {
+            direction: direction,
+            spaceBetween: thumbMargin,
+            slidesPerView: slides
+          },
+          1224: {
+              direction: direction,
+              spaceBetween: thumbMargin,
+              slidesPerView: slides
+          }
+        }
     });
     var galleryTop = new Swiper(top, {
         spaceBetween: 0,

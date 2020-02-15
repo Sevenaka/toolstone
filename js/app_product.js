@@ -126,15 +126,32 @@ if(rewBtn) {
 }
 
 //Product ico slider
+/*
 var swiper2 = new Swiper('.product_ico_slider', {
-    direction: 'vertical',
-    spaceBetween: 16,
-    slidesPerView: 7,
+    breakpoints: {
+        640: {
+            spaceBetween: 15,
+            slidesPerView: 4,
+          },
+        740: {
+            spaceBetween: 15,
+            slidesPerView: 5,
+        },
+        968: {
+            spaceBetween: 15,
+            slidesPerView: 7,
+        },
+        1224: {
+            direction: 'vertical',
+            spaceBetween: 16,
+            slidesPerView: 7,
+        },
+    },
     navigation: {
         nextEl: '.product_ico_next',
         prevEl: '.product_ico_prev',
     },
-});
+});*/
 
 var productIcoWrap = document.querySelector('.product_icons');
 

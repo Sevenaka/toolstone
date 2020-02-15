@@ -155,7 +155,7 @@
         <section class="product_section full_product pd-bt-8a">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-12 col-md-5 col-lg-6 col-xl-6">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <!--
                             data-swiper-id - Вставляем уникальный ID Элемента для цикла в js
                             data-thumb-slides - Количество видимых слайдов thumb
@@ -345,7 +345,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-7 col-lg-6 col-xl-6">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="product_info pd_tp_3a">
                             <h2 class="product_title">Оснастка, диски и запчасти для торцовочных пил</h2>
                             <div class="product_desc_text mr_bt_4a">
@@ -382,6 +382,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                        <button type="submit" class="filter_opn_btn btn btn btn-success btn_def btn-xl">Фильтр</button>
                         <div class="product_filter">
                             <form>
                                 <div class="filter_header">
@@ -1691,23 +1692,26 @@
                         <form class="cals_big_form">
                             <div class="form-row row_max_w">
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="name" placeholder="Ваше имя" />
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" />
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="phone" placeholder="Ваш телефон" />
+                                        <label for="phone">Ваш телефон</label>
+                                        <input type="text" class="form-control" id="phone" />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <textarea rows="5" class="form-control" placeholder="Текст Вашего сообщения" id="text"></textarea>
+                                        <label for="text">Текст Вашего сообщения</label>
+                                        <textarea rows="5" class="form-control" id="text"></textarea>
                                     </div>
                                 </div>
                             </div>

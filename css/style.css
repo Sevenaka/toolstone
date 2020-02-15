@@ -1513,7 +1513,15 @@ a[data-fancybox]:hover .lightbox_ico{
     bottom: -36px;
   }
 }
+@media (min-width: 576px) {
+  .container-lg,
+  .container-lgs,
+  .container-md{
+    max-width: 540px;
+  }
+}
 @media (min-width: 768px) {
+  .container-lg,
   .container-lgs,
   .container-md{
     max-width: 924px;

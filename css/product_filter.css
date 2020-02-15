@@ -145,3 +145,19 @@
     margin: 0px -23px;
     padding: 0px 23px;
 }
+@media (min-width: 994px) {
+    .filter_opn_btn{
+        display: none;
+    }
+}
+@media (max-width: 993px) {
+    .filter_opn_btn{
+        margin-bottom: 10px;
+    }
+    .product_filter{
+        margin-bottom: 15px;
+    }
+    .product_filter:not(.show){
+        display: none;
+    }
+}
