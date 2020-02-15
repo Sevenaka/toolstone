@@ -465,7 +465,7 @@ if(headerFixed) {
 }*/
 
 
-var searchInput = document.querySelector('.header_search .search_input');
+var searchInput = document.querySelector('.header .header_search .search_input');
 
 if(searchInput) {
     searchInput.addEventListener("focusin", function(){

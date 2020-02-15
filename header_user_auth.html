@@ -22,11 +22,81 @@
     <link href="css/breadcrumb.css" rel="stylesheet">
     <link href="css/popup_menu.css" rel="stylesheet">
 
+    <!-- Mobile Menu -->
+    <link href="css/mobile_menu.css" rel="stylesheet">
+
     <!-- FooterCals -->
     <link href="css/footer_cals.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Mobile Menu -->
+    <div class="mobile_menu">
+        <div class="menu_block">
+            <div class="header_search flex">
+                <input type="text" class="search_input form-control" placeholder="Например: Festool для ремонта">
+                <button type="button" class="btn btn-success btn-lg btn_search flex"><i class="icon-search_white"></i></button>
+            </div>
+        </div>
+        <div class="menu_block">
+            <div class="user_links">
+                <div class="item">
+                    <span class="user_buttom" data-toggle="modal" data-target="#userModal">
+                        <span style="background: url('image/user_auth.jpg');" class="user_av">
+
+                        </span>
+                        <label>Александрович</label>
+                    </span>
+                </div>
+                <div class="item">
+                    <a href="#" class="header_ico_link flex align_center">
+                        <i class="icon-bookmark"></i> <span>Избранное 14</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="header_ico_link flex align_center">
+                        <i class="icon-cart"></i> <span>Корзина 22</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu_block">
+            <ul class="mobile_menu_list">
+                <li>
+                    <a class="active" href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">Гарантия и возврат</a>
+                </li>
+                <li>
+                    <a href="#">Доставка и оплата</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu_block">
+            <div class="mobile_phone">
+                <div class="itm">
+                    <a href="tel:84956402213">8 (495) 640-22-13</a>
+                </div>
+                <div class="itm">
+                    <a href="tel:88007771426">8 (800) 777-14-26</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile_menu_dym">
+        <div class="close_mobile">
+            <i class="icon-close"></i>
+        </div>
+    </div>
+
     <!-- MAIN HEADER -->
     <header class="header fixed">
         <div class="header_top">
@@ -716,6 +786,9 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Mobile menu -->
+    <script src="js/mobile_menu.js"></script>
 </body>
 </html>
