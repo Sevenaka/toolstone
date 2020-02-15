@@ -2,7 +2,6 @@
     border: 1px solid var(--borderColor7);
     border-radius: 2px;
     background: var(--mainBg);
-    padding: 9px 30px 9px 9px;
 }
 .product_card_f:not(:last-child){
     margin-bottom: 16px;
@@ -71,7 +70,6 @@
     border-top: 0.5px solid var(--gray2);
     margin-top: 18px;
     padding-top: 20px;
-    max-width: 227px;
 }
 .product_card_f .product_price .item_price{
     -ms-flex: 0 0 50%;
@@ -260,7 +258,91 @@
         flex: 0 0 34%;
         max-width: 34%;
     }
+    .product_card_f{
+        padding: 9px 30px 9px 9px;
+    }
+    .product_card_f .product_price{
+        max-width: 227px;
+    }
 }
 @media (max-width: 993px) {
-    
+    .product_card_f{
+        padding: 9px;
+    }
+    .product_card_f .card_form_wrapper{
+        width: 100%;
+        display: block;
+    }
+    .product_card_f .one_click_buy{
+        width: 100%;
+    }
+    .product_card_f .card_count{
+        width: 100%;
+    }
+    .product_card_f .card_count .input_dym{
+        max-width: 100%;
+    }
+    .product_card_f .card_count .btn{
+        width: 33px;
+    }
+}
+@media (min-width: 994px) and (max-width: 1210px) {
+    .product_card_f{
+        padding: 9px;
+    }
+    .product_card_f .product_price .old_price,
+    .product_card_f .product_info_wrap{
+        padding: 0px;
+    }
+    .product_card_f .col-sku{
+        padding-left: 0px;
+    }
+    .product_card_f .product_price .item_price{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .product_card_f .top_action{
+        flex-wrap: wrap;
+    }
+    .product_card_f .top_action .item:not(:last-child){
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .product_card_f .top_action .item{
+        width: 100%;
+    }
+    .product_card_f .one_click_buy{
+        font-size: 10px;
+        width: 100%;
+    }
+}
+@media (min-width: 770px) and (max-width: 994px) {
+    .product_card_f .product_price{
+        max-width: 240px;
+    }
+    .product_card_f .card_form_wrapper{
+        max-width: 300px;
+    }
+    .product_card_f .col-product-text{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .product_card_f .col-sku{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .product_card_f .product_price .new_price .price{
+        font-size: 20px;
+    }
+    .product_card_f .product_price .new_price .price i{
+        font-size: 12px;
+    }
+}
+@media (min-width: 771px) and (max-width: 1000px) {
+    .product_card_f .gallery-top .image_wrap{
+        padding-bottom: 40%!important;
+    }
 }
