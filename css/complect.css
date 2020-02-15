@@ -101,6 +101,37 @@
     line-height: 14px;
     padding: .875rem 1.95rem .775rem 1.95rem;
 }
+.complect_more{
+    border: 2px solid #EFEFEF;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "FuturaDemiC";
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background: #ffffff;
+    outline: none!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -18px;
+    right: 21px;
+    z-index: 10;
+    position: absolute;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.complect_more:hover{
+    background: rgba(0, 0, 0, 0.04);
+}
 @media (min-width: 994px) {
     .complect_full{
         padding: 33px 84px;
@@ -118,6 +149,10 @@
     .complect_full .complect_label span{
         font-size: 16px;
         line-height: 19px;
+    }
+    .complect_more{
+        min-width: 440px;
+        height: 39px;
     }
 }
 @media (max-width: 993px) {
@@ -142,4 +177,9 @@
     .tabple_cm_price{
         padding-top: 0px;
     }
+    .complect_more{
+        min-width: 180px;
+        height: 35px;
+    }
+}
 }
