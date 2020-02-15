@@ -1,0 +1,145 @@
+.complect_full{
+    border: 1px solid var(--borderColor7);
+    border-radius: 2px;
+    position: relative;
+}
+.complect_full .complect_label span{
+    background: var(--black4);
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: "FuturaDemiC";
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 15px;
+}
+.complect_full .complect_label{
+    margin-bottom: 15px;
+}
+.complect_full h2{
+    font-size: 24px;
+    line-height: 26px;
+}
+.complect_full .action_btn .btn{
+    border: 2px solid var(--red);
+}
+.col_complect_table{
+    padding-top: 21px;
+}
+.col_complect_table h4{
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 19px;
+}
+.col_complect_table .name{
+    width: 80%;
+}
+.col_complect_table .th_price{
+    width: 7%;
+}
+.col_complect_table .th_count{
+    width: 2%;
+}
+.tabple_cm_price{
+    display: flex;
+    justify-content: flex-end;
+}
+.tabple_cm_price .item_price{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tabple_cm_price .item_price .label{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-family: "FuturaBookC Regular";
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.tabple_cm_price .item_price .price{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    white-space: nowrap;
+}
+.tabple_cm_price .item_price .price.new{
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "FuturaDemiC";
+    padding-right: 15px;
+}
+.tabple_cm_price .item_price .price.new i{
+    font-size: 14px;
+}
+.tabple_cm_price .item_price .price.old{
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "FuturaBookC Regular";
+    text-decoration-line: line-through;
+    color: var(--gray5);
+}
+.tabple_cm_price .item_price .price.old i{
+    font-size: 12px;
+}
+.tabple_cm_price .price_ekonom{
+    letter-spacing: 0.01em;
+    font-size: 10px;
+    color: var(--mainGreen);
+    padding-top: 6px;
+}
+.tabple_cm_price .price_ekonom i{
+    font-size: 12px;
+}
+.tabple_cm_price .price_button{
+    margin-top: 20px;
+}
+.tabple_cm_price .price_button .btn{
+    text-transform: uppercase;
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 14px;
+    padding: .875rem 1.95rem .775rem 1.95rem;
+}
+@media (min-width: 994px) {
+    .complect_full{
+        padding: 33px 84px;
+        margin-bottom: 64px;
+    }
+    .complect_full h2{
+        margin-bottom: 44px;
+    }
+    .complect_full .action_btn{
+        padding-top: 15px;
+    }
+    .tabple_cm_price{
+        padding-top: 44px;
+    }
+    .complect_full .complect_label span{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+@media (max-width: 993px) {
+    .complect_full .complect_label span{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .section_compect{
+        margin-top: 20px;
+    }
+    .complect_full{
+        padding: 15px;
+        margin-bottom: 34px;
+    }
+    .complect_full h2{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .complect_full .action_btn{
+        padding-top: 5px;
+    }
+    .tabple_cm_price{
+        padding-top: 0px;
+    }
+}

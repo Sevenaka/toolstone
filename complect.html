@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Ubuntu:400,500&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    
+    <!-- Custom Style -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer_dark.css" rel="stylesheet">
+    <link href="css/pagination.css" rel="stylesheet">
+    <link href="css/btngroup.css" rel="stylesheet">
+    <link href="css/breadcrumb.css" rel="stylesheet">
+    <link href="css/popup_menu.css" rel="stylesheet">
+
+    <!-- Category -->
+    <link href="css/category_card.css" rel="stylesheet">
+
+    <!-- Range Slider -->
+    <link href="css/ion.rangeSlider.min.css" rel="stylesheet">
+
+    <!-- Catalog -->
+    <link href="css/sort_btn.css" rel="stylesheet">
+    <link href="css/full_product.css" rel="stylesheet">
+    <link href="css/product_table.css" rel="stylesheet">
+
+    <!-- Swiper Gallery -->
+    <link href="css/gallery_swiper.css" rel="stylesheet">
+
+    <!-- FooterCals -->
+    <link href="css/footer_cals2.css" rel="stylesheet">
+
+    <!-- Complect -->
+    <link href="css/complect.css" rel="stylesheet">
+
+    <!-- Fancybox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- MAIN HEADER -->
+    <header class="header fixed">
+        <div class="header_top">
+            <div class="container">
+                <div class="row align_center">
+                    <div class="cl">
+                        <a href="/" class="main_logo">
+                            <img src="image/logo.svg" alt="ToolStone">
+                        </a>
+                    </div>
+                    <div class="cl">
+                        <nav>
+                            <ul class="header_nav">
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li class="submenu_li">
+                                    <div class="button"><i class="icon-ar_bottom"></i></div>
+                                    <ul class="header_nav_response">
+                                        <li><a href="#">Гарантия и возврат</a></li>
+                                        <li><a href="#">Доставка и оплата</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="cl">
+                        <div class="header_search flex">
+                            <input type="text" class="search_input form-control" placeholder="Например: Festool для ремонта" />
+                            <button type="button" class="btn btn-success btn-lg btn_search flex"><i class="icon-search_white"></i></button>
+                        </div>
+                    </div>
+                    <div class="cl">
+                        <div class="header_phone">
+                            <div class="itm">
+                                <a href="tel:84956402213">8 (495) 640-22-13</a>
+                            </div>
+                            <div class="itm">
+                                <a href="tel:88007771426">8 (800) 777-14-26</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="header_ico_link flex align_center">
+                            <i class="icon-bookmark"></i> <span>Избранное</span>
+                        </a>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="header_ico_link flex align_center">
+                            <i class="icon-cart"></i> <span>Корзина</span>
+                        </a>
+                    </div>
+                    <div class="cl">
+                        <div class="mobile_menu_btn">
+                            <i class="ico ico_pattern ico_right_menu_red"></i>
+                        </div>
+                        <a href="#" class="user_buttom">
+                            <span>
+                                <i class="icon-user"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="row align_center space_between">
+                    <div class="cl">
+                        <div class="header_catalog flex align_center no_sel">
+                            <i class="ico ico_header_menu ico_pattern"></i>  <span>Каталог</span>
+                        </div>
+                    </div>
+                    <div class="cl">
+                        <nav>
+                            <ul class="flex service_menu">
+                                <li><a href="#">Обработка искусственного камня</a></li>
+                                <li><a href="#">Обработка кварцевого агломерата</a></li>
+                                <li><a href="#">Обработка керамики Laminam и Dekton</a></li>
+                                <li><a href="#">Деревообработка</a></li>
+                                <li><a href="#">Тест центр и Обучение</a></li>
+                                <li><a href="#">Сервис и Запчасти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="cl">
+                        <a href="#" class="stocks_link text_red">
+                            Акции
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main main_bot_of">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#">Каталог</a></li>
+                </ol>
+            </nav>
+            <h1 class="page_title">Базовый стартовый комплект</h1>
+            <div class="page_tit_btn">
+                <div class="btn_group">
+                    <a href="#" type="button" class="btn btn-danger">Всё</a>
+                    <a href="#" type="button" class="btn btn-outline-secondary">Базовый</a>
+                    <a href="#" type="button" class="btn btn-outline-secondary">Оптимальный</a>
+                    <a href="#" type="button" class="btn btn-outline-secondary">Расширенный</a>
+                </div>
+            </div>
+        </div>
+        <section class="section_compect">
+            <div class="container">
+                <div class="complect_full">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <!--
+                                data-swiper-id - Вставляем уникальный ID Элемента для цикла в js
+                                data-thumb-slides - Количество видимых слайдов thumb
+                                data-thumb-margin - margin между слайдами thumb
+                            -->
+                            <div class="gallery_wrap gallery_slider gallery_no_bg bottom_fix" data-thumb-slides="4" data-thumb-margin="16" data-swiper-id="big_gallery">
+                                <!-- Image Gallery -->
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/complect_slider.jpg" data-fancybox="big_gallery" data-thumb="image/complect_slider.jpg">
+                                                        <img data-src="image/complect_slider.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+    
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/fullprod2.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod2.jpg">
+                                                        <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/fullprod3.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod3.jpg">
+                                                        <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/front_sloide_big.png" data-fancybox="big_gallery" data-thumb="image/front_sloide_big.png">
+                                                        <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/menuc2.png" data-fancybox="big_gallery" data-thumb="image/menuc2.png">
+                                                        <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/menuc1.png" data-fancybox="big_gallery" data-thumb="image/menuc1.png">
+                                                        <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/fullprod2.jpg" data-fancybox="big_gallery" data-thumb="image/fullprod2.jpg">
+                                                        <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image_wrap">
+                                            <figure>
+                                                <picture>
+                                                    <a href="image/menuc1.png" data-fancybox="big_gallery" data-thumb="image/menuc1.png">
+                                                        <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                    </a>
+                                                </picture>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper_bottom">
+    
+                                <!-- Add Arrows -->
+                                <div class="gallery_arr next gallery_arr-next-big_gallery">
+                                    <i class="icon-ar_next2"></i>
+                                </div>
+                                <div class="gallery_arr prev gallery_arr-prev-big_gallery">
+                                    <i class="icon-ar_back2"></i>
+                                </div>
+    
+                                <div class="swiper-container gallery-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/complect_slider.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/fullprod3.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/front_sloide_big.png" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/menuc2.png" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/fullprod2.jpg" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="image_wrap">
+                                                <figure>
+                                                    <picture>
+                                                        <img data-src="image/menuc1.png" class="swiper-lazy img-fluid" alt="">
+                                                    </picture>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-8">
+                            <h2>Полировальная машинка RUPES LH18EN c набором расходных материалов.</h2>
+                            <div class="complect_label">
+                                <span>РЕКОМЕНДАЦИЯ ОТ TOOLSTONE</span>
+                            </div>
+                            <p class="text_style">
+                                Основные операции по фрезерованию и подготовка под склейку искусственного камня (края деталей) обрабатываются мощным и точным фрезером FESTOOL OF 2200EB. Фигурную фаску удобнее выполнять более лёгким и эргономичным фрезером FESTOOL OF1400 (используется как вспомогательный фрезер). Рекомендуется использовать фрезы с хвостовиком 12 мм.
+                            </p>
+                            <div class="action_btn">
+                                <button class="btn btn-outline-danger btn_def btn-xl">
+                                    СВЕРНУТЬ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 col_complect_table">
+                            <h4>Рекомендуей состав комплекта:</h4>
+                            <div class="table_wrapper">
+                                <table class="product_table table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="name" scope="col">Наименование:</th>
+                                            <th class="th_price" scope="col">Цена:</th>
+                                            <th class="th_count" scope="col">Количество:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-template="one" class="tippy_table">
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <form class="flex">
+                                                    <div class="card_count flex">
+                                                        <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                        <div class="btn btn-success btn-plus">+</div>
+                                                        <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                        <div class="btn btn-success btn-minus">-</div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success add_btn">
+                                                        <i class="icon-cart"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td data-template="two" class="tippy_table">
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <form class="flex">
+                                                    <div class="card_count flex">
+                                                        <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                        <div class="btn btn-success btn-plus">+</div>
+                                                        <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                        <div class="btn btn-success btn-minus">-</div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success add_btn">
+                                                        <i class="icon-cart"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td data-template="three" class="tippy_table">
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <form class="flex">
+                                                    <div class="card_count flex">
+                                                        <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                        <div class="btn btn-success btn-plus">+</div>
+                                                        <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                        <div class="btn btn-success btn-minus">-</div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success add_btn">
+                                                        <i class="icon-cart"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td data-template="one" class="tippy_table">
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <form class="flex">
+                                                    <div class="card_count flex">
+                                                        <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                        <div class="btn btn-success btn-plus">+</div>
+                                                        <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                        <div class="btn btn-success btn-minus">-</div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success add_btn">
+                                                        <i class="icon-cart"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td data-template="three" class="tippy_table">
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <form class="flex">
+                                                    <div class="card_count flex">
+                                                        <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                        <div class="btn btn-success btn-plus">+</div>
+                                                        <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                        <div class="btn btn-success btn-minus">-</div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success add_btn">
+                                                        <i class="icon-cart"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td data-template="three" class="tippy_table">
+                                                <a href="#" class="name">
+                                                    Аккумуляторный ногофункциональный инструмент Festool OSC 18 Li 3,1 E-Basic VECTURO ...
+                                                </a>
+                                                <div class="sku">
+                                                    Артикул: 
+                                                    <span>&#8203;KIT1602ARMWH</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="price">
+                                                    <div class="old"><span>92 4500</span> <i class="icon-ruble"></i></div>
+                                                    <div class="current">1 292 450 <i class="icon-ruble"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <form class="flex">
+                                                    <div class="card_count flex">
+                                                        <input value="0" type="text" onchange="return inputValidateNum(this);" class="count_input hidden form-control">
+                                                        <div class="btn btn-success btn-plus">+</div>
+                                                        <div class="input_dym no_sel"><strong>0</strong> шт.</div>
+                                                        <div class="btn btn-success btn-minus">-</div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success add_btn">
+                                                        <i class="icon-cart"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+    
+                                <!-- Tippy Template -->
+                                <div style="display: none;">
+                                    <div id="one">
+                                        <div class="product_tippy">
+                                            <div class="label label_green">
+                                                ТЕСТ-ЦЕНТР
+                                            </div>
+                                            <div class="logo">
+                                                <img src="image/tippylogo.png" alt="">
+                                            </div>
+                                            <img src="image/tippy.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="two">
+                                        <div class="product_tippy">
+                                            <div class="label label_blue">
+                                                ТЕСТ-ЦЕНТР
+                                            </div>
+                                            <div class="logo">
+                                                <img src="image/tippylogo.png" alt="">
+                                            </div>
+                                            <img src="image/tippy.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="three">
+                                        <div class="product_tippy">
+                                            <div class="label label_yellow">
+                                                ТЕСТ-ЦЕНТР
+                                            </div>
+                                            <div class="logo">
+                                                <img src="image/tippylogo.png" alt="">
+                                            </div>
+                                            <img src="image/tippy.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabple_cm_price">
+                                <div class="price_block">
+                                    <div class="product_price">
+                                        <div class="item item_price">
+                                            <div class="label">Итого:</div>
+                                            <div class="price new">
+                                                924 500 <i class="icon-ruble"></i>
+                                            </div>
+                                            <div class="price old">
+                                                1 224 500 <i class="icon-ruble"></i>
+                                            </div>
+                                        </div>
+                                        <div class="item fluid price_ekonom">
+                                            Экономия в цене - 5 100 <i class="icon-ruble"></i>
+                                        </div>
+                                        <div class="price_button">
+                                            <button href="#" type="button" class="btn btn-danger">КУПИТЬ ВЕСЬ КОМПЛЕКТ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FooterCals -->
+    <div class="footer_cals">
+        <div class="container-lg cals_container relative">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="page_title">Нужна помощь?</h2>
+                </div>
+                <div class="col-md-9">
+                    <div class="form_bg relative">
+                        <p>Наши специалисты помогут: <a class="hide_link str" href="tel:88007771426">8 (800)-777-14-26</a>, <a class="hide_link str" href="tel:84956402213">8 (495)-640-22-13</a></p>
+                        <p>или по электронной почте: <a class="email" href="mailto:info@toolstone.ru">info@toolstone.ru</a> или <a class="hide_link" href="#">у нас в магазине</a>.</p>
+                        <form class="cals_big_form">
+                            <div class="form-row row_max_w">
+                                <div class="form-group col-md-6">
+                                    <div class="input_wrapper input_label">
+                                        <span class="required" title="Обязательно для заполнения">*</span>
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" />
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input_wrapper input_label">
+                                        <span class="required" title="Обязательно для заполнения">*</span>
+                                        <label for="phone">Ваш телефон</label>
+                                        <input type="text" class="form-control" id="phone" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <div class="input_wrapper input_label">
+                                        <span class="required" title="Обязательно для заполнения">*</span>
+                                        <label for="text">Текст Вашего сообщения</label>
+                                        <textarea rows="5" class="form-control" id="text"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row align_center">
+                                <div class="form-group col-md-8">
+                                    <div class="custom-control custom-checkbox no_sel">
+                                        <input type="checkbox" class="custom-control-input" id="personal">
+                                        <label class="custom-control-label" for="personal">Согласие на обработку <a href="#">личных данных</a></label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4 text-right">
+                                    <button type="submit" class="btn btn btn-success btn_def btn-xl">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3 cals_image relative">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer_dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label class="footer_label">О Компании</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Компания</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Преимущества</a></li>
+                                <li><a href="#">Наши партнеры</a></li>
+                                <li><a href="#">Сертификаты</a></li>
+                                <li><a href="#">Мы в соцсетях</a></li>
+                                <li><a href="#">Политика конфеденциальности</a></li>
+                                <li><a href="#">Скачать Сувенирные товары FanShop</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Новости</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Тест центр Toolstone</a></li>
+                                <li><a href="#">Учебный практический центр Toolstone</a></li>
+                                <li><a href="#">Демонстрация в работе инструмента Festool</a></li>
+                                <li><a href="#">Сервис по ремонту</a></li>
+                                <li><a href="#">Запчасти Festool</a></li>
+                                <li><a href="#">Сервис по заточке режущего инструмента</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Услуги</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Информация</label>
+                        <nav>
+                            <ul class="footer_nav">
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Возврат и обмен</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <label class="footer_label">Контакты</label>
+                        <div class="footer_row">
+                            <div class="title">Телефон:</div>
+                            <div class="phone_list">
+                                <div class="phone">
+                                    <a href="tel:84956402213">8 (495) 640-22-13</a>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:88007771426">8 (800) 777-14-26</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_row">
+                            E-mail: <a class="green" href="mailto:info@toolstone.ru">info@toolstone.ru</a>
+                        </div>
+                        <div class="footer_row">
+                            Алрес: <span class="green">г. Москва, Каширское ш., д.41, 2 эт.</span>
+                        </div>
+                        <div class="footer_row double_margin">
+                            <div class="title">Будте в кусе новостей:</div>
+                            <form>
+                                <div class="form_inpt">
+                                    <input class="form-control" name="email" id="mes_email" placeholder="Ваш e-mail:" />
+                                    <button class="mail_button" type="submit"><i class="icon-mail"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="footer_row">
+
+                            <ul class="mes_list flex align_center">
+                                <li><a href="#" target="_blank">WhatsApp</a></li>
+                                <li><a href="#" target="_blank">Viber</a></li>
+                                <li><a href="#" target="_blank">Telegram</a></li>
+                            </ul>
+                            
+                            <div class="phone">
+                                <a href="tel:8(929)525-73-77">8 (929) 525-73-77</a>
+                            </div>
+                        </div>
+
+                        <div class="footer_soc footer_row">
+                            <div class="title">Мы в соцсетях:</div>
+                            <ul class="footer_social_list flex">
+                                <li class="vk"><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
+                                <li class="fb"><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li class="insta"><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                                <li class="yt"><a href="#" target="_blank"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="flex align_bottom">
+                            <div class="itm"> &copy; 2019 ToolStone. </div>
+                            <div class="itm footer_in_txt">Полное копирование текстов, страниц, разделов и изображений запрещено. Цитирование отдельных фраз возможно только с указанием гиперссылки на сайт toolstone.ru </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back_to_top">
+        <i class="icon-ar_up"></i>
+    </div>
+    
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="js/lazyload.min.js"></script> <!-- https://github.com/verlok/lazyload -->
+
+    <!-- Popper Js -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+
+    <!-- Range Slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Swiper Gallery -->
+    <script src="js/gallery_swiper.js"></script>
+    
+    <!-- product -->
+    <script src="js/app_cart_count.js"></script>
+</body>
+</html>

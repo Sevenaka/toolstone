@@ -263,6 +263,10 @@ h4.page_title{
   font-family: "FuturaMediumC";
   color: var(--titleColor);
 }
+.btn-outline-danger{
+  color: var(--red);
+  border-color: var(--red);
+}
 .page_title.margin_sm{
   margin-bottom: 15px;
 }
@@ -1144,7 +1148,7 @@ a[data-fancybox]:hover .lightbox_ico{
   display: none;
 }
 .custom-radio .custom-control-label{
-  border: 0.5px solid #CFCFCF;
+  border: 0.5px solid var(--gray2);
   background: #EFEFEF;
   border-radius: 2px;
   font-family: "FuturaMediumC";

@@ -23,7 +23,7 @@
     left: 0;
     width: 100%;
 }
-.complect_card .complect_label span{
+.complect_label span{
     font-size: 16px;
     line-height: 19px;
     background: var(--black4);

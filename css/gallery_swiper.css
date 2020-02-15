@@ -152,6 +152,25 @@
 .gallery_wrap.product_gallery .gallery-top .image_wrap{
     padding-bottom: 93%;
 }
+.gallery_no_bg::before{
+    display: none;
+}
+.gallery_wrap.bottom_fix{
+    position: relative;
+}
+.gallery_wrap.bottom_fix .swiper_bottom{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.gallery_wrap.bottom_fix .gallery-top .image_wrap{
+    padding-bottom: 104%;
+}
+.gallery_wrap.bottom_fix .gallery-top{
+    border-color: #cfcfcf;
+}
 @media (min-width: 994px) {
     .gallery_wrap.product_gallery .swiper_bottom{
         padding: 36px 9px;
