@@ -79,6 +79,22 @@
     }
 }
 @media (max-width: 993px) {
+    .brand_big_slider .swiper-button-next,
+    .brand_big_slider .swiper-button-prev{
+        top: 40%;
+    }
+    .front_big_slider .mobile_text_sm{
+        font-size: 14px!important;
+        line-height: 18px!important;
+        padding-right: 0px!important;
+    }
+    .slide_image.hide_mobile{
+        display: none;
+    }
+    .front_big_slider .img_list img{
+        max-width: 70px;
+        height: auto;
+    }
     .front_big_slider .slide_image{
         min-height: 300px;
         position: relative;

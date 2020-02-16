@@ -23,7 +23,7 @@
     <link href="css/popup_menu.css" rel="stylesheet">
 
     <!-- FooterCals -->
-    <link href="css/footer_cals.css" rel="stylesheet">
+    <link href="css/footer_cals2.css" rel="stylesheet">
 </head>
 
 <body>
@@ -543,35 +543,38 @@
 
     <!-- FooterCals -->
     <div class="footer_cals">
-        <div class="container-md relative">
+        <div class="container-lg cals_container relative">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="page_title text_center margin_md">Нужна помощь?</h2>
+                    <h2 class="page_title">Нужна помощь?</h2>
                 </div>
                 <div class="col-md-9">
                     <div class="form_bg relative">
-                        <p>Наши специалисты помогут: <a class="hide_link montserrat" href="tel:88007771426">8 (800)-777-14-26</a>, <a class="hide_link montserrat" href="tel:84956402213">8 (495)-640-22-13</a></p>
-                        <p>или по электронной почте: <a class="hide_link" href="mailto:info@toolstone.ru">info@toolstone.ru</a> или <a href="#">у нас в магазине</a>.</p>
+                        <p>Наши специалисты помогут: <a class="hide_link str" href="tel:88007771426">8 (800)-777-14-26</a>, <a class="hide_link str" href="tel:84956402213">8 (495)-640-22-13</a></p>
+                        <p>или по электронной почте: <a class="email" href="mailto:info@toolstone.ru">info@toolstone.ru</a> или <a class="hide_link" href="#">у нас в магазине</a>.</p>
                         <form class="cals_big_form">
-                            <div class="form-row">
+                            <div class="form-row row_max_w">
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="name" placeholder="Ваше имя" />
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" />
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="phone" placeholder="Ваш телефон" />
+                                        <label for="phone">Ваш телефон</label>
+                                        <input type="text" class="form-control" id="phone" />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <textarea rows="5" class="form-control" placeholder="Текст Вашего сообщения" id="text"></textarea>
+                                        <label for="text">Текст Вашего сообщения</label>
+                                        <textarea rows="5" class="form-control" id="text"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -598,9 +601,9 @@
 
     <!-- Footer -->
     <footer class="footer footer_dark">
-        <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
                         <label class="footer_label">О Компании</label>
                         <nav>
                             <ul class="footer_nav">

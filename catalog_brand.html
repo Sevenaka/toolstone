@@ -159,19 +159,19 @@
 
             <div class="front_slider">
                 <div class="swiper_wrapper">
-                    <div class="swiper-container front_big_slider bg_gray swiper_bullets">
+                    <div class="swiper-container front_big_slider bg_gray brand_big_slider swiper_bullets">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide bg_slide">
                                 <div class="slide_color" style="background: #ffca00;"></div>
-                                <div class="slide_image" style="background: #ced0da;"></div>
+                                <div class="slide_image hide_mobile" style="background: #ced0da;"></div>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-12 col-lg-6">
                                             <div class="center_image">
                                                 <img class="img-fluid" src="image/front_sloide_big.png" alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-12 col-lg-6">
                                             <div class="slide_text">
                                                 <div class="img_list align_center flex">
                                                     <div class="itm">
@@ -198,10 +198,10 @@
                             <div class="slide_image" style="background: url('image/front_slide_big2.jpg');"></div>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-12 col-lg-6">
                                         
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-12 col-lg-6">
                                         <div class="slide_text">
                                             <div class="img_list align_center flex">
                                                 <div class="itm">
@@ -221,15 +221,15 @@
 
                           <div class="swiper-slide bg_slide">
                             <div class="slide_color" style="background: #FF494C;"></div>
-                            <div class="slide_image" style="background: #ffffff;"></div>
+                            <div class="slide_image hide_mobile" style="background: #ffffff;"></div>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-12 col-md-12 col-lg-6">
                                         <div class="center_image">
                                             <img class="img-fluid" src="image/front_slide_big3.png" alt="" />
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-12 col-md-12 col-lg-6">
                                         <div class="slide_text">
                                             <div class="img_list align_center flex">
                                                 <div class="itm">
@@ -237,10 +237,10 @@
                                                 </div>
                                             </div>
                                             <h3 class="title">Новинка Dimar 2019 года:</h3>
-                                            <p class="text white">
+                                            <p class="text white mobile_text_sm">
                                                 Обновленные фрезы для выравнивания слэбов с хвостом 8 и 12 мм.
                                             </p>
-                                            <p class="text white">
+                                            <p class="text white mobile_text_sm">
                                                 Обгонная фреза Dimar Terminator 19[50 мм со сменными ножами и двойным врхним и нижним подшипниками.
                                             </p>
                                             <a href="#" class="btn btn-outline-success btn_def btn-xl">ПОДРОБНЕЕ</a>
@@ -551,7 +551,7 @@
                             <p>
                                 ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). Наш проект ToolStone был основан в декабре 2015 года.<br/>ToolStone.ru (ТулСтоун) - первый и единственный в России специализированный торгово-консультационный ресурс для производителей мебели и тех, кто занимается деревообработкой, переработчиков искусственного акрилового камня, кварцевого агломерата и натурального камня, листовой керамики (Laminam, Dekton и др.). 
                             </p>
-                            <div class="about_bottom no_mr_top itm_sm_mr flex">
+                            <div class="about_bottom brand_ab_bottom no_mr_top itm_sm_mr flex">
                                 <div class="itm">
                                     <a href="#" class="btn btn-outline-success btn_def btn-xl">ПОДРОБНЕЕ</a>
                                 </div>
@@ -2712,23 +2712,26 @@
                         <form class="cals_big_form">
                             <div class="form-row row_max_w">
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="name" placeholder="Ваше имя" />
+                                        <label for="name">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" />
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <input type="text" class="form-control" id="phone" placeholder="Ваш телефон" />
+                                        <label for="phone">Ваш телефон</label>
+                                        <input type="text" class="form-control" id="phone" />
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-12">
-                                    <div class="input_wrapper">
+                                    <div class="input_wrapper input_label">
                                         <span class="required" title="Обязательно для заполнения">*</span>
-                                        <textarea rows="5" class="form-control" placeholder="Текст Вашего сообщения" id="text"></textarea>
+                                        <label for="text">Текст Вашего сообщения</label>
+                                        <textarea rows="5" class="form-control" id="text"></textarea>
                                     </div>
                                 </div>
                             </div>

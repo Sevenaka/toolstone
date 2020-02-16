@@ -84,4 +84,24 @@
         display: flex;
         justify-content: center;
     }
+    .brand_ab_bottom{
+        flex-wrap: wrap;
+    }
+    .brand_ab_bottom .itm{
+        margin-right: 0px;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+    .brand_ab_bottom .itm:first-child{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .brand_ab_bottom .itm.last{
+        
+    }
 }
