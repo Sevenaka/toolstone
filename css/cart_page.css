@@ -13,10 +13,11 @@
     margin-bottom: 26px;
 }
 .summary_price > label{
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 16px;
     display: block;
-    font-family: "FuturaMediumC";
+    font-family: "FuturaDemiC";
+    font-weight: normal;
     margin-bottom: 6px;
 }
 .summary_price .item{
@@ -131,6 +132,20 @@
 .table_footer .footer_price{
     display: flex;
     flex-wrap: wrap;
+}
+.main_sum{
+    display: flex;
+    align-items: baseline;
+    padding-top: 32px;
+}
+.main_sum label{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "FuturaMediumC";
+    margin-right: 6px;
+    margin-bottom: 0px;
+    color: #010109;
 }
 @media (min-width: 994px) {
     .delivery_wrapper .name_dym{

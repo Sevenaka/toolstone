@@ -135,10 +135,11 @@
 @media (min-width: 994px) {
     .complect_full{
         padding: 33px 84px;
-        margin-bottom: 64px;
     }
     .complect_full h2{
-        margin-bottom: 44px;
+        margin-bottom: 18px;
+        font-size: 40px;
+        line-height: 36px;
     }
     .complect_full .action_btn{
         padding-top: 15px;
