@@ -211,11 +211,35 @@
   box-shadow: 0 0 0 0!important;
   border: 0.5px solid var(--borderColor5)!important;
 }
-.header .search_input::-webkit-input-placeholder,
-.header .search_input:-ms-input-placeholder,
-.header .search_input::placeholder{
+.header .header_search input::-webkit-input-placeholder{
   font-family: "FuturaBookC Regular";
   color: #989999;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+.header .header_search input:-ms-input-placeholder{
+  font-family: "FuturaBookC Regular";
+  color: #989999;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+.header .header_search input:-moz-placeholder{
+  font-family: "FuturaBookC Regular";
+  color: #989999;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+.header .header_search input::-moz-placeholder{
+  font-family: "FuturaBookC Regular";
+  color: #989999;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+.header .header_search input::placeholder {
+  font-family: "FuturaBookC Regular";
+  color: #989999;
+  font-weight: normal;
+  letter-spacing: 0.01em;
 }
 .header .search_input.elem_focus{
   max-width: 265%;
