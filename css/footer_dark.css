@@ -136,6 +136,14 @@
     font-size: 40px;
     line-height: 28px;
 }
+.footer.footer_dark .footer_social_list li a .icon-instagram{
+    font-size: 25px;
+    line-height: 30px;
+}
+.footer.footer_dark .footer_social_list li a .icon-youtube{
+    font-size: 24px;
+    line-height: 28px;
+}
 .footer.footer_dark .footer_social_list li a:hover{
     color: var(--red);
 }
