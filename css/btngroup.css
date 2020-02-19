@@ -10,14 +10,12 @@
   padding: .51rem 1.1rem .38rem 1.1rem;
 }
 .btn_group .btn:not(:last-child){
-  margin-right: 4px;
+  margin-right: -1px;
 }
 .btn_group .btn-danger,
 .btn_group .btn-success{
   position: relative;
   z-index: 1;
-  padding-bottom: 9px;
-  padding-top: 9px;
 }
 .btn_group .btn-outline-secondary{
  background: #ffffff;
