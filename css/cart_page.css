@@ -18,7 +18,7 @@
     display: block;
     font-family: "FuturaDemiC";
     font-weight: normal;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
 }
 .summary_price .item{
     display: flex;
@@ -34,12 +34,12 @@
 }
 .summary_price .item .price{
     font-family: "FuturaDemiC";
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 21px;
     color: var(--black);
 }
 .summary_price .item .price i{
-    font-size: 16px;
+    font-size: 12px;
 }
 .summary_price .item .custom-control{
     font-size: 11px;
@@ -136,7 +136,7 @@
 .main_sum{
     display: flex;
     align-items: baseline;
-    padding-top: 32px;
+    padding-top: 22px;
 }
 .main_sum label{
     font-size: 16px;
@@ -146,6 +146,13 @@
     margin-right: 6px;
     margin-bottom: 0px;
     color: #010109;
+}
+.summary_price .main_sum .price{
+    font-size: 24px;
+    line-height: 26px;
+}
+.summary_price .main_sum .price i{
+    font-size: 16px;
 }
 @media (min-width: 994px) {
     .delivery_wrapper .name_dym{
