@@ -384,6 +384,33 @@
     line-height: 20px;
     display: block;
 }
+table.complect_table th{
+    font-size: 12px;
+}
+.table.complect_table th{
+    padding: 8px 24px;
+}
+.table.complect_table td{
+    padding: 15px 24px;
+}
+.col_complect_table .table.complect_table .name{
+    width: 75%;
+}
+.col_complect_table .table.complect_table .th_price{
+    width: 15%;
+}
+.col_complect_table .table.complect_table .th_count{
+    width: 10%;
+}
+.table.complect_table{
+    margin-bottom: 23px;
+}
+.product_table .count_pd_2{
+    padding-right: 26px;
+}
+table.cart_table thead th{
+    font-size: 12px;
+}
 @media (min-width: 1201px){
     .product_table .table_image{
         width: 120px;

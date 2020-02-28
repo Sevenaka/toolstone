@@ -264,6 +264,9 @@
 .seminar_card_big article .news_header{
     padding-bottom: 60%!important;
 }
+.td_lst_right td:last-child{
+    text-align: right;
+}
 @media (min-width: 994px) {
     .seminar_card_big article{
         max-width: 434px;
@@ -284,7 +287,7 @@
     .top_media.background{
         padding-top: 107px;
         padding-bottom: 101px;
-        margin-bottom: 96px;
+        margin-bottom: 76px;
     }
     .training_more {
         padding-top: 64px;

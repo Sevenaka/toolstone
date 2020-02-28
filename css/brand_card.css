@@ -23,9 +23,11 @@
     width: 100%;
 }
 .brand_card .desc{
-    max-width: 148px;
-    font-family: "FuturaBookC Regular";
+    max-width: 178px;
+    font-family: "FuturaDemiC";
     margin: 0px auto;
+    font-size: 14px;
+    line-height: 16px;
 }
 @media (min-width: 994px) {
     .brand_row .col:not(:last-child){

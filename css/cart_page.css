@@ -46,10 +46,10 @@
     margin-top: 8px;
 }
 .summary_price .custom-control-label::before{
-    top: .01rem;
+    top: -1px;
 }
 .summary_price .custom-control-label::after{
-    top: 5px!important;
+    top: 4px!important;
 }
 .cart_block .cart_buy{
     padding: .95rem 1.6rem .92rem 1.6rem;

@@ -2,7 +2,7 @@
     padding-top: 48px;
 }
 .section_about .about_bottom{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 .section_about .about_bottom .itm:not(:last-child){
     margin-right: 30px;

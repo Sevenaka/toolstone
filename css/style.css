@@ -809,10 +809,12 @@ ul:last-child:not([class]){
   margin-bottom: 0px;
 }
 .section_title_btn .btn{
-  font-size: 13px;
+  font-size: 15px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: inherit;
+  min-height: 34.23px;
+  padding: .51rem 1.1rem .38rem 1.1rem;
 }
 .section_title_btn .btn_group{
   margin-bottom: 0px;
@@ -1310,6 +1312,13 @@ a[data-fancybox]:hover .lightbox_ico{
   margin-top: -20px;
 }
 @media (min-width: 994px) {
+  .section_title_btn.top_mrg_mins{
+    margin-top: -18px;
+  }
+  .news_carousel3 .news_card.news_default,
+  .news_carousel_4 .news_card.news_default{
+    margin-bottom: 32px!important;
+  }
   .main{
     min-height: 400px;
   }
@@ -1337,7 +1346,7 @@ a[data-fancybox]:hover .lightbox_ico{
   }
   h2.page_title{
     font-size: 40px;
-    line-height: 22px;
+    line-height: 36px;
     margin-bottom: 48px;
     max-width: 1000px;
     margin-left: auto;
@@ -1354,10 +1363,10 @@ a[data-fancybox]:hover .lightbox_ico{
     margin-bottom: 32px;
   }
   .swiper_bullets{
-    margin-bottom: 82px;
+    margin-bottom: 64px;
   }
   .swiper_wrapper .swiper-pagination{
-    bottom: -52px;
+    bottom: -44px;
   }
   .back_to_top{
     left: 8px;
@@ -1365,6 +1374,9 @@ a[data-fancybox]:hover .lightbox_ico{
   }
   .mr_bt_12a{
     margin-bottom: 96px!important;
+  }
+  .mr_bt_10a{
+    margin-bottom: 76px!important;
   }
   .pd-bt-12a{
     padding-bottom: 96px!important;
@@ -1396,7 +1408,7 @@ a[data-fancybox]:hover .lightbox_ico{
   h1.page_title{
     font-size: 34px;
     line-height: 22px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
   .mr_bt_a6{
     margin-bottom: 48px;
@@ -1419,6 +1431,9 @@ a[data-fancybox]:hover .lightbox_ico{
   }
   .pd_bt_2a{
     padding-bottom: 16px!important;
+  }
+  .pd_tp_2a{
+    padding-top: 16px;
   }
 }
 @media (max-width: 993px) {

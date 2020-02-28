@@ -135,50 +135,50 @@
 }
 @media (min-width: 1401px) {
     .col_cnt_map{
-        -ms-flex: 0 0 82%;
-        flex: 0 0 82%;
-        max-width: 82%;
+        -ms-flex: 0 0 78%;
+        flex: 0 0 78%;
+        max-width: 78%;
     }
     .col_cnt_info{
-        -ms-flex: 0 0 18%;
-        flex: 0 0 18%;
-        max-width: 18%;
+        -ms-flex: 0 0 22%;
+        flex: 0 0 22%;
+        max-width: 22%;
     }
 }
 @media (max-width: 1400px) {
     .col_cnt_map{
-        -ms-flex: 0 0 80%;
-        flex: 0 0 80%;
-        max-width: 80%;
+        -ms-flex: 0 0 76%;
+        flex: 0 0 76%;
+        max-width: 76%;
     }
     .col_cnt_info{
-        -ms-flex: 0 0 20%;
-        flex: 0 0 20%;
-        max-width: 20%;
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+        max-width: 24%;
     }
 }
 @media (max-width: 1300px) {
     .col_cnt_map{
-        -ms-flex: 0 0 77%;
-        flex: 0 0 77%;
-        max-width: 77%;
+        -ms-flex: 0 0 73%;
+        flex: 0 0 73%;
+        max-width: 73%;
     }
     .col_cnt_info{
         -ms-flex: 0 0 23%;
-        flex: 0 0 23%;
-        max-width: 23%;
+        flex: 0 0 27%;
+        max-width: 27%;
     }
 }
 @media (max-width: 1100px) {
     .col_cnt_map{
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%;
+        -ms-flex: 0 0 71%;
+        flex: 0 0 71%;
+        max-width: 71%;
     }
     .col_cnt_info{
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%;
+        -ms-flex: 0 0 29%;
+        flex: 0 0 29%;
+        max-width: 29%;
     }
 }
 @media (min-width: 994px) {
@@ -189,10 +189,11 @@
         height: 700px;
     }
     .dil_wrap{
-        padding-top: 10px;
+        padding-top: 30px;
     }
     .contact_menu .row_desc{
         margin-bottom: 15px;
+        max-width: 300px;
     }
 }
 @media (max-width: 993px) {

@@ -112,7 +112,7 @@
     position: relative;
     background: #ffffff;
     overflow: hidden;
-    border: 0.5px solid var(--borderColor5);
+    border: 0.5px solid #ABABAB;
     padding-left: 15px;
     padding-right: 14px;
     cursor: text;
@@ -133,6 +133,7 @@
     font-family: "FuturaBookC Regular";
     color: #989999;
     padding-right: 7px;
+    padding-top: 5px;
 }
 .range_input .cr{
     color: var(--black);
@@ -144,6 +145,18 @@
 .collapse_price{
     margin: 0px -23px;
     padding: 0px 23px;
+}
+.range_wrapper .irs-single,
+.range_wrapper .irs-to,
+.range_wrapper .irs-from{
+    width: 25px;
+    text-indent: -9999px;
+    color: transparent;
+    border-radius: 1px!important;
+    background-image: url('../image/ico/slider_range.svg');
+    background-position: 2px -1px;
+    background-repeat: no-repeat;
+    background-size: 22px;
 }
 @media (min-width: 994px) {
     .filter_opn_btn{

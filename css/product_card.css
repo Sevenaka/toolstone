@@ -2,7 +2,7 @@
     border-radius: 2px;
     border: 1px solid var(--borderColor7);
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     background: var(--mainBg);
 }
 .product_card .product_image{

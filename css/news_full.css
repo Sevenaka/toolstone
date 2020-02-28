@@ -30,7 +30,7 @@
     background: var(--red);
 }
 .news_body_empty:not(:first-child){
-    margin-top: 16px;
+    margin-top: 26px;
 }
 .news_full .news_body p{
     line-height: 30px;
@@ -70,11 +70,14 @@
     margin-bottom: 24px;
 }
 @media (min-width: 994px) {
+    .news_carousel .news_card.news_default{
+        margin-bottom: 32px;
+    }
     .news_full .news_body ul:not([class]) li{
-        margin-bottom: 48px;
+        margin-bottom: 25px;
     }
     .news_body p:not(:last-child){
-        margin-bottom: 48px;
+        margin-bottom: 25px;
     }
     .news_body_empty .news_card{
         padding: 32px 80px;

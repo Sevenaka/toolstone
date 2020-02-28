@@ -25,18 +25,20 @@
     padding-top: 36px;
     padding-bottom: 28px;
 }
-.partner_col{
-    border-right: 0.5px solid var(--gray2);
-}
 .partner_list{
     margin-bottom: 32px;
 }
 @media (min-width: 994px) {
-    .partner_col:first-child{
-        border-left: 0.5px solid var(--gray2);
-    } 
+    .partner_col:not(:last-child){
+        border-right: 0.5px solid var(--gray2);
+    }
 }
 @media (max-width: 993px) {
+    .partner_col:nth-child(5),
+    .partner_col:nth-child(3),
+    .partner_col:nth-child(1){
+        border-right: 0.5px solid var(--gray2);
+    }
     .section_popular_cat{
         padding-top: 24px;
     }

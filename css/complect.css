@@ -31,15 +31,6 @@
     color: #000000;
     margin-bottom: 19px;
 }
-.col_complect_table .name{
-    width: 80%;
-}
-.col_complect_table .th_price{
-    width: 7%;
-}
-.col_complect_table .th_count{
-    width: 2%;
-}
 .tabple_cm_price{
     display: flex;
     justify-content: flex-end;
@@ -144,9 +135,6 @@
     .complect_full .action_btn{
         padding-top: 15px;
     }
-    .tabple_cm_price{
-        padding-top: 44px;
-    }
     .complect_full .complect_label span{
         font-size: 16px;
         line-height: 19px;
@@ -154,6 +142,9 @@
     .complect_more{
         min-width: 440px;
         height: 39px;
+    }
+    .tabple_cm_price .price_block{
+        margin-right: 115px;
     }
 }
 @media (max-width: 993px) {
@@ -174,9 +165,6 @@
     }
     .complect_full .action_btn{
         padding-top: 5px;
-    }
-    .tabple_cm_price{
-        padding-top: 0px;
     }
     .complect_more{
         min-width: 180px;

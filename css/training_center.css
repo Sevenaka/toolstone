@@ -53,7 +53,7 @@
 @media (min-width: 994px) {
     .training_about{
         padding-bottom: 64px;
-        padding-top: 64px;
+        padding-top: 44px;
     }
     .training_title{
         font-size: 24px;
@@ -68,6 +68,14 @@
     }
     .training_vide_text{
         margin-top: 64px;
+    }
+    .center_ab_img{
+        padding-top: 170px;
+    }
+}
+@media (min-width: 765px) and (max-width: 994px) {
+    .center_ab_img{
+        padding-top: 140px;
     }
 }
 @media (max-width: 993px) {
